@@ -434,22 +434,34 @@ def run_pair(task: dict, task_id: str, model: str, out: Path,
     usage = {"input_tokens": 0, "output_tokens": 0}
 
     if candidate is not None:
-        for stage, prompt_fn in (
-            ("selfcheck", selfcheck_prompt),
-            ("steelman", steelman_prompt),
-        ):
+        # selfcheck and steelman are independent given the frozen candidate:
+        # run them concurrently. Determinism is unaffected (temperature 0,
+        # independent calls, both read the same frozen candidate).
+        def eval_stage(stage: str, prompt_fn):
             event = call_model(model, prompt_fn(task, code), stage, task_id, out,
                                max_transport_attempts)
             verdict = strict_verdict(event.get("raw_response"))
-            derived[f"{stage}_event_id"] = event["event_id"]
-            derived[f"{stage}_verdict"] = verdict
-            derived[f"{stage}_extraction"] = (
-                "parsed" if verdict is not None and event.get("error") is None
-                else "malformed_or_error"
-            )
-            event_usage = event.get("usage") or {}
-            usage["input_tokens"] += event_usage.get("prompt_tokens", 0)
-            usage["output_tokens"] += event_usage.get("completion_tokens", 0)
+            u = event.get("usage") or {}
+            return {
+                f"{stage}_event_id": event["event_id"],
+                f"{stage}_verdict": verdict,
+                f"{stage}_extraction": (
+                    "parsed" if verdict is not None and event.get("error") is None
+                    else "malformed_or_error"
+                ),
+                "_in": u.get("prompt_tokens", 0),
+                "_out": u.get("completion_tokens", 0),
+            }
+
+        with ThreadPoolExecutor(max_workers=2) as eval_pool:
+            for results in eval_pool.map(
+                eval_stage,
+                ("selfcheck", "steelman"),
+                (selfcheck_prompt, steelman_prompt),
+            ):
+                usage["input_tokens"] += results.pop("_in")
+                usage["output_tokens"] += results.pop("_out")
+                derived.update(results)
 
     append_jsonl(out / "derived_records.jsonl", derived)
     return usage

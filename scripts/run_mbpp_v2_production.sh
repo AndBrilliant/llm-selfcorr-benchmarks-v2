@@ -9,4 +9,4 @@ exec python3 scripts/mbpp_v2_pilot.py \
     --models gpt-5.4 ds-v4-flash glm-5.3-flash qwen38-flash gpt-6-luna \
     --out data/mbpp_v2/production \
     --transport-retries 2 \
-    --workers 8
+    --workers 16
