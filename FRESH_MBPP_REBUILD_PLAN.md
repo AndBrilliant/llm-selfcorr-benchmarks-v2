@@ -13,11 +13,15 @@ copied from in-memory content unless that content is also persisted.
 
 Each generation and evaluator attempt must persist, before parsing:
 
-- run ID, model, task ID, prompt fingerprint, timestamp, attempt number, and transport retry count;
+- run ID, model, task ID, prompt fingerprint, timestamp, attempt number, and retry count;
 - complete raw response text exactly as returned;
 - provider completion/finish metadata when available;
 - HTTP/provider status and error class on failure;
 - derived candidate code or parsed verdict only in a separate analysis step.
+
+A provider-truncated or transport-failed call may be retried under the pre-specified fixed retry
+policy. Every attempt remains in the immutable event ledger, and only a complete selected attempt
+may feed a derived record.
 
 A record is immutable after append. A manifest of SHA-256 hashes is committed after each stage.
 

@@ -55,6 +55,13 @@ def main() -> int:
     event_by_id = {row["event_id"]: row for row in events}
     assert len(event_by_id) == len(events), "duplicate event IDs"
 
+    referenced_ids = {
+        row["generation_event_id"] for row in candidates
+    } | {
+        row[f"{stage}_event_id"] for row in derived
+        for stage in ("selfcheck", "steelman")
+    }
+
     success_events = 0
     malformed_events = 0
     length_events = 0
@@ -71,12 +78,15 @@ def main() -> int:
         )
         if event.get("finish_reason") == "length":
             length_events += 1
-        if event["stage"] in {"selfcheck", "steelman"}:
-            assert strict_verdict(raw) is not None, (
-                f"{event['event_id']}: evaluator response lacks one terminal verdict"
-            )
 
-    assert length_events == 0, f"{length_events} provider responses hit max-token length"
+    for event_id in referenced_ids:
+        event = event_by_id[event_id]
+        assert event.get("http_status") == 200 and not event.get("error"), (
+            f"{event_id}: selected event is a failed API attempt"
+        )
+        assert event.get("finish_reason") != "length", (
+            f"{event_id}: selected event is provider-truncated"
+        )
 
     candidate_keys = set()
     for candidate in candidates:

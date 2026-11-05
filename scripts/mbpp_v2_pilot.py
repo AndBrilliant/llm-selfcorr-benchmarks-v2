@@ -47,7 +47,7 @@ MODEL_SPECS = {
         "model_id": "z-ai/glm-5.3-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 8192,
+        "max_output": 16384,
         "uses_max_completion_tokens": False,
     },
     "qwen38-flash": {
@@ -248,7 +248,6 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
 
     base = {
         "schema_version": "mbpp-v2-pilot/1",
-        "event_id": str(uuid.uuid4()),
         "ts": utc_now(),
         "stage": stage,
         "task_id": task_id,
@@ -274,6 +273,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
                 payload = None
             record = dict(base)
             record.update({
+                "event_id": str(uuid.uuid4()),
                 "transport_attempt": attempt,
                 "http_status": response.status_code,
                 "duration_s": duration,
@@ -295,20 +295,34 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
             raw = message.get("content")
             if isinstance(raw, list):
                 raw = "".join(part.get("text", "") for part in raw if isinstance(part, dict))
+            finish_reason = choices[0].get("finish_reason") if choices else None
+            if not isinstance(raw, str):
+                provider_error = "provider returned no string content"
+            elif finish_reason == "length":
+                provider_error = "provider response truncated by max tokens"
+            else:
+                provider_error = None
             record.update({
                 "raw_response": raw if isinstance(raw, str) else None,
                 "raw_response_sha256": sha256_text(raw) if isinstance(raw, str) else None,
-                "finish_reason": choices[0].get("finish_reason") if choices else None,
+                "finish_reason": finish_reason,
                 "usage": payload.get("usage"),
                 "provider_response_id": payload.get("id"),
-                "error": None if isinstance(raw, str) else "provider returned no string content",
+                "error": provider_error,
             })
             append_jsonl(out / "events.jsonl", record)
+            if provider_error is None:
+                return record
+            last_error = provider_error
+            if attempt < max_transport_attempts:
+                time.sleep(min(2**attempt, 8))
+                continue
             return record
         except requests.RequestException as exc:
             duration = round(time.time() - started, 3)
             record = dict(base)
             record.update({
+                "event_id": str(uuid.uuid4()),
                 "transport_attempt": attempt,
                 "http_status": None,
                 "duration_s": duration,
@@ -323,10 +337,10 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
             last_error = record["error"]
             time.sleep(min(2**attempt, 8))
 
-    return dict(base, transport_attempt=max_transport_attempts, http_status=None,
+    return dict(base, event_id=str(uuid.uuid4()), transport_attempt=max_transport_attempts, http_status=None,
                 duration_s=None, raw_response=None, raw_response_sha256=None,
                 finish_reason=None, usage=None, provider_response_id=None,
-                error=f"transport failed after {max_transport_attempts} attempts: {last_error}")
+                error=f"call failed after {max_transport_attempts} attempts: {last_error}")
 
 
 def already_done(out: Path, model: str, task_id: str) -> bool:
@@ -361,7 +375,7 @@ def main() -> int:
     parser.add_argument("--tasks", nargs="+", default=["MBPP/1", "MBPP/2"])
     parser.add_argument("--out", default="data/mbpp_v2/pilot")
     parser.add_argument("--transport-retries", type=int, default=2,
-                        help="retries after the initial transport attempt")
+                        help="retries after the initial attempt for transport errors or provider truncation")
     args = parser.parse_args()
 
     out = ROOT / args.out
