@@ -27,6 +27,7 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 TASKS = ROOT / "data/MBPP.jsonl"
 PRINT_LOCK = threading.Lock()
+LEDGER_LOCK = threading.Lock()
 
 SCHEMA_VERSION = "mbpp-v2-pilot/1"
 
@@ -107,10 +108,12 @@ def sha256_text(text: str) -> str:
 
 def append_jsonl(path: Path, record: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as fh:
-        fh.write(json.dumps(record, sort_keys=True) + "\n")
-        fh.flush()
-        os.fsync(fh.fileno())
+    line = json.dumps(record, sort_keys=True) + "\n"
+    with LEDGER_LOCK:
+        with path.open("a", encoding="utf-8") as fh:
+            fh.write(line)
+            fh.flush()
+            os.fsync(fh.fileno())
 
 
 def load_task_map() -> dict[str, dict]:
@@ -353,18 +356,22 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
                 error=f"call failed after {max_transport_attempts} attempts: {last_error}")
 
 
-def already_done(out: Path, model: str, task_id: str) -> bool:
+def completed_pairs(out: Path) -> set[tuple[str, str]]:
+    done: set[tuple[str, str]] = set()
     path = out / "derived_records.jsonl"
     if not path.exists():
-        return False
+        return done
     with path.open(encoding="utf-8") as fh:
         for line in fh:
             if not line.strip():
                 continue
             row = json.loads(line)
-            if row.get("model") == model and row.get("task_id") == task_id:
-                return True
-    return False
+            done.add((row.get("model"), row.get("task_id")))
+    return done
+
+
+def already_done(out: Path, model: str, task_id: str) -> bool:
+    return (model, task_id) in completed_pairs(out)
 
 
 def write_manifest(out: Path) -> None:
@@ -379,6 +386,79 @@ def write_manifest(out: Path) -> None:
     (out / "manifest.sha256").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def run_pair(task: dict, task_id: str, model: str, out: Path,
+             max_transport_attempts: int) -> dict:
+    """Run one (task, model) pair: generate, test, then both evaluator arms.
+
+    Returns the pair's token usage. Every API attempt is appended to the
+    immutable event ledger before any parsing happens.
+    """
+    log(f"RUN {model} {task_id}")
+
+    gen_prompt = generation_prompt(task)
+    gen_event = call_model(model, gen_prompt, "generation", task_id, out,
+                           max_transport_attempts)
+    code = extract_code(gen_event.get("raw_response"), task)
+    candidate = None
+    if code is not None:
+        passed, test_reason = run_task_tests(code, task)
+        candidate = {
+            "schema_version": SCHEMA_VERSION,
+            "ts": utc_now(),
+            "task_id": task_id,
+            "model": model,
+            "generation_event_id": gen_event["event_id"],
+            "code": code,
+            "code_sha256": sha256_text(code),
+            "T": int(passed),
+            "test_reason": test_reason,
+        }
+        append_jsonl(out / "candidate_records.jsonl", candidate)
+
+    derived = {
+        "schema_version": SCHEMA_VERSION,
+        "ts": utc_now(),
+        "task_id": task_id,
+        "model": model,
+        "generation_event_id": gen_event["event_id"],
+        "generation_error": gen_event.get("error"),
+        "generation_http_status": gen_event.get("http_status"),
+        "generation_finish_reason": gen_event.get("finish_reason"),
+        "code_sha256": candidate["code_sha256"] if candidate else None,
+        "T": candidate["T"] if candidate else None,
+        "test_reason": candidate["test_reason"] if candidate else None,
+        "selfcheck_event_id": None,
+        "selfcheck_verdict": None,
+        "selfcheck_extraction": "not_run",
+        "steelman_event_id": None,
+        "steelman_verdict": None,
+        "steelman_extraction": "not_run",
+    }
+
+    usage = {"input_tokens": 0, "output_tokens": 0}
+
+    if candidate is not None:
+        for stage, prompt_fn in (
+            ("selfcheck", selfcheck_prompt),
+            ("steelman", steelman_prompt),
+        ):
+            event = call_model(model, prompt_fn(task, code), stage, task_id, out,
+                               max_transport_attempts)
+            verdict = strict_verdict(event.get("raw_response"))
+            derived[f"{stage}_event_id"] = event["event_id"]
+            derived[f"{stage}_verdict"] = verdict
+            derived[f"{stage}_extraction"] = (
+                "parsed" if verdict is not None and event.get("error") is None
+                else "malformed_or_error"
+            )
+            event_usage = event.get("usage") or {}
+            usage["input_tokens"] += event_usage.get("prompt_tokens", 0)
+            usage["output_tokens"] += event_usage.get("completion_tokens", 0)
+
+    append_jsonl(out / "derived_records.jsonl", derived)
+    return usage
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", default=["gpt-5.4", "ds-v4-flash"])
@@ -386,6 +466,8 @@ def main() -> int:
     parser.add_argument("--out", default="data/mbpp_v2/pilot")
     parser.add_argument("--transport-retries", type=int, default=2,
                         help="retries after the initial attempt for transport errors or provider truncation")
+    parser.add_argument("--workers", type=int, default=1,
+                        help="concurrent (task, model) pairs; each pair is sequential internally")
     args = parser.parse_args()
 
     out = ROOT / args.out
@@ -397,85 +479,45 @@ def main() -> int:
     for model in args.models:
         if model not in MODEL_SPECS:
             raise SystemExit(f"Unknown model: {model}")
+    if args.workers < 1:
+        raise SystemExit("--workers must be >= 1")
 
     max_transport_attempts = args.transport_retries + 1
     total_usage = {"input_tokens": 0, "output_tokens": 0}
-    completed = 0
 
-    for task_id in args.tasks:
-        task = task_map[task_id]
-        for model in args.models:
-            if already_done(out, model, task_id):
-                print(f"SKIP {model} {task_id}")
-                continue
-            print(f"RUN {model} {task_id}", flush=True)
+    # Full work list in deterministic order, minus pairs already present in the
+    # immutable ledger. Disjoint round-robin partitions keep workers from ever
+    # sharing a pair, so resume after interruption cannot duplicate work.
+    done = completed_pairs(out)
+    work = [
+        (task_map[task_id], task_id, model)
+        for task_id in args.tasks
+        for model in args.models
+        if (model, task_id) not in done
+    ]
+    skipped = len(args.tasks) * len(args.models) - len(work)
+    if skipped:
+        log(f"SKIP {skipped} already-recorded pairs")
 
-            gen_prompt = generation_prompt(task)
-            gen_event = call_model(model, gen_prompt, "generation", task_id, out,
-                                   max_transport_attempts)
-            code = extract_code(gen_event.get("raw_response"), task)
-            candidate = None
-            candidate_record = None
-            if code is not None:
-                passed, test_reason = run_task_tests(code, task)
-                candidate_record = {
-                    "schema_version": SCHEMA_VERSION,
-                    "ts": utc_now(),
-                    "task_id": task_id,
-                    "model": model,
-                    "generation_event_id": gen_event["event_id"],
-                    "code": code,
-                    "code_sha256": sha256_text(code),
-                    "T": int(passed),
-                    "test_reason": test_reason,
-                }
-                append_jsonl(out / "candidate_records.jsonl", candidate_record)
-                candidate = candidate_record
+    partitions = [work[i::args.workers] for i in range(args.workers)]
+    partitions = [p for p in partitions if p]
 
-            derived = {
-                "schema_version": SCHEMA_VERSION,
-                "ts": utc_now(),
-                "task_id": task_id,
-                "model": model,
-                "generation_event_id": gen_event["event_id"],
-                "generation_error": gen_event.get("error"),
-                "generation_http_status": gen_event.get("http_status"),
-                "generation_finish_reason": gen_event.get("finish_reason"),
-                "code_sha256": candidate["code_sha256"] if candidate else None,
-                "T": candidate["T"] if candidate else None,
-                "test_reason": candidate["test_reason"] if candidate else None,
-                "selfcheck_event_id": None,
-                "selfcheck_verdict": None,
-                "selfcheck_extraction": "not_run",
-                "steelman_event_id": None,
-                "steelman_verdict": None,
-                "steelman_extraction": "not_run",
-            }
+    def worker(partition: list) -> dict:
+        subtotal = {"input_tokens": 0, "output_tokens": 0}
+        for task, task_id, model in partition:
+            usage = run_pair(task, task_id, model, out, max_transport_attempts)
+            subtotal["input_tokens"] += usage["input_tokens"]
+            subtotal["output_tokens"] += usage["output_tokens"]
+        return subtotal
 
-            if candidate is not None:
-                for stage, prompt_fn in (
-                    ("selfcheck", selfcheck_prompt),
-                    ("steelman", steelman_prompt),
-                ):
-                    event = call_model(model, prompt_fn(task, code), stage, task_id, out,
-                                       max_transport_attempts)
-                    verdict = strict_verdict(event.get("raw_response"))
-                    key = f"{stage}"
-                    derived[f"{key}_event_id"] = event["event_id"]
-                    derived[f"{key}_verdict"] = verdict
-                    derived[f"{key}_extraction"] = (
-                        "parsed" if verdict is not None and event.get("error") is None
-                        else "malformed_or_error"
-                    )
-                    usage = event.get("usage") or {}
-                    total_usage["input_tokens"] += usage.get("prompt_tokens", 0)
-                    total_usage["output_tokens"] += usage.get("completion_tokens", 0)
-
-            append_jsonl(out / "derived_records.jsonl", derived)
-            completed += 1
+    with ThreadPoolExecutor(max_workers=len(partitions)) as pool:
+        for subtotal in pool.map(worker, partitions):
+            total_usage["input_tokens"] += subtotal["input_tokens"]
+            total_usage["output_tokens"] += subtotal["output_tokens"]
 
     write_manifest(out)
-    print(json.dumps({"completed_pairs": completed, "usage": total_usage}, indent=2))
+    print(json.dumps({"completed_pairs": len(work), "skipped_pairs": skipped,
+                      "usage": total_usage}, indent=2))
     return 0
 
 
