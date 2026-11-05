@@ -66,7 +66,8 @@ class TestFreshMBPPAnalysis(unittest.TestCase):
         self.assertEqual(family["malformed_steelman"], 1)
         self.assertEqual(family["paired_evaluated"], 0)
         self.assertEqual(family["steelman_false_accepts"], 0)
-        self.assertEqual(family["steelman_far_pct"], 0.0)
+        self.assertEqual(family["steelman_far_pct"], None)
+        self.assertEqual(family["steelman_far_ci95"], None)
 
     def test_write_outputs_are_manifested(self):
         import tempfile

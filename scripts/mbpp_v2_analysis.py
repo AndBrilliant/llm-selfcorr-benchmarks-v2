@@ -43,6 +43,17 @@ def pct(numerator: int, denominator: int) -> float | None:
     return None if denominator == 0 else 100.0 * numerator / denominator
 
 
+def wilson_ci(numerator: int, denominator: int, z: float = 1.959964) -> tuple[float, float] | None:
+    """Two-sided 95% Wilson score interval for a binomial proportion, in percent."""
+    if denominator == 0:
+        return None
+    p = numerator / denominator
+    d = 1.0 + z * z / denominator
+    center = (p + z * z / (2 * denominator)) / d
+    half = z * math.sqrt(p * (1 - p) / denominator + z * z / (4 * denominator * denominator)) / d
+    return (100.0 * (center - half), 100.0 * (center + half))
+
+
 def decision(verdict: str | None) -> bool | None:
     return VERDICTS.get(verdict)
 
@@ -74,6 +85,8 @@ def analyze(rows: list[dict], model_order: list[str] = MODEL_ORDER) -> dict:
         st_incorrect = [row for row in paired if row["T"] == 0 and decision(row["steelman_verdict"])]
         sc_correct = [row for row in paired if row["T"] == 1 and decision(row["selfcheck_verdict"])]
         st_correct = [row for row in paired if row["T"] == 1 and decision(row["steelman_verdict"])]
+        incorrect_paired = sum(row["T"] == 0 for row in paired)
+        correct_paired = sum(row["T"] == 1 for row in paired)
 
         sc_only_wrong = sum(
             row["T"] == 0 and decision(row["selfcheck_verdict"]) and not decision(row["steelman_verdict"])
@@ -110,14 +123,20 @@ def analyze(rows: list[dict], model_order: list[str] = MODEL_ORDER) -> dict:
             "paired_evaluated": len(paired),
             "incorrect_total": incorrect_total,
             "correct_total": correct_total,
+            "incorrect_paired": incorrect_paired,
+            "correct_paired": correct_paired,
             "selfcheck_false_accepts": len(sc_incorrect),
             "steelman_false_accepts": len(st_incorrect),
             "selfcheck_true_accepts": len(sc_correct),
             "steelman_true_accepts": len(st_correct),
-            "selfcheck_far_pct": pct(len(sc_incorrect), incorrect_total),
-            "steelman_far_pct": pct(len(st_incorrect), incorrect_total),
-            "selfcheck_true_acceptance_pct": pct(len(sc_correct), correct_total),
-            "steelman_true_acceptance_pct": pct(len(st_correct), correct_total),
+            "selfcheck_far_pct": pct(len(sc_incorrect), incorrect_paired),
+            "steelman_far_pct": pct(len(st_incorrect), incorrect_paired),
+            "selfcheck_true_acceptance_pct": pct(len(sc_correct), correct_paired),
+            "steelman_true_acceptance_pct": pct(len(st_correct), correct_paired),
+            "selfcheck_far_ci95": wilson_ci(len(sc_incorrect), incorrect_paired),
+            "steelman_far_ci95": wilson_ci(len(st_incorrect), incorrect_paired),
+            "selfcheck_true_acceptance_ci95": wilson_ci(len(sc_correct), correct_paired),
+            "steelman_true_acceptance_ci95": wilson_ci(len(st_correct), correct_paired),
             "far_discordant_selfcheck_only": far_b,
             "far_discordant_steelman_only": far_c,
             "far_mcnemar_exact_p": far_p,
@@ -147,14 +166,17 @@ def write_outputs(result: dict, out: Path) -> None:
         "Fresh complete-response MBPP analysis",
         "=====================================",
         "Exact two-sided McNemar p-values; Holm adjustment across the five model families.",
+        "FAR/TAR rates use the paired stratum (both arms parsed, ground truth assigned);",
+        "malformed records are reported as counts, never imputed.",
         "",
     ]
     for family in result["families"]:
         lines.append(
             f"{family['model']}: tasks={family['tasks']} paired={family['paired_evaluated']} "
-            f"incorrect={family['incorrect_total']} correct={family['correct_total']} "
-            f"SC FAR={family['selfcheck_false_accepts']}/{family['incorrect_total']} "
-            f"ST FAR={family['steelman_false_accepts']}/{family['incorrect_total']} "
+            f"incorrect={family['incorrect_total']} (paired {family['incorrect_paired']}) "
+            f"correct={family['correct_total']} (paired {family['correct_paired']}) "
+            f"SC FAR={family['selfcheck_false_accepts']}/{family['incorrect_paired']} "
+            f"ST FAR={family['steelman_false_accepts']}/{family['incorrect_paired']} "
             f"discordant={family['far_discordant_selfcheck_only']}/{family['far_discordant_steelman_only']} "
             f"exact p={family['far_mcnemar_exact_p']:.12g} Holm p={family['far_mcnemar_exact_holm_p']:.12g} "
             f"overall={family['overall_discordant_corrected_by_steelman']}/{family['overall_discordant_introduced_by_steelman']} "
@@ -165,16 +187,17 @@ def write_outputs(result: dict, out: Path) -> None:
     tex = [
         "\\begin{tabular}{lrrrrrrr}",
         "\\hline",
-        "Model & Tasks & Incorrect & SC FAR & ST FAR & Discordant & Exact $p$ & Holm $p$ \\\\",
+        "Model & Tasks & Paired & $n_{T=0}$ & SC FAR & ST FAR & Discordant & Holm $p$ \\\\",
         "\\hline",
     ]
     for family in result["families"]:
         tex.append(
-            f"{family['model']} & {family['tasks']} & {family['incorrect_total']} & "
-            f"{family['selfcheck_false_accepts']}/{family['incorrect_total']} & "
-            f"{family['steelman_false_accepts']}/{family['incorrect_total']} & "
+            f"{family['model']} & {family['tasks']} & {family['paired_evaluated']} & "
+            f"{family['incorrect_paired']} & "
+            f"{family['selfcheck_false_accepts']}/{family['incorrect_paired']} & "
+            f"{family['steelman_false_accepts']}/{family['incorrect_paired']} & "
             f"{family['far_discordant_selfcheck_only']}/{family['far_discordant_steelman_only']} & "
-            f"{family['far_mcnemar_exact_p']:.6g} & {family['far_mcnemar_exact_holm_p']:.6g} \\\\"
+            f"{family['far_mcnemar_exact_holm_p']:.6g} \\\\"
         )
     tex.extend(["\\hline", "\\end{tabular}", ""])
     table_path.write_text("\n".join(tex), encoding="utf-8")
