@@ -275,6 +275,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
                 payload = response.json()
             except ValueError:
                 payload = None
+            record = dict(base)
             record.update({
                 "event_id": str(uuid.uuid4()),
                 "transport_attempt": attempt,
@@ -509,7 +510,15 @@ def main() -> int:
     def worker(partition: list) -> dict:
         subtotal = {"input_tokens": 0, "output_tokens": 0}
         for task, task_id, model in partition:
-            usage = run_pair(task, task_id, model, out, max_transport_attempts)
+            try:
+                usage = run_pair(task, task_id, model, out, max_transport_attempts)
+            except Exception as exc:  # one bad pair must not kill the pool
+                log(f"ERROR pair {model} {task_id}: {type(exc).__name__}: {exc}")
+                append_jsonl(out / "runner_errors.jsonl", {
+                    "ts": utc_now(), "model": model, "task_id": task_id,
+                    "error": f"{type(exc).__name__}: {exc}",
+                })
+                continue
             subtotal["input_tokens"] += usage["input_tokens"]
             subtotal["output_tokens"] += usage["output_tokens"]
         return subtotal
