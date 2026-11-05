@@ -15,8 +15,10 @@ import re
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -24,6 +26,9 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 TASKS = ROOT / "data/MBPP.jsonl"
+PRINT_LOCK = threading.Lock()
+
+SCHEMA_VERSION = "mbpp-v2-pilot/1"
 
 MODEL_SPECS = {
     "gpt-5.4": {
@@ -89,6 +94,11 @@ SAFE_HEADER = (
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def log(message: str) -> None:
+    with PRINT_LOCK:
+        print(message, flush=True)
 
 
 def sha256_text(text: str) -> str:
@@ -247,7 +257,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
         body["max_tokens"] = spec["max_output"]
 
     base = {
-        "schema_version": "mbpp-v2-pilot/1",
+        "schema_version": SCHEMA_VERSION,
         "ts": utc_now(),
         "stage": stage,
         "task_id": task_id,
@@ -409,7 +419,7 @@ def main() -> int:
             if code is not None:
                 passed, test_reason = run_task_tests(code, task)
                 candidate_record = {
-                    "schema_version": "mbpp-v2-pilot/1",
+                    "schema_version": SCHEMA_VERSION,
                     "ts": utc_now(),
                     "task_id": task_id,
                     "model": model,
@@ -423,7 +433,7 @@ def main() -> int:
                 candidate = candidate_record
 
             derived = {
-                "schema_version": "mbpp-v2-pilot/1",
+                "schema_version": SCHEMA_VERSION,
                 "ts": utc_now(),
                 "task_id": task_id,
                 "model": model,
