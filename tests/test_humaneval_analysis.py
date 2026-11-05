@@ -116,8 +116,19 @@ class TestHumanEvalAnalysis(unittest.TestCase):
     def test_no_legacy_mbpp_outputs_or_analysis(self):
         for relative in ("data/mbpp", "data/mbpp_paired", "data/mbpp_control"):
             self.assertFalse((ROOT / relative).exists(), relative)
-        for path in (ROOT / "scripts").glob("*.py"):
-            self.assertNotIn("mbpp", path.name.lower(), path.name)
+        legacy_scripts = {
+            "harness_paired.py",
+            "harness_control.py",
+            "verdict_parsing.py",
+            "mbpp_multiplicity.py",
+            "mbpp_verdict_audit.py",
+            "mbpp_control_semantic_audit.py",
+            "mbpp_first_record_sensitivity.py",
+            "association_analysis.py",
+            "final_table_paired.py",
+        }
+        for name in legacy_scripts:
+            self.assertFalse((ROOT / "scripts" / name).exists(), name)
         mbpp = json.loads((ROOT / "data/MBPP.jsonl").read_text().splitlines()[0])
         self.assertIn("task_id", mbpp)
         self.assertNotIn("accept_sc", mbpp)
