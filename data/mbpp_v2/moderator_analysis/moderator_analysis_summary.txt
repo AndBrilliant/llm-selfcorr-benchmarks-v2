@@ -1,0 +1,44 @@
+Tier 0 moderator-stratified arm association (pre-registered)
+==============================================================
+
+== gpt-5.4 (paired incorrect n=427)
+   crude: a=357 b=28 c=21 d=21 phi=0.399 fisher_p=2.36e-11 joint_accept=83.6%
+   provenance: phi_stratified=0.391 rule=persistent [crowd n=226 phi=0.47 p=8.8e-09 jA=83%] [intro n=1 phi=0.00 p=1 jA=100%] [sanitized n=200 phi=0.30 p=0.00056 jA=84%]
+   prompt_words: phi_stratified=0.410 rule=persistent [hi n=117 phi=0.51 p=3.9e-05 jA=86%] [lo n=310 phi=0.37 p=7.5e-08 jA=83%]
+   code_lines: phi_stratified=0.405 rule=mixed [hi n=1 phi=0.00 p=1 jA=0%] [lo n=426 phi=0.41 p=1.3e-11 jA=84%]
+   n_args: phi_stratified=0.398 rule=persistent [1 n=257 phi=0.34 p=8.8e-06 jA=83%] [2 n=170 phi=0.49 p=5.6e-07 jA=84%]
+   concept: phi_stratified=0.389 rule=persistent [other n=365 phi=0.43 p=2e-11 jA=83%] [text n=62 phi=0.13 p=0.35 jA=85%]
+
+== ds-v4-flash (paired incorrect n=389)
+   crude: a=358 b=19 c=9 d=3 phi=0.149 fisher_p=0.0248 joint_accept=92.0%
+   provenance: phi_stratified=0.152 rule=persistent [crowd n=219 phi=0.20 p=0.042 jA=93%] [intro n=1 phi=0.00 p=1 jA=100%] [sanitized n=169 phi=0.10 p=0.29 jA=91%]
+   prompt_words: phi_stratified=0.157 rule=persistent [hi n=103 phi=0.26 p=0.11 jA=94%] [lo n=286 phi=0.12 p=0.1 jA=91%]
+   code_lines: phi_stratified=0.148 rule=persistent [hi n=2 phi=0.00 p=1 jA=100%] [lo n=387 phi=0.15 p=0.025 jA=92%]
+   n_args: phi_stratified=0.121 rule=persistent [1 n=243 phi=0.21 p=0.016 jA=91%] [2 n=146 phi=-0.03 p=1 jA=94%]
+   concept: phi_stratified=0.166 rule=persistent [other n=332 phi=0.21 p=0.0092 jA=93%] [text n=57 phi=-0.06 p=1 jA=88%]
+
+== glm-5.3-flash (paired incorrect n=299)
+   crude: a=240 b=26 c=16 d=17 phi=0.373 fisher_p=5.11e-08 joint_accept=80.3%
+   provenance: phi_stratified=0.388 rule=persistent [crowd n=173 phi=0.51 p=9.9e-08 jA=84%] [sanitized n=126 phi=0.22 p=0.025 jA=75%]
+   prompt_words: phi_stratified=0.375 rule=persistent [hi n=83 phi=0.51 p=0.00018 jA=81%] [lo n=216 phi=0.32 p=5e-05 jA=80%]
+   code_lines: phi_stratified=0.373 rule=persistent [hi n=13 phi=0.41 p=0.29 jA=77%] [lo n=286 phi=0.37 p=1.2e-07 jA=80%]
+   n_args: phi_stratified=0.367 rule=persistent [1 n=175 phi=0.42 p=2.3e-06 jA=79%] [2 n=124 phi=0.29 p=0.0075 jA=81%]
+   concept: phi_stratified=0.368 rule=persistent [other n=251 phi=0.42 p=1.8e-08 jA=80%] [text n=48 phi=0.08 p=0.5 jA=79%]
+
+== qwen38-flash (paired incorrect n=413)
+   crude: a=366 b=26 c=8 d=13 phi=0.415 fisher_p=7.42e-10 joint_accept=88.6%
+   provenance: phi_stratified=0.428 rule=persistent [crowd n=224 phi=0.51 p=4e-07 jA=91%] [intro n=1 phi=0.00 p=1 jA=100%] [sanitized n=188 phi=0.33 p=0.00041 jA=86%]
+   prompt_words: phi_stratified=0.418 rule=persistent [hi n=117 phi=0.42 p=0.0024 jA=90%] [lo n=296 phi=0.42 p=1.4e-07 jA=88%]
+   code_lines: phi_stratified=0.409 rule=persistent [hi n=22 phi=0.42 p=0.12 jA=73%] [lo n=391 phi=0.41 p=8.6e-09 jA=90%]
+   n_args: phi_stratified=0.428 rule=persistent [1 n=242 phi=0.54 p=8.4e-09 jA=90%] [2 n=171 phi=0.26 p=0.0072 jA=86%]
+   concept: phi_stratified=0.426 rule=persistent [other n=336 phi=0.46 p=6.9e-09 jA=90%] [text n=77 phi=0.30 p=0.035 jA=82%]
+
+== gpt-6-luna (paired incorrect n=432)
+   crude: a=372 b=32 c=3 d=25 phi=0.592 fisher_p=1.05e-21 joint_accept=86.1%
+   provenance: phi_stratified=0.594 rule=persistent [crowd n=239 phi=0.59 p=9.8e-12 jA=87%] [intro n=1 phi=0.00 p=1 jA=100%] [sanitized n=192 phi=0.60 p=2.3e-11 jA=84%]
+   prompt_words: phi_stratified=0.588 rule=persistent [hi n=118 phi=0.63 p=5e-08 jA=84%] [lo n=314 phi=0.57 p=1.7e-14 jA=87%]
+   code_lines: phi_stratified=0.589 rule=persistent [hi n=2 phi=0.00 p=1 jA=100%] [lo n=430 phi=0.59 p=1.2e-21 jA=86%]
+   n_args: phi_stratified=0.592 rule=persistent [1 n=260 phi=0.60 p=1.5e-14 jA=85%] [2 n=172 phi=0.57 p=2.8e-08 jA=87%]
+   concept: phi_stratified=0.594 rule=persistent [other n=363 phi=0.59 p=1.7e-18 jA=85%] [text n=69 phi=0.63 p=0.00067 jA=90%]
+
+HEADLINE: persistent (5/5 families have at least one fully persistent moderator)
