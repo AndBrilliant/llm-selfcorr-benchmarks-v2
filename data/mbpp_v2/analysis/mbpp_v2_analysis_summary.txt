@@ -1,0 +1,9 @@
+Fresh complete-response MBPP analysis
+=====================================
+Exact two-sided McNemar p-values; Holm adjustment across the five model families.
+
+gpt-5.4: tasks=947 paired=938 incorrect=433 correct=514 SC FAR=385/433 ST FAR=378/433 discordant=28/21 exact p=0.391602910547 Holm p=0.391602910547 overall=39/42 p=0.824313215105
+ds-v4-flash: tasks=947 paired=917 incorrect=396 correct=542 SC FAR=377/396 ST FAR=367/396 discordant=19/9 exact p=0.0871585533023 Holm p=0.261475659907 overall=24/14 p=0.143306654296
+glm-5.3-flash: tasks=947 paired=917 incorrect=308 correct=634 SC FAR=266/308 ST FAR=256/308 discordant=26/16 exact p=0.164149401783 Holm p=0.328298803566 overall=37/27 p=0.260435476577
+qwen38-flash: tasks=947 paired=940 incorrect=416 correct=528 SC FAR=392/416 ST FAR=374/416 discordant=26/8 exact p=0.00293505564332 Holm p=0.0117402225733 overall=27/19 p=0.30199561319
+gpt-6-luna: tasks=947 paired=943 incorrect=434 correct=513 SC FAR=404/434 ST FAR=375/434 discordant=32/3 exact p=4.17698174715e-07 Holm p=2.08849087358e-06 overall=36/23 p=0.117477350245
