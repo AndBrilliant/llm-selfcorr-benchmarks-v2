@@ -37,40 +37,30 @@ MODEL_SPECS = {
         "model_id": "gpt-5.4",
         "base_url": "https://api.openai.com/v1/chat/completions",
         "key_file": "openai",
-        "max_output": 4096,
-        "uses_max_completion_tokens": True,
     },
     "ds-v4-flash": {
         "provider": "openrouter",
         "model_id": "deepseek/deepseek-v4.1-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 32768,
-        "uses_max_completion_tokens": False,
     },
     "glm-5.3-flash": {
         "provider": "openrouter",
         "model_id": "z-ai/glm-5.3-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 32768,
-        "uses_max_completion_tokens": False,
     },
     "qwen38-flash": {
         "provider": "openrouter",
         "model_id": "qwen/qwen3.8-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 32768,
-        "uses_max_completion_tokens": False,
     },
     "gpt-6-luna": {
         "provider": "openrouter",
         "model_id": "openai/gpt-6-luna",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 16384,
-        "uses_max_completion_tokens": False,
     },
 }
 
@@ -249,15 +239,15 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
     spec = MODEL_SPECS[model]
     key = (Path.home() / ".keys" / spec["key_file"]).read_text().strip()
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    # NO max_tokens / max_completion_tokens: the API must never truncate a
+    # response at our request. Responses generate until the model itself
+    # finishes (finish_reason="stop") or the provider's own context ceiling
+    # is reached (finish_reason="length", recorded visibly, never retried).
     body = {
         "model": spec["model_id"],
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0,
     }
-    if spec["uses_max_completion_tokens"]:
-        body["max_completion_tokens"] = spec["max_output"]
-    else:
-        body["max_tokens"] = spec["max_output"]
 
     base = {
         "schema_version": SCHEMA_VERSION,
@@ -268,7 +258,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
         "provider": spec["provider"],
         "provider_model_id": spec["model_id"],
         "prompt_sha256": sha256_text(prompt),
-        "max_output_tokens": spec["max_output"],
+        "max_output_tokens": None,
         "temperature": 0,
     }
 
@@ -278,7 +268,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
         log(f"CALL {model} {stage} {task_id} attempt={attempt}")
         try:
             response = requests.post(
-                spec["base_url"], headers=headers, json=body, timeout=600
+                spec["base_url"], headers=headers, json=body, timeout=1800
             )
             duration = round(time.time() - started, 3)
             try:

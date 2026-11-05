@@ -9,6 +9,12 @@ not contain exactly one terminal `VERDICT: ACCEPT` or `VERDICT: REJECT` line is 
 must be retained as an extraction failure. There is no substring fallback and no verdict is
 copied from in-memory content unless that content is also persisted.
 
+No request ever carries a `max_tokens` or `max_completion_tokens` parameter. The harness
+never truncates a response; each response generates until the model itself ends it. A
+`finish_reason=length` event can therefore only come from the provider's own context ceiling
+and is recorded visibly, never retried (it is deterministic at temperature 0), and never
+silently converted into a verdict.
+
 ## Fresh record schema
 
 Each generation and evaluator attempt must persist, before parsing:
@@ -19,11 +25,12 @@ Each generation and evaluator attempt must persist, before parsing:
 - HTTP/provider status and error class on failure;
 - derived candidate code or parsed verdict only in a separate analysis step.
 
-A provider-truncated or transport-failed call may be retried under the pre-specified fixed retry
-policy — with one exception: `finish_reason=length` truncation at temperature 0 is
-deterministic, so it is recorded once as an immutable failed attempt and never retried.
-Every attempt remains in the immutable event ledger, and only a complete selected attempt
-may feed a derived record.
+A transport-failed call may be retried under the pre-specified fixed retry
+policy. Provider-side `finish_reason=length` truncation is deterministic at temperature 0,
+so it is recorded once as an immutable failed attempt and never retried. Note the harness
+itself never truncates: no request carries a token cap, so a `length` finish can only come
+from the provider's own context ceiling. Every attempt remains in the immutable event
+ledger, and only a complete selected attempt may feed a derived record.
 
 A record is immutable after append. A manifest of SHA-256 hashes is committed after each stage.
 
