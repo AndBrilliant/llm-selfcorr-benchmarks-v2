@@ -45,7 +45,7 @@ MODEL_SPECS = {
         "model_id": "deepseek/deepseek-v4.1-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 8192,
+        "max_output": 32768,
         "uses_max_completion_tokens": False,
     },
     "glm-5.3-flash": {
@@ -53,7 +53,7 @@ MODEL_SPECS = {
         "model_id": "z-ai/glm-5.3-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 16384,
+        "max_output": 32768,
         "uses_max_completion_tokens": False,
     },
     "qwen38-flash": {
@@ -61,7 +61,7 @@ MODEL_SPECS = {
         "model_id": "qwen/qwen3.8-flash",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 8192,
+        "max_output": 32768,
         "uses_max_completion_tokens": False,
     },
     "gpt-6-luna": {
@@ -69,7 +69,7 @@ MODEL_SPECS = {
         "model_id": "openai/gpt-6-luna",
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_file": "openrouter",
-        "max_output": 8192,
+        "max_output": 16384,
         "uses_max_completion_tokens": False,
     },
 }
@@ -460,19 +460,27 @@ def run_pair(task: dict, task_id: str, model: str, out: Path,
 
 
 def main() -> int:
+    global SCHEMA_VERSION
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", default=["gpt-5.4", "ds-v4-flash"])
-    parser.add_argument("--tasks", nargs="+", default=["MBPP/1", "MBPP/2"])
+    parser.add_argument("--tasks", nargs="+", default=None,
+                        help="task IDs to run; defaults to every task in the corpus")
     parser.add_argument("--out", default="data/mbpp_v2/pilot")
     parser.add_argument("--transport-retries", type=int, default=2,
                         help="retries after the initial attempt for transport errors or provider truncation")
     parser.add_argument("--workers", type=int, default=1,
                         help="concurrent (task, model) pairs; each pair is sequential internally")
+    parser.add_argument("--schema", default=SCHEMA_VERSION,
+                        help="schema version string written to all records")
     args = parser.parse_args()
+
+    SCHEMA_VERSION = args.schema
 
     out = ROOT / args.out
     out.mkdir(parents=True, exist_ok=True)
     task_map = load_task_map()
+    if args.tasks is None:
+        args.tasks = sorted(task_map, key=lambda tid: int(tid.split("/")[1]))
     missing = [task_id for task_id in args.tasks if task_id not in task_map]
     if missing:
         raise SystemExit(f"Unknown task IDs: {missing}")

@@ -55,6 +55,13 @@ def main() -> int:
     event_by_id = {row["event_id"]: row for row in events}
     assert len(event_by_id) == len(events), "duplicate event IDs"
 
+    for name, rows in (("candidate", candidates), ("derived", derived)):
+        seen = set()
+        for row in rows:
+            key = (row.get("model"), row.get("task_id"))
+            assert key not in seen, f"duplicate {name} record for {key}"
+            seen.add(key)
+
     referenced_ids = {
         row["generation_event_id"] for row in candidates
     } | {
