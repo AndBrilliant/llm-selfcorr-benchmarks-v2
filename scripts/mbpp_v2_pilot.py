@@ -275,6 +275,7 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
     last_error = None
     for attempt in range(1, max_transport_attempts + 1):
         started = time.time()
+        log(f"CALL {model} {stage} {task_id} attempt={attempt}")
         try:
             response = requests.post(
                 spec["base_url"], headers=headers, json=body, timeout=600
