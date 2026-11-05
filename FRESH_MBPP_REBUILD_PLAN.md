@@ -20,7 +20,9 @@ Each generation and evaluator attempt must persist, before parsing:
 - derived candidate code or parsed verdict only in a separate analysis step.
 
 A provider-truncated or transport-failed call may be retried under the pre-specified fixed retry
-policy. Every attempt remains in the immutable event ledger, and only a complete selected attempt
+policy — with one exception: `finish_reason=length` truncation at temperature 0 is
+deterministic, so it is recorded once as an immutable failed attempt and never retried.
+Every attempt remains in the immutable event ledger, and only a complete selected attempt
 may feed a derived record.
 
 A record is immutable after append. A manifest of SHA-256 hashes is committed after each stage.

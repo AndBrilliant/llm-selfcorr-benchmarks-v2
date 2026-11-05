@@ -277,14 +277,13 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
         started = time.time()
         try:
             response = requests.post(
-                spec["base_url"], headers=headers, json=body, timeout=300
+                spec["base_url"], headers=headers, json=body, timeout=600
             )
             duration = round(time.time() - started, 3)
             try:
                 payload = response.json()
             except ValueError:
                 payload = None
-            record = dict(base)
             record.update({
                 "event_id": str(uuid.uuid4()),
                 "transport_attempt": attempt,
@@ -326,10 +325,15 @@ def call_model(model: str, prompt: str, stage: str, task_id: str, out: Path,
             append_jsonl(out / "events.jsonl", record)
             if provider_error is None:
                 return record
-            last_error = provider_error
-            if attempt < max_transport_attempts:
-                time.sleep(min(2**attempt, 8))
-                continue
+            # Max-token truncation at temperature 0 is deterministic: a retry
+            # reproduces the same reasoning loop and burns the same budget.
+            # Record it once as an immutable failed attempt; never retry.
+            # Other provider errors are retried under the fixed policy.
+            if finish_reason != "length":
+                last_error = provider_error
+                if attempt < max_transport_attempts:
+                    time.sleep(min(2**attempt, 8))
+                    continue
             return record
         except requests.RequestException as exc:
             duration = round(time.time() - started, 3)
@@ -467,7 +471,8 @@ def main() -> int:
                         help="task IDs to run; defaults to every task in the corpus")
     parser.add_argument("--out", default="data/mbpp_v2/pilot")
     parser.add_argument("--transport-retries", type=int, default=2,
-                        help="retries after the initial attempt for transport errors or provider truncation")
+                        help="retries after the initial attempt for transport/HTTP errors; "
+                             "deterministic max-token truncation is never retried")
     parser.add_argument("--workers", type=int, default=1,
                         help="concurrent (task, model) pairs; each pair is sequential internally")
     parser.add_argument("--schema", default=SCHEMA_VERSION,
