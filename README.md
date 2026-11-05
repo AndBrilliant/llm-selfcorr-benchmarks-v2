@@ -35,6 +35,8 @@ From this repository's root:
 ```bash
 (cd data/humaneval && sha256sum -c MANIFEST.sha256)
 python3 tests/test_humaneval_analysis.py
+python3 tests/test_mbpp_v2_strict_verdict.py
+python3 tests/test_mbpp_v2_analysis.py
 python3 scripts/humaneval/paired_contrasts.py
 python3 tests/test_humaneval_analysis.py
 ```
