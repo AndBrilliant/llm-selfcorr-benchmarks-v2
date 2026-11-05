@@ -1,0 +1,30 @@
+HumanEval frozen-candidate uncertainty analysis
+===============================================
+Paired stratified inverse-ECDF bootstrap: B=4000, seed=20261104; no pseudocounts.
+Marginal intervals: two-sided 95% Koopman score, Miettinen-Nurminen correction.
+
+Marginal E intervals (bits):
+  selfcheck: [0.09130988568701287, 1.4157256579594393]
+  steelman: [0.5702743175876569, 2.9999385661379105]
+  execution: [1.6775025088397648, 'Infinity']
+
+Paired contrasts (point; 95% percentile interval):
+  steelman_minus_selfcheck
+    kappa: -0.3333333333333333; [-0.8888888888888888, 0.22222222222222227]; +inf draws=0, undefined=0
+    tau: 0.01935483870967747; [-0.012903225806451646, 0.05161290322580647]; +inf draws=0, undefined=0
+    E: 1.0293439615821445; [-0.7082066011847826, 3.2591923395394]; +inf draws=100, undefined=0
+  execution_minus_selfcheck
+    kappa: -0.6666666666666666; [-1.0, -0.3333333333333333]; +inf draws=0, undefined=0
+    tau: 0.01935483870967747; [-0.006451612903225823, 0.05161290322580636]; +inf draws=0, undefined=0
+    E: Infinity; None; +inf draws=4000, undefined=0
+  execution_minus_steelman
+    kappa: -0.3333333333333333; [-0.6666666666666666, -0.1111111111111111]; +inf draws=0, undefined=0
+    tau: 0.0; [-0.02580645161290329, 0.02580645161290329]; +inf draws=0, undefined=0
+    E: Infinity; None; +inf draws=3900, undefined=100
+
+Execution-arm paired E intervals are unavailable when contrasts are undefined
+or the bootstrap distribution is degenerate at infinity; no draws are dropped.
+The execution-arm marginal E lower endpoint is 1.6775 bits (reported as 1.68).
+Its upper endpoint is infinite; this is not a separate one-sided 95% LCB.
+Nominal intervals describe representative/exchangeable task inference;
+they are not uncertainty about the realized fixed corpus itself.

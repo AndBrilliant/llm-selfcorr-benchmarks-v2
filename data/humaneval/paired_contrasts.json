@@ -1,0 +1,169 @@
+{
+  "bootstrap": {
+    "coverage": "nominal 95%, unadjusted for multiplicity",
+    "method": "task-level paired inverse-ECDF percentile bootstrap, stratified by T",
+    "resamples": 4000,
+    "seed": 20261104,
+    "stratum_sizes": {
+      "T0": 9,
+      "T1": 155
+    },
+    "zero_cells": "retained; no pseudocount or continuity correction"
+  },
+  "design": "Three arms paired on the same 164 frozen HumanEval candidates",
+  "marginal": {
+    "execution": {
+      "E_bits": "Infinity",
+      "E_score_ci95_bits": [
+        1.6775025088397648,
+        "Infinity"
+      ],
+      "correct_accepted": 149,
+      "incorrect_accepted": 0,
+      "kappa": 0.0,
+      "n_correct": 155,
+      "n_incorrect": 9,
+      "ratio_score_ci95": [
+        3.1987372878493936,
+        "Infinity"
+      ],
+      "tau": 0.9612903225806452
+    },
+    "selfcheck": {
+      "E_bits": 0.4986626543269358,
+      "E_score_ci95_bits": [
+        0.09130988568701287,
+        1.4157256579594393
+      ],
+      "correct_accepted": 146,
+      "incorrect_accepted": 6,
+      "kappa": 0.6666666666666666,
+      "n_correct": 155,
+      "n_incorrect": 9,
+      "ratio_score_ci95": [
+        1.0653370093631995,
+        2.6679389574121513
+      ],
+      "tau": 0.9419354838709677
+    },
+    "steelman": {
+      "E_bits": 1.5280066159090804,
+      "E_score_ci95_bits": [
+        0.5702743175876569,
+        2.9999385661379105
+      ],
+      "correct_accepted": 149,
+      "incorrect_accepted": 3,
+      "kappa": 0.3333333333333333,
+      "n_correct": 155,
+      "n_incorrect": 9,
+      "ratio_score_ci95": [
+        1.4848058684339014,
+        7.99965934558666
+      ],
+      "tau": 0.9612903225806452
+    }
+  },
+  "marginal_interval_method": "two-sided 95% Koopman score interval for tau/kappa with Miettinen-Nurminen N/(N-1) correction, transformed by log2",
+  "paired_contrasts": {
+    "execution_minus_selfcheck": {
+      "E": {
+        "bootstrap_percentile_ci95": null,
+        "interval_status": "unavailable: undefined contrasts or a degenerate infinite distribution",
+        "negative_infinity_draws": 0,
+        "point": "Infinity",
+        "positive_infinity_draws": 4000,
+        "undefined_draws": 0
+      },
+      "kappa": {
+        "bootstrap_percentile_ci95": [
+          -1.0,
+          -0.3333333333333333
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": -0.6666666666666666,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      },
+      "tau": {
+        "bootstrap_percentile_ci95": [
+          -0.006451612903225823,
+          0.05161290322580636
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": 0.01935483870967747,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      }
+    },
+    "execution_minus_steelman": {
+      "E": {
+        "bootstrap_percentile_ci95": null,
+        "interval_status": "unavailable: undefined contrasts or a degenerate infinite distribution",
+        "negative_infinity_draws": 0,
+        "point": "Infinity",
+        "positive_infinity_draws": 3900,
+        "undefined_draws": 100
+      },
+      "kappa": {
+        "bootstrap_percentile_ci95": [
+          -0.6666666666666666,
+          -0.1111111111111111
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": -0.3333333333333333,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      },
+      "tau": {
+        "bootstrap_percentile_ci95": [
+          -0.02580645161290329,
+          0.02580645161290329
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": 0.0,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      }
+    },
+    "steelman_minus_selfcheck": {
+      "E": {
+        "bootstrap_percentile_ci95": [
+          -0.7082066011847826,
+          3.2591923395394
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": 1.0293439615821445,
+        "positive_infinity_draws": 100,
+        "undefined_draws": 0
+      },
+      "kappa": {
+        "bootstrap_percentile_ci95": [
+          -0.8888888888888888,
+          0.22222222222222227
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": -0.3333333333333333,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      },
+      "tau": {
+        "bootstrap_percentile_ci95": [
+          -0.012903225806451646,
+          0.05161290322580647
+        ],
+        "interval_status": "inverse-ECDF percentile over all 4000 draws",
+        "negative_infinity_draws": 0,
+        "point": 0.01935483870967747,
+        "positive_infinity_draws": 0,
+        "undefined_draws": 0
+      }
+    }
+  }
+}

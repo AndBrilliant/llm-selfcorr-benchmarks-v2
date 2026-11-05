@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this benchmark data, please cite it using the metadata below."
+title: "llm-selfcorr-benchmarks-v2: HumanEval and Fresh MBPP Self-Evaluation Data"
+repository-code: "https://github.com/AndBrilliant/llm-selfcorr-benchmarks-v2"
+authors:
+  - family-names: Brilliant
+    given-names: Andrew Michael
+    orcid: "https://orcid.org/0009-0004-8024-5442"
+type: dataset
+version: 2.0.0
+date-released: "2026-11-05"
+license: "CC-BY-NC-SA-4.0"
+keywords:
+  - LLM
+  - self-evaluation
+  - benchmark
+  - MBPP
+  - HumanEval
+  - evaluation
+  - information theory
+preferred-citation:
+  type: article
+  title: "Limits of Self-Correction in LLMs: An Information-Theoretic Analysis of Correlated Errors"
+  authors:
+    - family-names: Brilliant
+      given-names: Andrew Michael
+      orcid: "https://orcid.org/0009-0004-8024-5442"
