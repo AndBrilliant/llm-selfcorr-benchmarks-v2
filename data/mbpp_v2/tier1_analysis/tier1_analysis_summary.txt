@@ -1,0 +1,37 @@
+Tier 1 analyses: repeated evaluation and candidate replication
+================================================================
+
+A. Repeated evaluation (k=3 rounds per arm, temperature 0)
+== gpt-5.4
+   selfcheck: n=947 all3agree=918 (96.9%) P(T=0|3/3 ACC)=43.4% (n=874) P(T=0|1-2 ACC)=72.4% (n=29) P(T=0|all REJ)=75.0% (n=44)
+   steelman: n=936 all3agree=857 (91.6%) P(T=0|3/3 ACC)=43.6% (n=808) P(T=0|1-2 ACC)=48.1% (n=79) P(T=0|all REJ)=75.5% (n=49)
+== ds-v4-flash
+   selfcheck: n=910 all3agree=869 (95.5%) P(T=0|3/3 ACC)=40.3% (n=865) P(T=0|1-2 ACC)=78.0% (n=41) P(T=0|all REJ)=50.0% (n=4)
+   steelman: n=900 all3agree=855 (95.0%) P(T=0|3/3 ACC)=41.0% (n=847) P(T=0|1-2 ACC)=71.1% (n=45) P(T=0|all REJ)=50.0% (n=8)
+== glm-5.3-flash
+   selfcheck: n=890 all3agree=798 (89.7%) P(T=0|3/3 ACC)=27.3% (n=788) P(T=0|1-2 ACC)=65.2% (n=92) P(T=0|all REJ)=90.0% (n=10)
+   steelman: n=903 all3agree=815 (90.3%) P(T=0|3/3 ACC)=26.6% (n=793) P(T=0|1-2 ACC)=67.0% (n=88) P(T=0|all REJ)=86.4% (n=22)
+== qwen38-flash
+   selfcheck: n=933 all3agree=886 (95.0%) P(T=0|3/3 ACC)=42.0% (n=879) P(T=0|1-2 ACC)=80.9% (n=47) P(T=0|all REJ)=71.4% (n=7)
+   steelman: n=928 all3agree=854 (92.0%) P(T=0|3/3 ACC)=41.2% (n=839) P(T=0|1-2 ACC)=67.6% (n=74) P(T=0|all REJ)=93.3% (n=15)
+== gpt-6-luna
+   selfcheck: n=941 all3agree=894 (95.0%) P(T=0|3/3 ACC)=44.1% (n=866) P(T=0|1-2 ACC)=68.1% (n=47) P(T=0|all REJ)=64.3% (n=28)
+   steelman: n=946 all3agree=876 (92.6%) P(T=0|3/3 ACC)=43.0% (n=821) P(T=0|1-2 ACC)=67.1% (n=70) P(T=0|all REJ)=61.8% (n=55)
+
+B. Candidate replication (two independent greedy candidates per task)
+== gpt-5.4 (cells=947)
+   selfcheck: n=946 verdict-repeat=97.1% cross-cand Fisher p=8.5e-06 errA->T_B=0 Fisher p=5.52e-186 P(T=0|accept both)=43.6% (n=873) P(T=0|accept either)=44.4% (n=900)
+   steelman: n=937 verdict-repeat=93.8% cross-cand Fisher p=0.00211 errA->T_B=0 Fisher p=3.57e-165 P(T=0|accept both)=43.4% (n=831) P(T=0|accept either)=44.2% (n=889)
+== ds-v4-flash (cells=927)
+   selfcheck: n=906 verdict-repeat=95.3% cross-cand Fisher p=0.146 errA->T_B=0 Fisher p=9.2e-178 P(T=0|accept both)=40.4% (n=862) P(T=0|accept either)=42.1% (n=905)
+   steelman: n=905 verdict-repeat=95.1% cross-cand Fisher p=0.000651 errA->T_B=0 Fisher p=2.15e-167 P(T=0|accept both)=40.7% (n=856) P(T=0|accept either)=42.1% (n=900)
+== glm-5.3-flash (cells=932)
+   selfcheck: n=905 verdict-repeat=91.0% cross-cand Fisher p=0.142 errA->T_B=0 Fisher p=6.86e-82 P(T=0|accept both)=26.8% (n=812) P(T=0|accept either)=29.6% (n=893)
+   steelman: n=906 verdict-repeat=89.0% cross-cand Fisher p=0.000121 errA->T_B=0 Fisher p=1.17e-71 P(T=0|accept both)=25.4% (n=795) P(T=0|accept either)=29.6% (n=895)
+== qwen38-flash (cells=944)
+   selfcheck: n=937 verdict-repeat=96.1% cross-cand Fisher p=0.021 errA->T_B=0 Fisher p=2.52e-166 P(T=0|accept both)=41.7% (n=897) P(T=0|accept either)=42.7% (n=934)
+   steelman: n=940 verdict-repeat=92.2% cross-cand Fisher p=0.00388 errA->T_B=0 Fisher p=1.4e-143 P(T=0|accept both)=40.3% (n=857) P(T=0|accept either)=42.3% (n=930)
+== gpt-6-luna (cells=947)
+   selfcheck: n=940 verdict-repeat=95.3% cross-cand Fisher p=0.00524 errA->T_B=0 Fisher p=4.25e-182 P(T=0|accept both)=43.9% (n=877) P(T=0|accept either)=45.2% (n=921)
+   steelman: n=947 verdict-repeat=90.1% cross-cand Fisher p=0.00082 errA->T_B=0 Fisher p=1.43e-143 P(T=0|accept both)=43.4% (n=815) P(T=0|accept either)=45.1% (n=909)
+
