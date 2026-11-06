@@ -377,5 +377,157 @@
     "n_either_accept": 909
    }
   }
+ ],
+ "always_accept_baseline": [
+  {
+   "model": "gpt-5.4",
+   "cells": 947,
+   "difficulty_baseline": {
+    "n_TA0": 433,
+    "P_TB0_given_TA0": 99.07621247113164
+   },
+   "arms": {
+    "selfcheck": {
+     "n": 947,
+     "P_TB0_given_errA": 95.80246913580247,
+     "n_errA": 405,
+     "P_TB0_given_acceptA_TA0": 99.23076923076923,
+     "n_acceptA_TA0": 390,
+     "P_TB0_given_rejectA_TA0": 97.67441860465117,
+     "n_rejectA_TA0": 43,
+     "incremental_fisher_p": 0.34288780053920365
+    },
+    "steelman": {
+     "n": 938,
+     "P_TB0_given_errA": 93.30024813895781,
+     "n_errA": 403,
+     "P_TB0_given_acceptA_TA0": 99.47089947089947,
+     "n_acceptA_TA0": 378,
+     "P_TB0_given_rejectA_TA0": 95.91836734693878,
+     "n_rejectA_TA0": 49,
+     "incremental_fisher_p": 0.06660634903471954
+    }
+   }
+  },
+  {
+   "model": "ds-v4-flash",
+   "cells": 927,
+   "difficulty_baseline": {
+    "n_TA0": 389,
+    "P_TB0_given_TA0": 94.34447300771208
+   },
+   "arms": {
+    "selfcheck": {
+     "n": 917,
+     "P_TB0_given_errA": 93.42105263157895,
+     "n_errA": 380,
+     "P_TB0_given_acceptA_TA0": 94.6524064171123,
+     "n_acceptA_TA0": 374,
+     "P_TB0_given_rejectA_TA0": 83.33333333333333,
+     "n_rejectA_TA0": 12,
+     "incremental_fisher_p": 0.14474167565293813
+    },
+    "steelman": {
+     "n": 916,
+     "P_TB0_given_errA": 93.24324324324324,
+     "n_errA": 370,
+     "P_TB0_given_acceptA_TA0": 94.50549450549451,
+     "n_acceptA_TA0": 364,
+     "P_TB0_given_rejectA_TA0": 90.9090909090909,
+     "n_rejectA_TA0": 22,
+     "incremental_fisher_p": 0.3614649212954334
+    }
+   }
+  },
+  {
+   "model": "glm-5.3-flash",
+   "cells": 932,
+   "difficulty_baseline": {
+    "n_TA0": 303,
+    "P_TB0_given_TA0": 75.24752475247524
+   },
+   "arms": {
+    "selfcheck": {
+     "n": 918,
+     "P_TB0_given_errA": 75.08896797153025,
+     "n_errA": 281,
+     "P_TB0_given_acceptA_TA0": 78.11320754716981,
+     "n_acceptA_TA0": 265,
+     "P_TB0_given_rejectA_TA0": 52.94117647058823,
+     "n_rejectA_TA0": 34,
+     "incremental_fisher_p": 0.0026700654692610195
+    },
+    "steelman": {
+     "n": 922,
+     "P_TB0_given_errA": 73.80073800738008,
+     "n_errA": 271,
+     "P_TB0_given_acceptA_TA0": 76.47058823529412,
+     "n_acceptA_TA0": 255,
+     "P_TB0_given_rejectA_TA0": 67.44186046511628,
+     "n_rejectA_TA0": 43,
+     "incremental_fisher_p": 0.2513698956289055
+    }
+   }
+  },
+  {
+   "model": "qwen38-flash",
+   "cells": 944,
+   "difficulty_baseline": {
+    "n_TA0": 416,
+    "P_TB0_given_TA0": 90.38461538461539
+   },
+   "arms": {
+    "selfcheck": {
+     "n": 943,
+     "P_TB0_given_errA": 90.95477386934674,
+     "n_errA": 398,
+     "P_TB0_given_acceptA_TA0": 91.6243654822335,
+     "n_acceptA_TA0": 394,
+     "P_TB0_given_rejectA_TA0": 71.42857142857143,
+     "n_rejectA_TA0": 21,
+     "incremental_fisher_p": 0.008802011107848073
+    },
+    "steelman": {
+     "n": 940,
+     "P_TB0_given_errA": 88.91752577319588,
+     "n_errA": 388,
+     "P_TB0_given_acceptA_TA0": 91.71122994652407,
+     "n_acceptA_TA0": 374,
+     "P_TB0_given_rejectA_TA0": 79.48717948717949,
+     "n_rejectA_TA0": 39,
+     "incremental_fisher_p": 0.020899651915549586
+    }
+   }
+  },
+  {
+   "model": "gpt-6-luna",
+   "cells": 947,
+   "difficulty_baseline": {
+    "n_TA0": 434,
+    "P_TB0_given_TA0": 96.08294930875576
+   },
+   "arms": {
+    "selfcheck": {
+     "n": 943,
+     "P_TB0_given_errA": 93.36492890995261,
+     "n_errA": 422,
+     "P_TB0_given_acceptA_TA0": 96.2871287128713,
+     "n_acceptA_TA0": 404,
+     "P_TB0_given_rejectA_TA0": 92.85714285714286,
+     "n_rejectA_TA0": 28,
+     "incremental_fisher_p": 0.3030390553559541
+    },
+    "steelman": {
+     "n": 947,
+     "P_TB0_given_errA": 90.02433090024331,
+     "n_errA": 411,
+     "P_TB0_given_acceptA_TA0": 96.81697612732096,
+     "n_acceptA_TA0": 377,
+     "P_TB0_given_rejectA_TA0": 91.2280701754386,
+     "n_rejectA_TA0": 57,
+     "incremental_fisher_p": 0.05827028009209769
+    }
+   }
+  }
  ]
 }

@@ -35,3 +35,20 @@ B. Candidate replication (two independent greedy candidates per task)
    selfcheck: n=940 verdict-repeat=95.3% cross-cand Fisher p=0.00524 errA->T_B=0 Fisher p=4.25e-182 P(T=0|accept both)=43.9% (n=877) P(T=0|accept either)=45.2% (n=921)
    steelman: n=947 verdict-repeat=90.1% cross-cand Fisher p=0.00082 errA->T_B=0 Fisher p=1.43e-143 P(T=0|accept both)=43.4% (n=815) P(T=0|accept either)=45.1% (n=909)
 
+C. Always-accept baseline for the cross-candidate association
+== gpt-5.4 (cells=947): baseline P(T_B=0|T_A=0)=99.1% (n=433)
+   selfcheck: P(T_B=0|err_A)=95.8% (n=405) | within T_A=0: accept A -> 99.2% (n=390), reject A -> 97.7% (n=43), p=0.343
+   steelman: P(T_B=0|err_A)=93.3% (n=403) | within T_A=0: accept A -> 99.5% (n=378), reject A -> 95.9% (n=49), p=0.0666
+== ds-v4-flash (cells=927): baseline P(T_B=0|T_A=0)=94.3% (n=389)
+   selfcheck: P(T_B=0|err_A)=93.4% (n=380) | within T_A=0: accept A -> 94.7% (n=374), reject A -> 83.3% (n=12), p=0.145
+   steelman: P(T_B=0|err_A)=93.2% (n=370) | within T_A=0: accept A -> 94.5% (n=364), reject A -> 90.9% (n=22), p=0.361
+== glm-5.3-flash (cells=932): baseline P(T_B=0|T_A=0)=75.2% (n=303)
+   selfcheck: P(T_B=0|err_A)=75.1% (n=281) | within T_A=0: accept A -> 78.1% (n=265), reject A -> 52.9% (n=34), p=0.00267
+   steelman: P(T_B=0|err_A)=73.8% (n=271) | within T_A=0: accept A -> 76.5% (n=255), reject A -> 67.4% (n=43), p=0.251
+== qwen38-flash (cells=944): baseline P(T_B=0|T_A=0)=90.4% (n=416)
+   selfcheck: P(T_B=0|err_A)=91.0% (n=398) | within T_A=0: accept A -> 91.6% (n=394), reject A -> 71.4% (n=21), p=0.0088
+   steelman: P(T_B=0|err_A)=88.9% (n=388) | within T_A=0: accept A -> 91.7% (n=374), reject A -> 79.5% (n=39), p=0.0209
+== gpt-6-luna (cells=947): baseline P(T_B=0|T_A=0)=96.1% (n=434)
+   selfcheck: P(T_B=0|err_A)=93.4% (n=422) | within T_A=0: accept A -> 96.3% (n=404), reject A -> 92.9% (n=28), p=0.303
+   steelman: P(T_B=0|err_A)=90.0% (n=411) | within T_A=0: accept A -> 96.8% (n=377), reject A -> 91.2% (n=57), p=0.0583
+

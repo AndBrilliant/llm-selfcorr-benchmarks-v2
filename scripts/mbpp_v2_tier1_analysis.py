@@ -189,6 +189,67 @@ def main() -> int:
         result["candidate_replication"].append(fam)
     lines.append("")
 
+    # ---- C. always-accept baseline for the replication association ----
+    # The review objection: an always-accept evaluator has err_A = 1{T_A=0},
+    # so "err_A predicts T_B=0" reduces to task-difficulty persistence
+    # P(T_B=0 | T_A=0). Report baseline vs observed, and the incremental
+    # signal within T_A strata (does the verdict predict B beyond T_A?).
+    lines.append("C. Always-accept baseline for the cross-candidate association")
+    result["always_accept_baseline"] = []
+    for model in MODEL_ORDER:
+        cells = []
+        for (m, t), p in prod.items():
+            if m != model:
+                continue
+            q = repl.get((m, t))
+            if not q or p.get("T") not in (0, 1) or q.get("T") not in (0, 1):
+                continue
+            cells.append((p, q))
+        fam = {"model": model, "cells": len(cells),
+               "difficulty_baseline": None, "arms": {}}
+        ta0 = sum(p["T"] == 0 for p, q in cells)
+        ta0_tb0 = sum(p["T"] == 0 and q["T"] == 0 for p, q in cells)
+        fam["difficulty_baseline"] = {
+            "n_TA0": ta0, "P_TB0_given_TA0": (100.0 * ta0_tb0 / ta0) if ta0 else None}
+        lines.append(f"== {model} (cells={len(cells)}): baseline P(T_B=0|T_A=0)="
+                     f"{fam['difficulty_baseline']['P_TB0_given_TA0']:.1f}% (n={ta0})")
+        for arm in ("selfcheck", "steelman"):
+            n = err = err_tb0 = 0
+            accA_ta0 = accA_ta0_tb0 = rejA_ta0 = rejA_ta0_tb0 = 0
+            for p, q in cells:
+                if p.get(f"{arm}_verdict") not in VERDICTS:
+                    continue
+                n += 1
+                TA, TB = p["T"], q["T"]
+                acc = VERDICTS[p[f"{arm}_verdict"]]
+                e = acc != (TA == 1)
+                if e:
+                    err += 1
+                    err_tb0 += (TB == 0)
+                if TA == 0:
+                    if acc:
+                        accA_ta0 += 1
+                        accA_ta0_tb0 += (TB == 0)
+                    else:
+                        rejA_ta0 += 1
+                        rejA_ta0_tb0 += (TB == 0)
+            p_inc = fisher_two_sided(accA_ta0_tb0, accA_ta0 - accA_ta0_tb0,
+                                     rejA_ta0_tb0, rejA_ta0 - rejA_ta0_tb0)
+            a = {"n": n,
+                 "P_TB0_given_errA": (100.0 * err_tb0 / err) if err else None,
+                 "n_errA": err,
+                 "P_TB0_given_acceptA_TA0": (100.0 * accA_ta0_tb0 / accA_ta0) if accA_ta0 else None,
+                 "n_acceptA_TA0": accA_ta0,
+                 "P_TB0_given_rejectA_TA0": (100.0 * rejA_ta0_tb0 / rejA_ta0) if rejA_ta0 else None,
+                 "n_rejectA_TA0": rejA_ta0,
+                 "incremental_fisher_p": p_inc}
+            fam["arms"][arm] = a
+            lines.append(f"   {arm}: P(T_B=0|err_A)={a['P_TB0_given_errA']:.1f}% (n={err}) | "
+                         f"within T_A=0: accept A -> {a['P_TB0_given_acceptA_TA0']:.1f}% (n={accA_ta0}), "
+                         f"reject A -> {a['P_TB0_given_rejectA_TA0']:.1f}% (n={rejA_ta0}), p={p_inc:.3g}")
+        result["always_accept_baseline"].append(fam)
+    lines.append("")
+
     (out / "tier1_analysis.json").write_text(json.dumps(result, indent=1), encoding="utf-8")
     (out / "tier1_analysis_summary.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
     entries = []
