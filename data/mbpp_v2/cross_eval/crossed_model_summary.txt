@@ -6,6 +6,7 @@ categorical effects + same-family indicator; task-clustered sandwich SEs.
 --- selfcheck ---
 n=9773, tasks=512
 same-family beta=1.0709, OR=2.918, clustered SE=0.0853, z=12.55, p=4.096e-36, 95% CI [0.9037,1.2382]
+with same-provider indicator: same-family beta=0.7044, OR=2.023, p=8.108e-10; same-provider beta=0.4271, p=1.37e-05
 FAR % matrix (rows evaluator, columns generator):
 evaluator        GPT-5.4    DeepSeek         GLM        Qwen  GPT-6-Luna
 GPT-5.4             90.1        88.6        74.4        82.7        88.5
@@ -17,6 +18,7 @@ GPT-6-Luna          82.1        89.1        72.9        87.3        93.5
 --- steelman ---
 n=9780, tasks=512
 same-family beta=0.6562, OR=1.927, clustered SE=0.0668, z=9.82, p=9.251e-23, 95% CI [0.5252,0.7872]
+with same-provider indicator: same-family beta=0.4105, OR=1.508, p=1.819e-06; same-provider beta=0.2878, p=0.0002625
 FAR % matrix (rows evaluator, columns generator):
 evaluator        GPT-5.4    DeepSeek         GLM        Qwen  GPT-6-Luna
 GPT-5.4             88.5        85.5        76.5        85.0        89.8

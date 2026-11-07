@@ -136,6 +136,34 @@
      "n": 432
     }
    }
+  },
+  "provider_sensitivity": {
+   "beta_same_family": 0.7043519797397648,
+   "odds_ratio": 2.0225356161123638,
+   "clustered_se": 0.11466316944210123,
+   "z": 6.14279182379853,
+   "p_two_sided": 8.108352218075356e-10,
+   "ci95": [
+    0.4796162955073463,
+    0.9290876639721833
+   ],
+   "n": 9773,
+   "tasks": 512,
+   "features": [
+    "intercept",
+    "evaluator_glm-5.3-flash",
+    "evaluator_gpt-5.4",
+    "evaluator_gpt-6-luna",
+    "evaluator_qwen38-flash",
+    "generator_glm-5.3-flash",
+    "generator_gpt-5.4",
+    "generator_gpt-6-luna",
+    "generator_qwen38-flash",
+    "same",
+    "same_provider"
+   ],
+   "beta_same_provider": 0.4270752853708541,
+   "p_same_provider": 1.3704116988552224e-05
   }
  },
  "steelman": {
@@ -275,6 +303,34 @@
      "n": 434
     }
    }
+  },
+  "provider_sensitivity": {
+   "beta_same_family": 0.41054322201791515,
+   "odds_ratio": 1.5076365440745267,
+   "clustered_se": 0.08602191848424356,
+   "z": 4.772542036401029,
+   "p_two_sided": 1.8191512358807496e-06,
+   "ci95": [
+    0.2419433585778632,
+    0.5791430854579671
+   ],
+   "n": 9780,
+   "tasks": 512,
+   "features": [
+    "intercept",
+    "evaluator_glm-5.3-flash",
+    "evaluator_gpt-5.4",
+    "evaluator_gpt-6-luna",
+    "evaluator_qwen38-flash",
+    "generator_glm-5.3-flash",
+    "generator_gpt-5.4",
+    "generator_gpt-6-luna",
+    "generator_qwen38-flash",
+    "same",
+    "same_provider"
+   ],
+   "beta_same_provider": 0.2877686821027232,
+   "p_same_provider": 0.0002625345837915045
   }
  }
 }
