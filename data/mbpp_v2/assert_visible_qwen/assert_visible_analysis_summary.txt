@@ -1,0 +1,10 @@
+One-assert-visible Qwen control
+===============================
+
+production Qwen: attempted=947, ground-truth assigned=944, generation accuracy=55.9%, paired=940, malformed-or-unpaired=4
+  selfcheck: FAR=94.9% [92.4,96.7] (392/413); TAR=99.2% [98.1,99.7] (523/527)
+  steelman: FAR=90.6% [87.4,93.0] (374/413); TAR=97.3% [95.6,98.4] (513/527)
+
+assert-visible Qwen: attempted=947, ground-truth assigned=946, generation accuracy=56.1%, paired=940, malformed-or-unpaired=6
+  selfcheck: FAR=92.5% [89.5,94.6] (380/411); TAR=98.7% [97.3,99.4] (522/529)
+  steelman: FAR=92.9% [90.1,95.0] (382/411); TAR=98.3% [96.8,99.1] (520/529)

@@ -1,0 +1,3793 @@
+assert-visible Qwen: 947 pairs to run, 0 already done
+RUN qwen38-flash MBPP/1
+RUN qwen38-flash MBPP/2
+CALL qwen38-flash generation MBPP/1 attempt=1
+RUN qwen38-flash MBPP/3
+CALL qwen38-flash generation MBPP/2 attempt=1
+RUN qwen38-flash MBPP/4
+RUN qwen38-flash MBPP/5
+RUN qwen38-flash MBPP/6
+CALL qwen38-flash generation MBPP/3 attempt=1
+RUN qwen38-flash MBPP/7
+CALL qwen38-flash generation MBPP/5 attempt=1
+CALL qwen38-flash generation MBPP/4 attempt=1
+RUN qwen38-flash MBPP/8
+RUN qwen38-flash MBPP/9
+CALL qwen38-flash generation MBPP/6 attempt=1
+RUN qwen38-flash MBPP/10
+RUN qwen38-flash MBPP/11
+RUN qwen38-flash MBPP/12
+CALL qwen38-flash generation MBPP/7 attempt=1
+CALL qwen38-flash generation MBPP/8 attempt=1
+CALL qwen38-flash generation MBPP/9 attempt=1
+CALL qwen38-flash generation MBPP/10 attempt=1
+CALL qwen38-flash generation MBPP/11 attempt=1
+CALL qwen38-flash generation MBPP/12 attempt=1
+CALL qwen38-flash selfcheck MBPP/12 attempt=1
+CALL qwen38-flash steelman MBPP/12 attempt=1
+CALL qwen38-flash selfcheck MBPP/10 attempt=1
+CALL qwen38-flash steelman MBPP/10 attempt=1
+CALL qwen38-flash steelman MBPP/8 attempt=1
+CALL qwen38-flash selfcheck MBPP/8 attempt=1
+CALL qwen38-flash steelman MBPP/3 attempt=1
+CALL qwen38-flash selfcheck MBPP/3 attempt=1
+CALL qwen38-flash selfcheck MBPP/6 attempt=1
+CALL qwen38-flash steelman MBPP/6 attempt=1
+CALL qwen38-flash selfcheck MBPP/5 attempt=1
+CALL qwen38-flash steelman MBPP/5 attempt=1
+CALL qwen38-flash selfcheck MBPP/7 attempt=1
+CALL qwen38-flash steelman MBPP/7 attempt=1
+CALL qwen38-flash selfcheck MBPP/1 attempt=1
+CALL qwen38-flash steelman MBPP/1 attempt=1
+RUN qwen38-flash MBPP/13
+CALL qwen38-flash generation MBPP/13 attempt=1
+CALL qwen38-flash selfcheck MBPP/11 attempt=1
+CALL qwen38-flash steelman MBPP/11 attempt=1
+RUN qwen38-flash MBPP/14
+CALL qwen38-flash generation MBPP/14 attempt=1
+RUN qwen38-flash MBPP/15
+CALL qwen38-flash generation MBPP/15 attempt=1
+CALL qwen38-flash selfcheck MBPP/2 attempt=1
+CALL qwen38-flash steelman MBPP/2 attempt=1
+RUN qwen38-flash MBPP/16
+CALL qwen38-flash generation MBPP/16 attempt=1
+CALL qwen38-flash selfcheck MBPP/14 attempt=1
+CALL qwen38-flash steelman MBPP/14 attempt=1
+RUN qwen38-flash MBPP/17
+CALL qwen38-flash generation MBPP/17 attempt=1
+CALL qwen38-flash selfcheck MBPP/17 attempt=1
+CALL qwen38-flash steelman MBPP/17 attempt=1
+CALL qwen38-flash selfcheck MBPP/9 attempt=1
+CALL qwen38-flash steelman MBPP/9 attempt=1
+RUN qwen38-flash MBPP/18
+CALL qwen38-flash generation MBPP/18 attempt=1
+RUN qwen38-flash MBPP/19
+CALL qwen38-flash generation MBPP/19 attempt=1
+CALL qwen38-flash selfcheck MBPP/18 attempt=1
+CALL qwen38-flash steelman MBPP/18 attempt=1
+RUN qwen38-flash MBPP/20
+CALL qwen38-flash generation MBPP/20 attempt=1
+CALL qwen38-flash selfcheck MBPP/19 attempt=1
+CALL qwen38-flash steelman MBPP/19 attempt=1
+CALL qwen38-flash selfcheck MBPP/4 attempt=1
+CALL qwen38-flash steelman MBPP/4 attempt=1
+RUN qwen38-flash MBPP/21
+CALL qwen38-flash generation MBPP/21 attempt=1
+RUN qwen38-flash MBPP/22
+CALL qwen38-flash generation MBPP/22 attempt=1
+CALL qwen38-flash steelman MBPP/20 attempt=1
+CALL qwen38-flash selfcheck MBPP/20 attempt=1
+RUN qwen38-flash MBPP/23
+CALL qwen38-flash generation MBPP/23 attempt=1
+CALL qwen38-flash selfcheck MBPP/22 attempt=1
+CALL qwen38-flash steelman MBPP/22 attempt=1
+CALL qwen38-flash selfcheck MBPP/23 attempt=1
+CALL qwen38-flash steelman MBPP/23 attempt=1
+RUN qwen38-flash MBPP/24
+CALL qwen38-flash generation MBPP/24 attempt=1
+RUN qwen38-flash MBPP/25
+CALL qwen38-flash generation MBPP/25 attempt=1
+RUN qwen38-flash MBPP/26
+CALL qwen38-flash generation MBPP/26 attempt=1
+CALL qwen38-flash selfcheck MBPP/26 attempt=1
+CALL qwen38-flash steelman MBPP/26 attempt=1
+RUN qwen38-flash MBPP/27
+CALL qwen38-flash generation MBPP/27 attempt=1
+CALL qwen38-flash selfcheck MBPP/27 attempt=1
+CALL qwen38-flash steelman MBPP/27 attempt=1
+RUN qwen38-flash MBPP/28
+CALL qwen38-flash generation MBPP/28 attempt=1
+RUN qwen38-flash MBPP/29
+CALL qwen38-flash generation MBPP/29 attempt=1
+RUN qwen38-flash MBPP/30
+CALL qwen38-flash generation MBPP/30 attempt=1
+CALL qwen38-flash steelman MBPP/25 attempt=1
+CALL qwen38-flash selfcheck MBPP/25 attempt=1
+CALL qwen38-flash selfcheck MBPP/21 attempt=1
+CALL qwen38-flash steelman MBPP/21 attempt=1
+CALL qwen38-flash selfcheck MBPP/28 attempt=1
+CALL qwen38-flash steelman MBPP/28 attempt=1
+CALL qwen38-flash selfcheck MBPP/16 attempt=1
+CALL qwen38-flash steelman MBPP/16 attempt=1
+RUN qwen38-flash MBPP/31
+CALL qwen38-flash generation MBPP/31 attempt=1
+CALL qwen38-flash steelman MBPP/29 attempt=1
+CALL qwen38-flash selfcheck MBPP/29 attempt=1
+CALL qwen38-flash steelman MBPP/30 attempt=1
+CALL qwen38-flash selfcheck MBPP/30 attempt=1
+RUN qwen38-flash MBPP/33
+CALL qwen38-flash generation MBPP/33 attempt=1
+CALL qwen38-flash selfcheck MBPP/33 attempt=1
+CALL qwen38-flash steelman MBPP/33 attempt=1
+RUN qwen38-flash MBPP/34
+CALL qwen38-flash generation MBPP/34 attempt=1
+RUN qwen38-flash MBPP/35
+CALL qwen38-flash generation MBPP/35 attempt=1
+RUN qwen38-flash MBPP/36
+CALL qwen38-flash generation MBPP/36 attempt=1
+RUN qwen38-flash MBPP/37
+CALL qwen38-flash generation MBPP/37 attempt=1
+RUN qwen38-flash MBPP/38
+CALL qwen38-flash generation MBPP/38 attempt=1
+CALL qwen38-flash selfcheck MBPP/35 attempt=1
+CALL qwen38-flash steelman MBPP/35 attempt=1
+RUN qwen38-flash MBPP/39
+CALL qwen38-flash generation MBPP/39 attempt=1
+RUN qwen38-flash MBPP/40
+CALL qwen38-flash generation MBPP/40 attempt=1
+CALL qwen38-flash steelman MBPP/38 attempt=1
+CALL qwen38-flash selfcheck MBPP/38 attempt=1
+CALL qwen38-flash steelman MBPP/37 attempt=1
+CALL qwen38-flash selfcheck MBPP/37 attempt=1
+CALL qwen38-flash selfcheck MBPP/39 attempt=1
+CALL qwen38-flash steelman MBPP/39 attempt=1
+CALL qwen38-flash selfcheck MBPP/40 attempt=1
+CALL qwen38-flash steelman MBPP/40 attempt=1
+CALL qwen38-flash steelman MBPP/13 attempt=1
+CALL qwen38-flash selfcheck MBPP/13 attempt=1
+CALL qwen38-flash selfcheck MBPP/15 attempt=1
+CALL qwen38-flash steelman MBPP/15 attempt=1
+RUN qwen38-flash MBPP/41
+CALL qwen38-flash generation MBPP/41 attempt=1
+CALL qwen38-flash selfcheck MBPP/41 attempt=1
+CALL qwen38-flash steelman MBPP/41 attempt=1
+RUN qwen38-flash MBPP/42
+CALL qwen38-flash generation MBPP/42 attempt=1
+RUN qwen38-flash MBPP/43
+CALL qwen38-flash generation MBPP/43 attempt=1
+RUN qwen38-flash MBPP/44
+CALL qwen38-flash generation MBPP/44 attempt=1
+CALL qwen38-flash selfcheck MBPP/24 attempt=1
+CALL qwen38-flash steelman MBPP/24 attempt=1
+RUN qwen38-flash MBPP/45
+CALL qwen38-flash generation MBPP/45 attempt=1
+CALL qwen38-flash selfcheck MBPP/45 attempt=1
+CALL qwen38-flash steelman MBPP/45 attempt=1
+RUN qwen38-flash MBPP/46
+CALL qwen38-flash generation MBPP/46 attempt=1
+RUN qwen38-flash MBPP/47
+CALL qwen38-flash generation MBPP/47 attempt=1
+RUN qwen38-flash MBPP/48
+CALL qwen38-flash generation MBPP/48 attempt=1
+RUN qwen38-flash MBPP/49
+CALL qwen38-flash generation MBPP/49 attempt=1
+CALL qwen38-flash selfcheck MBPP/42 attempt=1
+CALL qwen38-flash steelman MBPP/42 attempt=1
+CALL qwen38-flash selfcheck MBPP/46 attempt=1
+CALL qwen38-flash steelman MBPP/46 attempt=1
+CALL qwen38-flash selfcheck MBPP/49 attempt=1
+CALL qwen38-flash steelman MBPP/49 attempt=1
+CALL qwen38-flash selfcheck MBPP/43 attempt=1
+CALL qwen38-flash steelman MBPP/43 attempt=1
+RUN qwen38-flash MBPP/50
+CALL qwen38-flash generation MBPP/50 attempt=1
+CALL qwen38-flash selfcheck MBPP/31 attempt=1
+CALL qwen38-flash steelman MBPP/31 attempt=1
+CALL qwen38-flash selfcheck MBPP/47 attempt=1
+CALL qwen38-flash steelman MBPP/47 attempt=1
+RUN qwen38-flash MBPP/51
+CALL qwen38-flash generation MBPP/51 attempt=1
+CALL qwen38-flash selfcheck MBPP/51 attempt=1
+CALL qwen38-flash steelman MBPP/51 attempt=1
+RUN qwen38-flash MBPP/52
+CALL qwen38-flash generation MBPP/52 attempt=1
+CALL qwen38-flash selfcheck MBPP/52 attempt=1
+CALL qwen38-flash steelman MBPP/52 attempt=1
+CALL qwen38-flash steelman MBPP/50 attempt=1
+CALL qwen38-flash selfcheck MBPP/50 attempt=1
+RUN qwen38-flash MBPP/53
+CALL qwen38-flash generation MBPP/53 attempt=1
+CALL qwen38-flash steelman MBPP/53 attempt=1
+CALL qwen38-flash selfcheck MBPP/53 attempt=1
+RUN qwen38-flash MBPP/54
+CALL qwen38-flash generation MBPP/54 attempt=1
+RUN qwen38-flash MBPP/55
+CALL qwen38-flash generation MBPP/55 attempt=1
+CALL qwen38-flash selfcheck MBPP/44 attempt=1
+CALL qwen38-flash steelman MBPP/44 attempt=1
+CALL qwen38-flash selfcheck MBPP/34 attempt=1
+CALL qwen38-flash steelman MBPP/34 attempt=1
+CALL qwen38-flash selfcheck MBPP/55 attempt=1
+CALL qwen38-flash steelman MBPP/55 attempt=1
+RUN qwen38-flash MBPP/56
+CALL qwen38-flash generation MBPP/56 attempt=1
+CALL qwen38-flash steelman MBPP/48 attempt=1
+CALL qwen38-flash selfcheck MBPP/48 attempt=1
+RUN qwen38-flash MBPP/57
+CALL qwen38-flash generation MBPP/57 attempt=1
+CALL qwen38-flash selfcheck MBPP/56 attempt=1
+CALL qwen38-flash steelman MBPP/56 attempt=1
+CALL qwen38-flash selfcheck MBPP/54 attempt=1
+CALL qwen38-flash steelman MBPP/54 attempt=1
+RUN qwen38-flash MBPP/58
+CALL qwen38-flash generation MBPP/58 attempt=1
+CALL qwen38-flash selfcheck MBPP/58 attempt=1
+CALL qwen38-flash steelman MBPP/58 attempt=1
+RUN qwen38-flash MBPP/59
+CALL qwen38-flash generation MBPP/59 attempt=1
+RUN qwen38-flash MBPP/60
+CALL qwen38-flash generation MBPP/60 attempt=1
+RUN qwen38-flash MBPP/61
+CALL qwen38-flash generation MBPP/61 attempt=1
+RUN qwen38-flash MBPP/62
+CALL qwen38-flash generation MBPP/62 attempt=1
+CALL qwen38-flash selfcheck MBPP/62 attempt=1
+CALL qwen38-flash steelman MBPP/62 attempt=1
+RUN qwen38-flash MBPP/63
+CALL qwen38-flash generation MBPP/63 attempt=1
+CALL qwen38-flash selfcheck MBPP/59 attempt=1
+CALL qwen38-flash steelman MBPP/59 attempt=1
+RUN qwen38-flash MBPP/64
+CALL qwen38-flash generation MBPP/64 attempt=1
+CALL qwen38-flash selfcheck MBPP/64 attempt=1
+CALL qwen38-flash steelman MBPP/64 attempt=1
+CALL qwen38-flash selfcheck MBPP/61 attempt=1
+CALL qwen38-flash steelman MBPP/61 attempt=1
+RUN qwen38-flash MBPP/65
+CALL qwen38-flash generation MBPP/65 attempt=1
+CALL qwen38-flash selfcheck MBPP/65 attempt=1
+CALL qwen38-flash steelman MBPP/65 attempt=1
+RUN qwen38-flash MBPP/66
+CALL qwen38-flash generation MBPP/66 attempt=1
+RUN qwen38-flash MBPP/67
+CALL qwen38-flash generation MBPP/67 attempt=1
+RUN qwen38-flash MBPP/68
+CALL qwen38-flash generation MBPP/68 attempt=1
+CALL qwen38-flash selfcheck MBPP/66 attempt=1
+CALL qwen38-flash steelman MBPP/66 attempt=1
+CALL qwen38-flash selfcheck MBPP/68 attempt=1
+CALL qwen38-flash steelman MBPP/68 attempt=1
+RUN qwen38-flash MBPP/69
+CALL qwen38-flash generation MBPP/69 attempt=1
+CALL qwen38-flash selfcheck MBPP/69 attempt=1
+CALL qwen38-flash steelman MBPP/69 attempt=1
+RUN qwen38-flash MBPP/70
+CALL qwen38-flash generation MBPP/70 attempt=1
+RUN qwen38-flash MBPP/71
+CALL qwen38-flash generation MBPP/71 attempt=1
+CALL qwen38-flash selfcheck MBPP/67 attempt=1
+CALL qwen38-flash steelman MBPP/67 attempt=1
+RUN qwen38-flash MBPP/72
+CALL qwen38-flash generation MBPP/72 attempt=1
+RUN qwen38-flash MBPP/73
+CALL qwen38-flash generation MBPP/73 attempt=1
+CALL qwen38-flash steelman MBPP/63 attempt=1
+CALL qwen38-flash selfcheck MBPP/63 attempt=1
+RUN qwen38-flash MBPP/74
+CALL qwen38-flash generation MBPP/74 attempt=1
+CALL qwen38-flash selfcheck MBPP/71 attempt=1
+CALL qwen38-flash steelman MBPP/71 attempt=1
+CALL qwen38-flash steelman MBPP/73 attempt=1
+CALL qwen38-flash selfcheck MBPP/73 attempt=1
+CALL qwen38-flash selfcheck MBPP/72 attempt=1
+CALL qwen38-flash steelman MBPP/72 attempt=1
+RUN qwen38-flash MBPP/75
+CALL qwen38-flash generation MBPP/75 attempt=1
+CALL qwen38-flash steelman MBPP/75 attempt=1
+CALL qwen38-flash selfcheck MBPP/75 attempt=1
+RUN qwen38-flash MBPP/76
+CALL qwen38-flash generation MBPP/76 attempt=1
+CALL qwen38-flash steelman MBPP/76 attempt=1
+CALL qwen38-flash selfcheck MBPP/76 attempt=1
+RUN qwen38-flash MBPP/77
+CALL qwen38-flash generation MBPP/77 attempt=1
+RUN qwen38-flash MBPP/78
+CALL qwen38-flash generation MBPP/78 attempt=1
+CALL qwen38-flash steelman MBPP/70 attempt=1
+CALL qwen38-flash selfcheck MBPP/70 attempt=1
+RUN qwen38-flash MBPP/79
+CALL qwen38-flash generation MBPP/79 attempt=1
+CALL qwen38-flash selfcheck MBPP/79 attempt=1
+CALL qwen38-flash steelman MBPP/79 attempt=1
+RUN qwen38-flash MBPP/80
+CALL qwen38-flash generation MBPP/80 attempt=1
+RUN qwen38-flash MBPP/81
+CALL qwen38-flash generation MBPP/81 attempt=1
+CALL qwen38-flash steelman MBPP/80 attempt=1
+CALL qwen38-flash selfcheck MBPP/80 attempt=1
+CALL qwen38-flash selfcheck MBPP/81 attempt=1
+CALL qwen38-flash steelman MBPP/81 attempt=1
+RUN qwen38-flash MBPP/82
+CALL qwen38-flash generation MBPP/82 attempt=1
+CALL qwen38-flash selfcheck MBPP/82 attempt=1
+CALL qwen38-flash steelman MBPP/82 attempt=1
+RUN qwen38-flash MBPP/83
+CALL qwen38-flash generation MBPP/83 attempt=1
+RUN qwen38-flash MBPP/84
+CALL qwen38-flash generation MBPP/84 attempt=1
+RUN qwen38-flash MBPP/85
+CALL qwen38-flash generation MBPP/85 attempt=1
+CALL qwen38-flash selfcheck MBPP/85 attempt=1
+CALL qwen38-flash steelman MBPP/85 attempt=1
+RUN qwen38-flash MBPP/86
+CALL qwen38-flash generation MBPP/86 attempt=1
+CALL qwen38-flash selfcheck MBPP/77 attempt=1
+CALL qwen38-flash steelman MBPP/77 attempt=1
+RUN qwen38-flash MBPP/87
+CALL qwen38-flash generation MBPP/87 attempt=1
+CALL qwen38-flash steelman MBPP/87 attempt=1
+CALL qwen38-flash selfcheck MBPP/87 attempt=1
+CALL qwen38-flash selfcheck MBPP/86 attempt=1
+CALL qwen38-flash steelman MBPP/86 attempt=1
+RUN qwen38-flash MBPP/88
+CALL qwen38-flash generation MBPP/88 attempt=1
+CALL qwen38-flash selfcheck MBPP/88 attempt=1
+CALL qwen38-flash steelman MBPP/88 attempt=1
+RUN qwen38-flash MBPP/89
+CALL qwen38-flash generation MBPP/89 attempt=1
+RUN qwen38-flash MBPP/90
+CALL qwen38-flash generation MBPP/90 attempt=1
+RUN qwen38-flash MBPP/91
+CALL qwen38-flash generation MBPP/91 attempt=1
+CALL qwen38-flash selfcheck MBPP/90 attempt=1
+CALL qwen38-flash steelman MBPP/90 attempt=1
+CALL qwen38-flash steelman MBPP/91 attempt=1
+CALL qwen38-flash selfcheck MBPP/91 attempt=1
+CALL qwen38-flash selfcheck MBPP/84 attempt=1
+CALL qwen38-flash steelman MBPP/84 attempt=1
+RUN qwen38-flash MBPP/92
+CALL qwen38-flash generation MBPP/92 attempt=1
+RUN qwen38-flash MBPP/93
+CALL qwen38-flash generation MBPP/93 attempt=1
+CALL qwen38-flash selfcheck MBPP/93 attempt=1
+CALL qwen38-flash steelman MBPP/93 attempt=1
+RUN qwen38-flash MBPP/94
+CALL qwen38-flash generation MBPP/94 attempt=1
+CALL qwen38-flash steelman MBPP/57 attempt=1
+CALL qwen38-flash selfcheck MBPP/57 attempt=1
+RUN qwen38-flash MBPP/95
+CALL qwen38-flash generation MBPP/95 attempt=1
+RUN qwen38-flash MBPP/96
+CALL qwen38-flash generation MBPP/96 attempt=1
+CALL qwen38-flash selfcheck MBPP/95 attempt=1
+CALL qwen38-flash steelman MBPP/95 attempt=1
+CALL qwen38-flash selfcheck MBPP/96 attempt=1
+CALL qwen38-flash steelman MBPP/96 attempt=1
+RUN qwen38-flash MBPP/97
+CALL qwen38-flash generation MBPP/97 attempt=1
+CALL qwen38-flash steelman MBPP/94 attempt=1
+CALL qwen38-flash selfcheck MBPP/94 attempt=1
+CALL qwen38-flash selfcheck MBPP/36 attempt=1
+CALL qwen38-flash steelman MBPP/36 attempt=1
+CALL qwen38-flash selfcheck MBPP/83 attempt=1
+CALL qwen38-flash steelman MBPP/83 attempt=1
+RUN qwen38-flash MBPP/98
+CALL qwen38-flash generation MBPP/98 attempt=1
+RUN qwen38-flash MBPP/99
+CALL qwen38-flash generation MBPP/99 attempt=1
+CALL qwen38-flash selfcheck MBPP/98 attempt=1
+CALL qwen38-flash steelman MBPP/98 attempt=1
+CALL qwen38-flash selfcheck MBPP/97 attempt=1
+CALL qwen38-flash steelman MBPP/97 attempt=1
+CALL qwen38-flash selfcheck MBPP/99 attempt=1
+CALL qwen38-flash steelman MBPP/99 attempt=1
+CALL qwen38-flash selfcheck MBPP/89 attempt=1
+CALL qwen38-flash steelman MBPP/89 attempt=1
+RUN qwen38-flash MBPP/101
+CALL qwen38-flash generation MBPP/101 attempt=1
+CALL qwen38-flash selfcheck MBPP/92 attempt=1
+CALL qwen38-flash steelman MBPP/92 attempt=1
+RUN qwen38-flash MBPP/102
+CALL qwen38-flash generation MBPP/102 attempt=1
+CALL qwen38-flash steelman MBPP/102 attempt=1
+CALL qwen38-flash selfcheck MBPP/102 attempt=1
+CALL qwen38-flash selfcheck MBPP/60 attempt=1
+CALL qwen38-flash steelman MBPP/60 attempt=1
+RUN qwen38-flash MBPP/103
+CALL qwen38-flash generation MBPP/103 attempt=1
+RUN qwen38-flash MBPP/104
+CALL qwen38-flash generation MBPP/104 attempt=1
+CALL qwen38-flash selfcheck MBPP/104 attempt=1
+CALL qwen38-flash steelman MBPP/104 attempt=1
+RUN qwen38-flash MBPP/105
+CALL qwen38-flash generation MBPP/105 attempt=1
+RUN qwen38-flash MBPP/106
+CALL qwen38-flash generation MBPP/106 attempt=1
+CALL qwen38-flash selfcheck MBPP/101 attempt=1
+CALL qwen38-flash steelman MBPP/101 attempt=1
+CALL qwen38-flash steelman MBPP/105 attempt=1
+CALL qwen38-flash selfcheck MBPP/105 attempt=1
+RUN qwen38-flash MBPP/107
+CALL qwen38-flash generation MBPP/107 attempt=1
+RUN qwen38-flash MBPP/108
+CALL qwen38-flash generation MBPP/108 attempt=1
+RUN qwen38-flash MBPP/109
+CALL qwen38-flash generation MBPP/109 attempt=1
+RUN qwen38-flash MBPP/110
+CALL qwen38-flash generation MBPP/110 attempt=1
+RUN qwen38-flash MBPP/111
+CALL qwen38-flash generation MBPP/111 attempt=1
+CALL qwen38-flash selfcheck MBPP/106 attempt=1
+CALL qwen38-flash steelman MBPP/106 attempt=1
+RUN qwen38-flash MBPP/112
+CALL qwen38-flash generation MBPP/112 attempt=1
+CALL qwen38-flash steelman MBPP/109 attempt=1
+CALL qwen38-flash selfcheck MBPP/109 attempt=1
+CALL qwen38-flash selfcheck MBPP/74 attempt=1
+CALL qwen38-flash steelman MBPP/74 attempt=1
+RUN qwen38-flash MBPP/113
+CALL qwen38-flash generation MBPP/113 attempt=1
+RUN qwen38-flash MBPP/114
+CALL qwen38-flash generation MBPP/114 attempt=1
+CALL qwen38-flash selfcheck MBPP/114 attempt=1
+CALL qwen38-flash steelman MBPP/114 attempt=1
+RUN qwen38-flash MBPP/115
+CALL qwen38-flash generation MBPP/115 attempt=1
+CALL qwen38-flash steelman MBPP/115 attempt=1
+CALL qwen38-flash selfcheck MBPP/115 attempt=1
+CALL qwen38-flash selfcheck MBPP/113 attempt=1
+CALL qwen38-flash steelman MBPP/113 attempt=1
+RUN qwen38-flash MBPP/116
+CALL qwen38-flash generation MBPP/116 attempt=1
+CALL qwen38-flash steelman MBPP/110 attempt=1
+CALL qwen38-flash selfcheck MBPP/110 attempt=1
+CALL qwen38-flash selfcheck MBPP/116 attempt=1
+CALL qwen38-flash steelman MBPP/116 attempt=1
+CALL qwen38-flash selfcheck MBPP/78 attempt=1
+CALL qwen38-flash steelman MBPP/78 attempt=1
+CALL qwen38-flash selfcheck MBPP/112 attempt=1
+CALL qwen38-flash steelman MBPP/112 attempt=1
+RUN qwen38-flash MBPP/117
+CALL qwen38-flash generation MBPP/117 attempt=1
+RUN qwen38-flash MBPP/118
+CALL qwen38-flash generation MBPP/118 attempt=1
+CALL qwen38-flash steelman MBPP/117 attempt=1
+CALL qwen38-flash selfcheck MBPP/117 attempt=1
+CALL qwen38-flash selfcheck MBPP/118 attempt=1
+CALL qwen38-flash steelman MBPP/118 attempt=1
+RUN qwen38-flash MBPP/119
+CALL qwen38-flash generation MBPP/119 attempt=1
+RUN qwen38-flash MBPP/120
+CALL qwen38-flash generation MBPP/120 attempt=1
+CALL qwen38-flash steelman MBPP/111 attempt=1
+CALL qwen38-flash selfcheck MBPP/111 attempt=1
+RUN qwen38-flash MBPP/121
+CALL qwen38-flash generation MBPP/121 attempt=1
+RUN qwen38-flash MBPP/122
+CALL qwen38-flash generation MBPP/122 attempt=1
+RUN qwen38-flash MBPP/123
+CALL qwen38-flash generation MBPP/123 attempt=1
+CALL qwen38-flash selfcheck MBPP/103 attempt=1
+CALL qwen38-flash steelman MBPP/103 attempt=1
+RUN qwen38-flash MBPP/124
+CALL qwen38-flash generation MBPP/124 attempt=1
+CALL qwen38-flash selfcheck MBPP/122 attempt=1
+CALL qwen38-flash steelman MBPP/122 attempt=1
+CALL qwen38-flash selfcheck MBPP/120 attempt=1
+CALL qwen38-flash steelman MBPP/120 attempt=1
+CALL qwen38-flash selfcheck MBPP/124 attempt=1
+CALL qwen38-flash steelman MBPP/124 attempt=1
+CALL qwen38-flash selfcheck MBPP/121 attempt=1
+CALL qwen38-flash steelman MBPP/121 attempt=1
+RUN qwen38-flash MBPP/125
+CALL qwen38-flash generation MBPP/125 attempt=1
+RUN qwen38-flash MBPP/126
+CALL qwen38-flash generation MBPP/126 attempt=1
+CALL qwen38-flash steelman MBPP/126 attempt=1
+CALL qwen38-flash selfcheck MBPP/126 attempt=1
+RUN qwen38-flash MBPP/127
+CALL qwen38-flash generation MBPP/127 attempt=1
+CALL qwen38-flash selfcheck MBPP/127 attempt=1
+CALL qwen38-flash steelman MBPP/127 attempt=1
+CALL qwen38-flash selfcheck MBPP/107 attempt=1
+CALL qwen38-flash steelman MBPP/107 attempt=1
+RUN qwen38-flash MBPP/128
+CALL qwen38-flash generation MBPP/128 attempt=1
+CALL qwen38-flash selfcheck MBPP/128 attempt=1
+CALL qwen38-flash steelman MBPP/128 attempt=1
+RUN qwen38-flash MBPP/129
+CALL qwen38-flash generation MBPP/129 attempt=1
+RUN qwen38-flash MBPP/130
+CALL qwen38-flash generation MBPP/130 attempt=1
+CALL qwen38-flash steelman MBPP/108 attempt=1
+CALL qwen38-flash selfcheck MBPP/108 attempt=1
+RUN qwen38-flash MBPP/131
+CALL qwen38-flash generation MBPP/131 attempt=1
+CALL qwen38-flash selfcheck MBPP/130 attempt=1
+CALL qwen38-flash steelman MBPP/130 attempt=1
+CALL qwen38-flash selfcheck MBPP/131 attempt=1
+CALL qwen38-flash steelman MBPP/131 attempt=1
+CALL qwen38-flash selfcheck MBPP/125 attempt=1
+CALL qwen38-flash steelman MBPP/125 attempt=1
+RUN qwen38-flash MBPP/132
+CALL qwen38-flash generation MBPP/132 attempt=1
+CALL qwen38-flash selfcheck MBPP/132 attempt=1
+CALL qwen38-flash steelman MBPP/132 attempt=1
+RUN qwen38-flash MBPP/133
+CALL qwen38-flash generation MBPP/133 attempt=1
+CALL qwen38-flash steelman MBPP/133 attempt=1
+CALL qwen38-flash selfcheck MBPP/133 attempt=1
+RUN qwen38-flash MBPP/135
+CALL qwen38-flash generation MBPP/135 attempt=1
+RUN qwen38-flash MBPP/136
+CALL qwen38-flash generation MBPP/136 attempt=1
+RUN qwen38-flash MBPP/137
+CALL qwen38-flash generation MBPP/137 attempt=1
+CALL qwen38-flash selfcheck MBPP/135 attempt=1
+CALL qwen38-flash steelman MBPP/135 attempt=1
+CALL qwen38-flash selfcheck MBPP/123 attempt=1
+CALL qwen38-flash steelman MBPP/123 attempt=1
+CALL qwen38-flash selfcheck MBPP/137 attempt=1
+CALL qwen38-flash steelman MBPP/137 attempt=1
+RUN qwen38-flash MBPP/138
+CALL qwen38-flash generation MBPP/138 attempt=1
+RUN qwen38-flash MBPP/139
+CALL qwen38-flash generation MBPP/139 attempt=1
+CALL qwen38-flash selfcheck MBPP/119 attempt=1
+CALL qwen38-flash steelman MBPP/119 attempt=1
+CALL qwen38-flash selfcheck MBPP/139 attempt=1
+CALL qwen38-flash steelman MBPP/139 attempt=1
+RUN qwen38-flash MBPP/140
+CALL qwen38-flash generation MBPP/140 attempt=1
+RUN qwen38-flash MBPP/141
+CALL qwen38-flash generation MBPP/141 attempt=1
+RUN qwen38-flash MBPP/142
+CALL qwen38-flash generation MBPP/142 attempt=1
+RUN qwen38-flash MBPP/143
+CALL qwen38-flash generation MBPP/143 attempt=1
+CALL qwen38-flash selfcheck MBPP/141 attempt=1
+CALL qwen38-flash steelman MBPP/141 attempt=1
+CALL qwen38-flash selfcheck MBPP/143 attempt=1
+CALL qwen38-flash steelman MBPP/143 attempt=1
+RUN qwen38-flash MBPP/144
+CALL qwen38-flash generation MBPP/144 attempt=1
+RUN qwen38-flash MBPP/145
+CALL qwen38-flash generation MBPP/145 attempt=1
+CALL qwen38-flash selfcheck MBPP/145 attempt=1
+CALL qwen38-flash steelman MBPP/145 attempt=1
+RUN qwen38-flash MBPP/146
+CALL qwen38-flash generation MBPP/146 attempt=1
+CALL qwen38-flash steelman MBPP/144 attempt=1
+CALL qwen38-flash selfcheck MBPP/144 attempt=1
+CALL qwen38-flash steelman MBPP/146 attempt=1
+CALL qwen38-flash selfcheck MBPP/146 attempt=1
+RUN qwen38-flash MBPP/147
+CALL qwen38-flash generation MBPP/147 attempt=1
+CALL qwen38-flash selfcheck MBPP/147 attempt=1
+CALL qwen38-flash steelman MBPP/147 attempt=1
+RUN qwen38-flash MBPP/148
+CALL qwen38-flash generation MBPP/148 attempt=1
+CALL qwen38-flash selfcheck MBPP/136 attempt=1
+CALL qwen38-flash steelman MBPP/136 attempt=1
+RUN qwen38-flash MBPP/149
+CALL qwen38-flash generation MBPP/149 attempt=1
+RUN qwen38-flash MBPP/150
+CALL qwen38-flash generation MBPP/150 attempt=1
+CALL qwen38-flash steelman MBPP/140 attempt=1
+CALL qwen38-flash selfcheck MBPP/140 attempt=1
+CALL qwen38-flash selfcheck MBPP/138 attempt=1
+CALL qwen38-flash steelman MBPP/138 attempt=1
+CALL qwen38-flash selfcheck MBPP/149 attempt=1
+CALL qwen38-flash steelman MBPP/149 attempt=1
+RUN qwen38-flash MBPP/151
+CALL qwen38-flash generation MBPP/151 attempt=1
+RUN qwen38-flash MBPP/152
+CALL qwen38-flash generation MBPP/152 attempt=1
+CALL qwen38-flash selfcheck MBPP/151 attempt=1
+CALL qwen38-flash steelman MBPP/151 attempt=1
+CALL qwen38-flash steelman MBPP/152 attempt=1
+CALL qwen38-flash selfcheck MBPP/152 attempt=1
+RUN qwen38-flash MBPP/153
+CALL qwen38-flash generation MBPP/153 attempt=1
+RUN qwen38-flash MBPP/154
+CALL qwen38-flash generation MBPP/154 attempt=1
+CALL qwen38-flash steelman MBPP/142 attempt=1
+CALL qwen38-flash selfcheck MBPP/142 attempt=1
+CALL qwen38-flash selfcheck MBPP/153 attempt=1
+CALL qwen38-flash steelman MBPP/153 attempt=1
+RUN qwen38-flash MBPP/155
+CALL qwen38-flash generation MBPP/155 attempt=1
+RUN qwen38-flash MBPP/156
+CALL qwen38-flash generation MBPP/156 attempt=1
+RUN qwen38-flash MBPP/157
+CALL qwen38-flash generation MBPP/157 attempt=1
+RUN qwen38-flash MBPP/158
+CALL qwen38-flash generation MBPP/158 attempt=1
+RUN qwen38-flash MBPP/159
+CALL qwen38-flash generation MBPP/159 attempt=1
+CALL qwen38-flash selfcheck MBPP/156 attempt=1
+CALL qwen38-flash steelman MBPP/156 attempt=1
+RUN qwen38-flash MBPP/161
+CALL qwen38-flash generation MBPP/161 attempt=1
+CALL qwen38-flash selfcheck MBPP/148 attempt=1
+CALL qwen38-flash steelman MBPP/148 attempt=1
+CALL qwen38-flash selfcheck MBPP/161 attempt=1
+CALL qwen38-flash steelman MBPP/161 attempt=1
+RUN qwen38-flash MBPP/162
+CALL qwen38-flash generation MBPP/162 attempt=1
+CALL qwen38-flash selfcheck MBPP/157 attempt=1
+CALL qwen38-flash steelman MBPP/157 attempt=1
+CALL qwen38-flash selfcheck MBPP/162 attempt=1
+CALL qwen38-flash steelman MBPP/162 attempt=1
+RUN qwen38-flash MBPP/163
+CALL qwen38-flash generation MBPP/163 attempt=1
+RUN qwen38-flash MBPP/164
+CALL qwen38-flash generation MBPP/164 attempt=1
+CALL qwen38-flash steelman MBPP/163 attempt=1
+CALL qwen38-flash selfcheck MBPP/163 attempt=1
+RUN qwen38-flash MBPP/165
+CALL qwen38-flash generation MBPP/165 attempt=1
+RUN qwen38-flash MBPP/166
+CALL qwen38-flash generation MBPP/166 attempt=1
+CALL qwen38-flash steelman MBPP/164 attempt=1
+CALL qwen38-flash selfcheck MBPP/164 attempt=1
+CALL qwen38-flash selfcheck MBPP/166 attempt=1
+CALL qwen38-flash steelman MBPP/166 attempt=1
+CALL qwen38-flash selfcheck MBPP/165 attempt=1
+CALL qwen38-flash steelman MBPP/165 attempt=1
+RUN qwen38-flash MBPP/167
+CALL qwen38-flash generation MBPP/167 attempt=1
+CALL qwen38-flash steelman MBPP/159 attempt=1
+CALL qwen38-flash selfcheck MBPP/159 attempt=1
+CALL qwen38-flash selfcheck MBPP/158 attempt=1
+CALL qwen38-flash steelman MBPP/158 attempt=1
+CALL qwen38-flash selfcheck MBPP/167 attempt=1
+CALL qwen38-flash steelman MBPP/167 attempt=1
+RUN qwen38-flash MBPP/168
+CALL qwen38-flash generation MBPP/168 attempt=1
+CALL qwen38-flash selfcheck MBPP/168 attempt=1
+CALL qwen38-flash steelman MBPP/168 attempt=1
+RUN qwen38-flash MBPP/169
+CALL qwen38-flash generation MBPP/169 attempt=1
+CALL qwen38-flash selfcheck MBPP/169 attempt=1
+CALL qwen38-flash steelman MBPP/169 attempt=1
+RUN qwen38-flash MBPP/170
+CALL qwen38-flash generation MBPP/170 attempt=1
+CALL qwen38-flash selfcheck MBPP/154 attempt=1
+CALL qwen38-flash steelman MBPP/154 attempt=1
+RUN qwen38-flash MBPP/171
+CALL qwen38-flash generation MBPP/171 attempt=1
+RUN qwen38-flash MBPP/172
+CALL qwen38-flash generation MBPP/172 attempt=1
+CALL qwen38-flash steelman MBPP/171 attempt=1
+CALL qwen38-flash selfcheck MBPP/171 attempt=1
+RUN qwen38-flash MBPP/174
+CALL qwen38-flash generation MBPP/174 attempt=1
+RUN qwen38-flash MBPP/175
+CALL qwen38-flash generation MBPP/175 attempt=1
+CALL qwen38-flash steelman MBPP/174 attempt=1
+CALL qwen38-flash selfcheck MBPP/174 attempt=1
+RUN qwen38-flash MBPP/176
+CALL qwen38-flash generation MBPP/176 attempt=1
+CALL qwen38-flash selfcheck MBPP/176 attempt=1
+CALL qwen38-flash steelman MBPP/176 attempt=1
+CALL qwen38-flash steelman MBPP/172 attempt=1
+CALL qwen38-flash selfcheck MBPP/172 attempt=1
+RUN qwen38-flash MBPP/177
+CALL qwen38-flash generation MBPP/177 attempt=1
+RUN qwen38-flash MBPP/178
+CALL qwen38-flash generation MBPP/178 attempt=1
+RUN qwen38-flash MBPP/179
+CALL qwen38-flash generation MBPP/179 attempt=1
+CALL qwen38-flash steelman MBPP/175 attempt=1
+CALL qwen38-flash selfcheck MBPP/175 attempt=1
+RUN qwen38-flash MBPP/180
+CALL qwen38-flash generation MBPP/180 attempt=1
+RUN qwen38-flash MBPP/182
+CALL qwen38-flash generation MBPP/182 attempt=1
+CALL qwen38-flash selfcheck MBPP/155 attempt=1
+CALL qwen38-flash steelman MBPP/155 attempt=1
+RUN qwen38-flash MBPP/183
+CALL qwen38-flash generation MBPP/183 attempt=1
+CALL qwen38-flash steelman MBPP/180 attempt=1
+CALL qwen38-flash selfcheck MBPP/180 attempt=1
+RUN qwen38-flash MBPP/184
+CALL qwen38-flash generation MBPP/184 attempt=1
+CALL qwen38-flash selfcheck MBPP/184 attempt=1
+CALL qwen38-flash steelman MBPP/184 attempt=1
+CALL qwen38-flash steelman MBPP/170 attempt=1
+CALL qwen38-flash selfcheck MBPP/170 attempt=1
+RUN qwen38-flash MBPP/185
+CALL qwen38-flash generation MBPP/185 attempt=1
+RUN qwen38-flash MBPP/186
+CALL qwen38-flash generation MBPP/186 attempt=1
+CALL qwen38-flash selfcheck MBPP/179 attempt=1
+CALL qwen38-flash steelman MBPP/179 attempt=1
+CALL qwen38-flash selfcheck MBPP/178 attempt=1
+CALL qwen38-flash steelman MBPP/178 attempt=1
+CALL qwen38-flash selfcheck MBPP/183 attempt=1
+CALL qwen38-flash steelman MBPP/183 attempt=1
+CALL qwen38-flash selfcheck MBPP/182 attempt=1
+CALL qwen38-flash steelman MBPP/182 attempt=1
+RUN qwen38-flash MBPP/187
+CALL qwen38-flash generation MBPP/187 attempt=1
+CALL qwen38-flash selfcheck MBPP/186 attempt=1
+CALL qwen38-flash steelman MBPP/186 attempt=1
+CALL qwen38-flash selfcheck MBPP/187 attempt=1
+CALL qwen38-flash steelman MBPP/187 attempt=1
+RUN qwen38-flash MBPP/188
+CALL qwen38-flash generation MBPP/188 attempt=1
+RUN qwen38-flash MBPP/189
+CALL qwen38-flash generation MBPP/189 attempt=1
+RUN qwen38-flash MBPP/190
+CALL qwen38-flash generation MBPP/190 attempt=1
+CALL qwen38-flash selfcheck MBPP/189 attempt=1
+CALL qwen38-flash steelman MBPP/189 attempt=1
+RUN qwen38-flash MBPP/191
+CALL qwen38-flash generation MBPP/191 attempt=1
+CALL qwen38-flash selfcheck MBPP/150 attempt=1
+CALL qwen38-flash steelman MBPP/150 attempt=1
+RUN qwen38-flash MBPP/192
+CALL qwen38-flash generation MBPP/192 attempt=1
+CALL qwen38-flash selfcheck MBPP/192 attempt=1
+CALL qwen38-flash steelman MBPP/192 attempt=1
+CALL qwen38-flash selfcheck MBPP/188 attempt=1
+CALL qwen38-flash steelman MBPP/188 attempt=1
+CALL qwen38-flash selfcheck MBPP/191 attempt=1
+CALL qwen38-flash steelman MBPP/191 attempt=1
+RUN qwen38-flash MBPP/193
+CALL qwen38-flash generation MBPP/193 attempt=1
+CALL qwen38-flash selfcheck MBPP/193 attempt=1
+CALL qwen38-flash steelman MBPP/193 attempt=1
+RUN qwen38-flash MBPP/194
+CALL qwen38-flash generation MBPP/194 attempt=1
+RUN qwen38-flash MBPP/195
+CALL qwen38-flash generation MBPP/195 attempt=1
+RUN qwen38-flash MBPP/196
+CALL qwen38-flash generation MBPP/196 attempt=1
+RUN qwen38-flash MBPP/197
+CALL qwen38-flash generation MBPP/197 attempt=1
+CALL qwen38-flash steelman MBPP/196 attempt=1
+CALL qwen38-flash selfcheck MBPP/196 attempt=1
+CALL qwen38-flash selfcheck MBPP/195 attempt=1
+CALL qwen38-flash steelman MBPP/195 attempt=1
+CALL qwen38-flash selfcheck MBPP/194 attempt=1
+CALL qwen38-flash steelman MBPP/194 attempt=1
+RUN qwen38-flash MBPP/198
+CALL qwen38-flash generation MBPP/198 attempt=1
+RUN qwen38-flash MBPP/199
+CALL qwen38-flash generation MBPP/199 attempt=1
+CALL qwen38-flash selfcheck MBPP/197 attempt=1
+CALL qwen38-flash steelman MBPP/197 attempt=1
+RUN qwen38-flash MBPP/200
+CALL qwen38-flash generation MBPP/200 attempt=1
+CALL qwen38-flash selfcheck MBPP/199 attempt=1
+CALL qwen38-flash steelman MBPP/199 attempt=1
+CALL qwen38-flash selfcheck MBPP/185 attempt=1
+CALL qwen38-flash steelman MBPP/185 attempt=1
+RUN qwen38-flash MBPP/201
+CALL qwen38-flash generation MBPP/201 attempt=1
+RUN qwen38-flash MBPP/202
+CALL qwen38-flash generation MBPP/202 attempt=1
+CALL qwen38-flash selfcheck MBPP/201 attempt=1
+CALL qwen38-flash steelman MBPP/201 attempt=1
+CALL qwen38-flash steelman MBPP/200 attempt=1
+CALL qwen38-flash selfcheck MBPP/200 attempt=1
+RUN qwen38-flash MBPP/203
+CALL qwen38-flash generation MBPP/203 attempt=1
+CALL qwen38-flash selfcheck MBPP/129 attempt=1
+CALL qwen38-flash steelman MBPP/129 attempt=1
+RUN qwen38-flash MBPP/204
+CALL qwen38-flash generation MBPP/204 attempt=1
+RUN qwen38-flash MBPP/205
+CALL qwen38-flash generation MBPP/205 attempt=1
+CALL qwen38-flash steelman MBPP/177 attempt=1
+CALL qwen38-flash selfcheck MBPP/177 attempt=1
+RUN qwen38-flash MBPP/206
+CALL qwen38-flash generation MBPP/206 attempt=1
+CALL qwen38-flash steelman MBPP/202 attempt=1
+CALL qwen38-flash selfcheck MBPP/202 attempt=1
+RUN qwen38-flash MBPP/207
+CALL qwen38-flash generation MBPP/207 attempt=1
+CALL qwen38-flash selfcheck MBPP/207 attempt=1
+CALL qwen38-flash steelman MBPP/207 attempt=1
+CALL qwen38-flash selfcheck MBPP/204 attempt=1
+CALL qwen38-flash steelman MBPP/204 attempt=1
+RUN qwen38-flash MBPP/209
+CALL qwen38-flash generation MBPP/209 attempt=1
+CALL qwen38-flash selfcheck MBPP/205 attempt=1
+CALL qwen38-flash steelman MBPP/205 attempt=1
+RUN qwen38-flash MBPP/211
+CALL qwen38-flash generation MBPP/211 attempt=1
+CALL qwen38-flash selfcheck MBPP/203 attempt=1
+CALL qwen38-flash steelman MBPP/203 attempt=1
+RUN qwen38-flash MBPP/212
+CALL qwen38-flash generation MBPP/212 attempt=1
+CALL qwen38-flash selfcheck MBPP/212 attempt=1
+CALL qwen38-flash steelman MBPP/212 attempt=1
+RUN qwen38-flash MBPP/213
+CALL qwen38-flash generation MBPP/213 attempt=1
+RUN qwen38-flash MBPP/214
+CALL qwen38-flash generation MBPP/214 attempt=1
+RUN qwen38-flash MBPP/215
+CALL qwen38-flash generation MBPP/215 attempt=1
+CALL qwen38-flash selfcheck MBPP/214 attempt=1
+CALL qwen38-flash steelman MBPP/214 attempt=1
+CALL qwen38-flash selfcheck MBPP/209 attempt=1
+CALL qwen38-flash steelman MBPP/209 attempt=1
+CALL qwen38-flash selfcheck MBPP/213 attempt=1
+CALL qwen38-flash steelman MBPP/213 attempt=1
+RUN qwen38-flash MBPP/216
+CALL qwen38-flash generation MBPP/216 attempt=1
+CALL qwen38-flash selfcheck MBPP/206 attempt=1
+CALL qwen38-flash steelman MBPP/206 attempt=1
+RUN qwen38-flash MBPP/217
+CALL qwen38-flash generation MBPP/217 attempt=1
+RUN qwen38-flash MBPP/218
+CALL qwen38-flash generation MBPP/218 attempt=1
+CALL qwen38-flash selfcheck MBPP/217 attempt=1
+CALL qwen38-flash steelman MBPP/217 attempt=1
+RUN qwen38-flash MBPP/219
+CALL qwen38-flash generation MBPP/219 attempt=1
+RUN qwen38-flash MBPP/220
+CALL qwen38-flash generation MBPP/220 attempt=1
+CALL qwen38-flash selfcheck MBPP/219 attempt=1
+CALL qwen38-flash steelman MBPP/219 attempt=1
+CALL qwen38-flash steelman MBPP/218 attempt=1
+CALL qwen38-flash selfcheck MBPP/218 attempt=1
+CALL qwen38-flash selfcheck MBPP/220 attempt=1
+CALL qwen38-flash steelman MBPP/220 attempt=1
+RUN qwen38-flash MBPP/221
+CALL qwen38-flash generation MBPP/221 attempt=1
+RUN qwen38-flash MBPP/222
+CALL qwen38-flash generation MBPP/222 attempt=1
+RUN qwen38-flash MBPP/223
+CALL qwen38-flash generation MBPP/223 attempt=1
+CALL qwen38-flash selfcheck MBPP/221 attempt=1
+CALL qwen38-flash steelman MBPP/221 attempt=1
+RUN qwen38-flash MBPP/224
+CALL qwen38-flash generation MBPP/224 attempt=1
+CALL qwen38-flash selfcheck MBPP/222 attempt=1
+CALL qwen38-flash steelman MBPP/222 attempt=1
+CALL qwen38-flash steelman MBPP/216 attempt=1
+CALL qwen38-flash selfcheck MBPP/216 attempt=1
+CALL qwen38-flash steelman MBPP/223 attempt=1
+CALL qwen38-flash selfcheck MBPP/223 attempt=1
+RUN qwen38-flash MBPP/225
+CALL qwen38-flash generation MBPP/225 attempt=1
+RUN qwen38-flash MBPP/226
+CALL qwen38-flash generation MBPP/226 attempt=1
+CALL qwen38-flash steelman MBPP/226 attempt=1
+CALL qwen38-flash selfcheck MBPP/226 attempt=1
+CALL qwen38-flash selfcheck MBPP/224 attempt=1
+CALL qwen38-flash steelman MBPP/224 attempt=1
+CALL qwen38-flash selfcheck MBPP/225 attempt=1
+CALL qwen38-flash steelman MBPP/225 attempt=1
+RUN qwen38-flash MBPP/227
+CALL qwen38-flash generation MBPP/227 attempt=1
+CALL qwen38-flash selfcheck MBPP/227 attempt=1
+CALL qwen38-flash steelman MBPP/227 attempt=1
+RUN qwen38-flash MBPP/228
+CALL qwen38-flash generation MBPP/228 attempt=1
+RUN qwen38-flash MBPP/229
+CALL qwen38-flash generation MBPP/229 attempt=1
+RUN qwen38-flash MBPP/230
+CALL qwen38-flash generation MBPP/230 attempt=1
+CALL qwen38-flash steelman MBPP/229 attempt=1
+CALL qwen38-flash selfcheck MBPP/229 attempt=1
+RUN qwen38-flash MBPP/231
+CALL qwen38-flash generation MBPP/231 attempt=1
+CALL qwen38-flash selfcheck MBPP/211 attempt=1
+CALL qwen38-flash steelman MBPP/211 attempt=1
+CALL qwen38-flash steelman MBPP/230 attempt=1
+CALL qwen38-flash selfcheck MBPP/230 attempt=1
+RUN qwen38-flash MBPP/232
+CALL qwen38-flash generation MBPP/232 attempt=1
+CALL qwen38-flash steelman MBPP/228 attempt=1
+CALL qwen38-flash selfcheck MBPP/228 attempt=1
+CALL qwen38-flash selfcheck MBPP/231 attempt=1
+CALL qwen38-flash steelman MBPP/231 attempt=1
+RUN qwen38-flash MBPP/233
+CALL qwen38-flash generation MBPP/233 attempt=1
+CALL qwen38-flash selfcheck MBPP/232 attempt=1
+CALL qwen38-flash steelman MBPP/232 attempt=1
+CALL qwen38-flash selfcheck MBPP/198 attempt=1
+CALL qwen38-flash steelman MBPP/198 attempt=1
+CALL qwen38-flash selfcheck MBPP/233 attempt=1
+CALL qwen38-flash steelman MBPP/233 attempt=1
+RUN qwen38-flash MBPP/234
+CALL qwen38-flash generation MBPP/234 attempt=1
+RUN qwen38-flash MBPP/235
+CALL qwen38-flash generation MBPP/235 attempt=1
+CALL qwen38-flash steelman MBPP/234 attempt=1
+CALL qwen38-flash selfcheck MBPP/234 attempt=1
+RUN qwen38-flash MBPP/236
+CALL qwen38-flash generation MBPP/236 attempt=1
+RUN qwen38-flash MBPP/237
+CALL qwen38-flash generation MBPP/237 attempt=1
+RUN qwen38-flash MBPP/238
+CALL qwen38-flash generation MBPP/238 attempt=1
+CALL qwen38-flash steelman MBPP/238 attempt=1
+CALL qwen38-flash selfcheck MBPP/238 attempt=1
+RUN qwen38-flash MBPP/239
+CALL qwen38-flash generation MBPP/239 attempt=1
+RUN qwen38-flash MBPP/240
+CALL qwen38-flash generation MBPP/240 attempt=1
+RUN qwen38-flash MBPP/241
+CALL qwen38-flash generation MBPP/241 attempt=1
+CALL qwen38-flash selfcheck MBPP/241 attempt=1
+CALL qwen38-flash steelman MBPP/241 attempt=1
+RUN qwen38-flash MBPP/242
+CALL qwen38-flash generation MBPP/242 attempt=1
+CALL qwen38-flash selfcheck MBPP/242 attempt=1
+CALL qwen38-flash steelman MBPP/242 attempt=1
+RUN qwen38-flash MBPP/243
+CALL qwen38-flash generation MBPP/243 attempt=1
+RUN qwen38-flash MBPP/244
+CALL qwen38-flash generation MBPP/244 attempt=1
+CALL qwen38-flash steelman MBPP/244 attempt=1
+CALL qwen38-flash selfcheck MBPP/244 attempt=1
+CALL qwen38-flash selfcheck MBPP/190 attempt=1
+CALL qwen38-flash steelman MBPP/190 attempt=1
+CALL qwen38-flash steelman MBPP/237 attempt=1
+CALL qwen38-flash selfcheck MBPP/237 attempt=1
+RUN qwen38-flash MBPP/245
+CALL qwen38-flash generation MBPP/245 attempt=1
+CALL qwen38-flash steelman MBPP/240 attempt=1
+CALL qwen38-flash selfcheck MBPP/240 attempt=1
+CALL qwen38-flash selfcheck MBPP/236 attempt=1
+CALL qwen38-flash steelman MBPP/236 attempt=1
+RUN qwen38-flash MBPP/246
+CALL qwen38-flash generation MBPP/246 attempt=1
+RUN qwen38-flash MBPP/247
+CALL qwen38-flash generation MBPP/247 attempt=1
+CALL qwen38-flash selfcheck MBPP/246 attempt=1
+CALL qwen38-flash steelman MBPP/246 attempt=1
+RUN qwen38-flash MBPP/248
+CALL qwen38-flash generation MBPP/248 attempt=1
+CALL qwen38-flash selfcheck MBPP/248 attempt=1
+CALL qwen38-flash steelman MBPP/248 attempt=1
+RUN qwen38-flash MBPP/249
+CALL qwen38-flash generation MBPP/249 attempt=1
+CALL qwen38-flash selfcheck MBPP/215 attempt=1
+CALL qwen38-flash steelman MBPP/215 attempt=1
+CALL qwen38-flash selfcheck MBPP/249 attempt=1
+CALL qwen38-flash steelman MBPP/249 attempt=1
+RUN qwen38-flash MBPP/250
+CALL qwen38-flash generation MBPP/250 attempt=1
+CALL qwen38-flash selfcheck MBPP/250 attempt=1
+CALL qwen38-flash steelman MBPP/250 attempt=1
+RUN qwen38-flash MBPP/251
+CALL qwen38-flash generation MBPP/251 attempt=1
+CALL qwen38-flash selfcheck MBPP/251 attempt=1
+CALL qwen38-flash steelman MBPP/251 attempt=1
+CALL qwen38-flash steelman MBPP/243 attempt=1
+CALL qwen38-flash selfcheck MBPP/243 attempt=1
+CALL qwen38-flash steelman MBPP/235 attempt=1
+CALL qwen38-flash selfcheck MBPP/235 attempt=1
+RUN qwen38-flash MBPP/252
+CALL qwen38-flash generation MBPP/252 attempt=1
+CALL qwen38-flash selfcheck MBPP/247 attempt=1
+CALL qwen38-flash steelman MBPP/247 attempt=1
+RUN qwen38-flash MBPP/253
+CALL qwen38-flash generation MBPP/253 attempt=1
+CALL qwen38-flash selfcheck MBPP/253 attempt=1
+CALL qwen38-flash steelman MBPP/253 attempt=1
+RUN qwen38-flash MBPP/254
+CALL qwen38-flash generation MBPP/254 attempt=1
+CALL qwen38-flash selfcheck MBPP/252 attempt=1
+CALL qwen38-flash steelman MBPP/252 attempt=1
+CALL qwen38-flash selfcheck MBPP/245 attempt=1
+CALL qwen38-flash steelman MBPP/245 attempt=1
+RUN qwen38-flash MBPP/255
+CALL qwen38-flash generation MBPP/255 attempt=1
+CALL qwen38-flash steelman MBPP/254 attempt=1
+CALL qwen38-flash selfcheck MBPP/254 attempt=1
+RUN qwen38-flash MBPP/256
+CALL qwen38-flash generation MBPP/256 attempt=1
+CALL qwen38-flash selfcheck MBPP/256 attempt=1
+CALL qwen38-flash steelman MBPP/256 attempt=1
+RUN qwen38-flash MBPP/257
+CALL qwen38-flash generation MBPP/257 attempt=1
+CALL qwen38-flash selfcheck MBPP/257 attempt=1
+CALL qwen38-flash steelman MBPP/257 attempt=1
+CALL qwen38-flash selfcheck MBPP/255 attempt=1
+CALL qwen38-flash steelman MBPP/255 attempt=1
+RUN qwen38-flash MBPP/258
+CALL qwen38-flash generation MBPP/258 attempt=1
+CALL qwen38-flash selfcheck MBPP/258 attempt=1
+CALL qwen38-flash steelman MBPP/258 attempt=1
+RUN qwen38-flash MBPP/259
+CALL qwen38-flash generation MBPP/259 attempt=1
+RUN qwen38-flash MBPP/260
+CALL qwen38-flash generation MBPP/260 attempt=1
+RUN qwen38-flash MBPP/261
+CALL qwen38-flash generation MBPP/261 attempt=1
+RUN qwen38-flash MBPP/262
+CALL qwen38-flash generation MBPP/262 attempt=1
+CALL qwen38-flash steelman MBPP/259 attempt=1
+CALL qwen38-flash selfcheck MBPP/259 attempt=1
+CALL qwen38-flash steelman MBPP/262 attempt=1
+CALL qwen38-flash selfcheck MBPP/262 attempt=1
+RUN qwen38-flash MBPP/263
+CALL qwen38-flash generation MBPP/263 attempt=1
+CALL qwen38-flash steelman MBPP/263 attempt=1
+CALL qwen38-flash selfcheck MBPP/263 attempt=1
+RUN qwen38-flash MBPP/265
+CALL qwen38-flash generation MBPP/265 attempt=1
+RUN qwen38-flash MBPP/266
+CALL qwen38-flash generation MBPP/266 attempt=1
+RUN qwen38-flash MBPP/267
+CALL qwen38-flash generation MBPP/267 attempt=1
+CALL qwen38-flash selfcheck MBPP/266 attempt=1
+CALL qwen38-flash steelman MBPP/266 attempt=1
+CALL qwen38-flash selfcheck MBPP/265 attempt=1
+CALL qwen38-flash steelman MBPP/265 attempt=1
+CALL qwen38-flash selfcheck MBPP/267 attempt=1
+CALL qwen38-flash steelman MBPP/267 attempt=1
+RUN qwen38-flash MBPP/268
+CALL qwen38-flash generation MBPP/268 attempt=1
+RUN qwen38-flash MBPP/269
+CALL qwen38-flash generation MBPP/269 attempt=1
+CALL qwen38-flash steelman MBPP/269 attempt=1
+CALL qwen38-flash selfcheck MBPP/269 attempt=1
+CALL qwen38-flash selfcheck MBPP/268 attempt=1
+CALL qwen38-flash steelman MBPP/268 attempt=1
+RUN qwen38-flash MBPP/270
+CALL qwen38-flash generation MBPP/270 attempt=1
+RUN qwen38-flash MBPP/271
+CALL qwen38-flash generation MBPP/271 attempt=1
+RUN qwen38-flash MBPP/272
+CALL qwen38-flash generation MBPP/272 attempt=1
+CALL qwen38-flash selfcheck MBPP/270 attempt=1
+CALL qwen38-flash steelman MBPP/270 attempt=1
+CALL qwen38-flash selfcheck MBPP/271 attempt=1
+CALL qwen38-flash steelman MBPP/271 attempt=1
+CALL qwen38-flash selfcheck MBPP/272 attempt=1
+CALL qwen38-flash steelman MBPP/272 attempt=1
+RUN qwen38-flash MBPP/273
+CALL qwen38-flash generation MBPP/273 attempt=1
+RUN qwen38-flash MBPP/274
+CALL qwen38-flash generation MBPP/274 attempt=1
+RUN qwen38-flash MBPP/275
+CALL qwen38-flash generation MBPP/275 attempt=1
+RUN qwen38-flash MBPP/276
+CALL qwen38-flash generation MBPP/276 attempt=1
+CALL qwen38-flash selfcheck MBPP/273 attempt=1
+CALL qwen38-flash steelman MBPP/273 attempt=1
+CALL qwen38-flash selfcheck MBPP/276 attempt=1
+CALL qwen38-flash steelman MBPP/276 attempt=1
+RUN qwen38-flash MBPP/277
+CALL qwen38-flash generation MBPP/277 attempt=1
+CALL qwen38-flash selfcheck MBPP/277 attempt=1
+CALL qwen38-flash steelman MBPP/277 attempt=1
+CALL qwen38-flash selfcheck MBPP/274 attempt=1
+CALL qwen38-flash steelman MBPP/274 attempt=1
+RUN qwen38-flash MBPP/278
+CALL qwen38-flash generation MBPP/278 attempt=1
+RUN qwen38-flash MBPP/279
+CALL qwen38-flash generation MBPP/279 attempt=1
+RUN qwen38-flash MBPP/280
+CALL qwen38-flash generation MBPP/280 attempt=1
+CALL qwen38-flash selfcheck MBPP/279 attempt=1
+CALL qwen38-flash steelman MBPP/279 attempt=1
+CALL qwen38-flash selfcheck MBPP/280 attempt=1
+CALL qwen38-flash steelman MBPP/280 attempt=1
+CALL qwen38-flash selfcheck MBPP/278 attempt=1
+CALL qwen38-flash steelman MBPP/278 attempt=1
+RUN qwen38-flash MBPP/281
+CALL qwen38-flash generation MBPP/281 attempt=1
+RUN qwen38-flash MBPP/282
+CALL qwen38-flash generation MBPP/282 attempt=1
+RUN qwen38-flash MBPP/283
+CALL qwen38-flash generation MBPP/283 attempt=1
+CALL qwen38-flash steelman MBPP/281 attempt=1
+CALL qwen38-flash selfcheck MBPP/281 attempt=1
+CALL qwen38-flash steelman MBPP/282 attempt=1
+CALL qwen38-flash selfcheck MBPP/282 attempt=1
+RUN qwen38-flash MBPP/284
+CALL qwen38-flash generation MBPP/284 attempt=1
+CALL qwen38-flash steelman MBPP/284 attempt=1
+CALL qwen38-flash selfcheck MBPP/284 attempt=1
+RUN qwen38-flash MBPP/285
+CALL qwen38-flash generation MBPP/285 attempt=1
+RUN qwen38-flash MBPP/286
+CALL qwen38-flash generation MBPP/286 attempt=1
+RUN qwen38-flash MBPP/287
+CALL qwen38-flash generation MBPP/287 attempt=1
+RUN qwen38-flash MBPP/288
+CALL qwen38-flash generation MBPP/288 attempt=1
+RUN qwen38-flash MBPP/289
+CALL qwen38-flash generation MBPP/289 attempt=1
+CALL qwen38-flash selfcheck MBPP/287 attempt=1
+CALL qwen38-flash steelman MBPP/287 attempt=1
+CALL qwen38-flash selfcheck MBPP/289 attempt=1
+CALL qwen38-flash steelman MBPP/289 attempt=1
+CALL qwen38-flash selfcheck MBPP/261 attempt=1
+CALL qwen38-flash steelman MBPP/261 attempt=1
+CALL qwen38-flash selfcheck MBPP/285 attempt=1
+CALL qwen38-flash steelman MBPP/285 attempt=1
+RUN qwen38-flash MBPP/290
+CALL qwen38-flash generation MBPP/290 attempt=1
+RUN qwen38-flash MBPP/291
+CALL qwen38-flash generation MBPP/291 attempt=1
+RUN qwen38-flash MBPP/292
+CALL qwen38-flash generation MBPP/292 attempt=1
+RUN qwen38-flash MBPP/293
+CALL qwen38-flash generation MBPP/293 attempt=1
+RUN qwen38-flash MBPP/294
+CALL qwen38-flash generation MBPP/294 attempt=1
+CALL qwen38-flash selfcheck MBPP/292 attempt=1
+CALL qwen38-flash steelman MBPP/292 attempt=1
+CALL qwen38-flash selfcheck MBPP/283 attempt=1
+CALL qwen38-flash steelman MBPP/283 attempt=1
+CALL qwen38-flash selfcheck MBPP/290 attempt=1
+CALL qwen38-flash steelman MBPP/290 attempt=1
+RUN qwen38-flash MBPP/295
+CALL qwen38-flash generation MBPP/295 attempt=1
+CALL qwen38-flash selfcheck MBPP/295 attempt=1
+CALL qwen38-flash steelman MBPP/295 attempt=1
+CALL qwen38-flash selfcheck MBPP/291 attempt=1
+CALL qwen38-flash steelman MBPP/291 attempt=1
+CALL qwen38-flash selfcheck MBPP/286 attempt=1
+CALL qwen38-flash steelman MBPP/286 attempt=1
+RUN qwen38-flash MBPP/296
+CALL qwen38-flash generation MBPP/296 attempt=1
+CALL qwen38-flash selfcheck MBPP/296 attempt=1
+CALL qwen38-flash steelman MBPP/296 attempt=1
+RUN qwen38-flash MBPP/297
+CALL qwen38-flash generation MBPP/297 attempt=1
+RUN qwen38-flash MBPP/298
+CALL qwen38-flash generation MBPP/298 attempt=1
+CALL qwen38-flash selfcheck MBPP/293 attempt=1
+CALL qwen38-flash steelman MBPP/293 attempt=1
+CALL qwen38-flash selfcheck MBPP/297 attempt=1
+CALL qwen38-flash steelman MBPP/297 attempt=1
+RUN qwen38-flash MBPP/299
+CALL qwen38-flash generation MBPP/299 attempt=1
+CALL qwen38-flash selfcheck MBPP/239 attempt=1
+CALL qwen38-flash steelman MBPP/239 attempt=1
+RUN qwen38-flash MBPP/300
+CALL qwen38-flash generation MBPP/300 attempt=1
+RUN qwen38-flash MBPP/301
+CALL qwen38-flash generation MBPP/301 attempt=1
+CALL qwen38-flash selfcheck MBPP/300 attempt=1
+CALL qwen38-flash steelman MBPP/300 attempt=1
+RUN qwen38-flash MBPP/302
+CALL qwen38-flash generation MBPP/302 attempt=1
+RUN qwen38-flash MBPP/304
+CALL qwen38-flash generation MBPP/304 attempt=1
+CALL qwen38-flash selfcheck MBPP/301 attempt=1
+CALL qwen38-flash steelman MBPP/301 attempt=1
+CALL qwen38-flash selfcheck MBPP/302 attempt=1
+CALL qwen38-flash steelman MBPP/302 attempt=1
+CALL qwen38-flash selfcheck MBPP/298 attempt=1
+CALL qwen38-flash steelman MBPP/298 attempt=1
+RUN qwen38-flash MBPP/305
+CALL qwen38-flash generation MBPP/305 attempt=1
+RUN qwen38-flash MBPP/306
+CALL qwen38-flash generation MBPP/306 attempt=1
+RUN qwen38-flash MBPP/307
+CALL qwen38-flash generation MBPP/307 attempt=1
+RUN qwen38-flash MBPP/308
+CALL qwen38-flash generation MBPP/308 attempt=1
+CALL qwen38-flash selfcheck MBPP/275 attempt=1
+CALL qwen38-flash steelman MBPP/275 attempt=1
+CALL qwen38-flash steelman MBPP/308 attempt=1
+CALL qwen38-flash selfcheck MBPP/308 attempt=1
+CALL qwen38-flash selfcheck MBPP/288 attempt=1
+CALL qwen38-flash steelman MBPP/288 attempt=1
+CALL qwen38-flash selfcheck MBPP/299 attempt=1
+CALL qwen38-flash steelman MBPP/299 attempt=1
+RUN qwen38-flash MBPP/309
+CALL qwen38-flash generation MBPP/309 attempt=1
+CALL qwen38-flash steelman MBPP/309 attempt=1
+CALL qwen38-flash selfcheck MBPP/309 attempt=1
+CALL qwen38-flash selfcheck MBPP/305 attempt=1
+CALL qwen38-flash steelman MBPP/305 attempt=1
+RUN qwen38-flash MBPP/310
+CALL qwen38-flash generation MBPP/310 attempt=1
+CALL qwen38-flash steelman MBPP/310 attempt=1
+CALL qwen38-flash selfcheck MBPP/310 attempt=1
+CALL qwen38-flash steelman MBPP/307 attempt=1
+CALL qwen38-flash selfcheck MBPP/307 attempt=1
+CALL qwen38-flash selfcheck MBPP/294 attempt=1
+CALL qwen38-flash steelman MBPP/294 attempt=1
+RUN qwen38-flash MBPP/311
+CALL qwen38-flash generation MBPP/311 attempt=1
+RUN qwen38-flash MBPP/312
+CALL qwen38-flash generation MBPP/312 attempt=1
+RUN qwen38-flash MBPP/313
+CALL qwen38-flash generation MBPP/313 attempt=1
+CALL qwen38-flash selfcheck MBPP/313 attempt=1
+CALL qwen38-flash steelman MBPP/313 attempt=1
+CALL qwen38-flash steelman MBPP/312 attempt=1
+CALL qwen38-flash selfcheck MBPP/312 attempt=1
+RUN qwen38-flash MBPP/314
+CALL qwen38-flash generation MBPP/314 attempt=1
+RUN qwen38-flash MBPP/315
+CALL qwen38-flash generation MBPP/315 attempt=1
+RUN qwen38-flash MBPP/316
+CALL qwen38-flash generation MBPP/316 attempt=1
+RUN qwen38-flash MBPP/317
+CALL qwen38-flash generation MBPP/317 attempt=1
+CALL qwen38-flash selfcheck MBPP/316 attempt=1
+CALL qwen38-flash steelman MBPP/316 attempt=1
+RUN qwen38-flash MBPP/319
+CALL qwen38-flash generation MBPP/319 attempt=1
+RUN qwen38-flash MBPP/320
+CALL qwen38-flash generation MBPP/320 attempt=1
+CALL qwen38-flash steelman MBPP/320 attempt=1
+CALL qwen38-flash selfcheck MBPP/320 attempt=1
+CALL qwen38-flash steelman MBPP/319 attempt=1
+CALL qwen38-flash selfcheck MBPP/319 attempt=1
+RUN qwen38-flash MBPP/321
+CALL qwen38-flash generation MBPP/321 attempt=1
+RUN qwen38-flash MBPP/322
+CALL qwen38-flash generation MBPP/322 attempt=1
+CALL qwen38-flash steelman MBPP/322 attempt=1
+CALL qwen38-flash selfcheck MBPP/322 attempt=1
+RUN qwen38-flash MBPP/323
+CALL qwen38-flash generation MBPP/323 attempt=1
+RUN qwen38-flash MBPP/324
+CALL qwen38-flash generation MBPP/324 attempt=1
+CALL qwen38-flash selfcheck MBPP/311 attempt=1
+CALL qwen38-flash steelman MBPP/311 attempt=1
+CALL qwen38-flash steelman MBPP/315 attempt=1
+CALL qwen38-flash selfcheck MBPP/315 attempt=1
+RUN qwen38-flash MBPP/325
+CALL qwen38-flash generation MBPP/325 attempt=1
+CALL qwen38-flash selfcheck MBPP/304 attempt=1
+CALL qwen38-flash steelman MBPP/304 attempt=1
+RUN qwen38-flash MBPP/326
+CALL qwen38-flash generation MBPP/326 attempt=1
+CALL qwen38-flash selfcheck MBPP/326 attempt=1
+CALL qwen38-flash steelman MBPP/326 attempt=1
+CALL qwen38-flash selfcheck MBPP/325 attempt=1
+CALL qwen38-flash steelman MBPP/325 attempt=1
+RUN qwen38-flash MBPP/327
+CALL qwen38-flash generation MBPP/327 attempt=1
+RUN qwen38-flash MBPP/328
+CALL qwen38-flash generation MBPP/328 attempt=1
+CALL qwen38-flash selfcheck MBPP/327 attempt=1
+CALL qwen38-flash steelman MBPP/327 attempt=1
+CALL qwen38-flash selfcheck MBPP/328 attempt=1
+CALL qwen38-flash steelman MBPP/328 attempt=1
+RUN qwen38-flash MBPP/329
+CALL qwen38-flash generation MBPP/329 attempt=1
+CALL qwen38-flash selfcheck MBPP/329 attempt=1
+CALL qwen38-flash steelman MBPP/329 attempt=1
+RUN qwen38-flash MBPP/330
+CALL qwen38-flash generation MBPP/330 attempt=1
+CALL qwen38-flash selfcheck MBPP/330 attempt=1
+CALL qwen38-flash steelman MBPP/330 attempt=1
+RUN qwen38-flash MBPP/331
+CALL qwen38-flash generation MBPP/331 attempt=1
+RUN qwen38-flash MBPP/332
+CALL qwen38-flash generation MBPP/332 attempt=1
+CALL qwen38-flash selfcheck MBPP/331 attempt=1
+CALL qwen38-flash steelman MBPP/331 attempt=1
+CALL qwen38-flash selfcheck MBPP/332 attempt=1
+CALL qwen38-flash steelman MBPP/332 attempt=1
+RUN qwen38-flash MBPP/333
+CALL qwen38-flash generation MBPP/333 attempt=1
+CALL qwen38-flash steelman MBPP/333 attempt=1
+CALL qwen38-flash selfcheck MBPP/333 attempt=1
+RUN qwen38-flash MBPP/334
+CALL qwen38-flash generation MBPP/334 attempt=1
+CALL qwen38-flash selfcheck MBPP/334 attempt=1
+CALL qwen38-flash steelman MBPP/334 attempt=1
+CALL qwen38-flash selfcheck MBPP/323 attempt=1
+CALL qwen38-flash steelman MBPP/323 attempt=1
+RUN qwen38-flash MBPP/335
+CALL qwen38-flash generation MBPP/335 attempt=1
+RUN qwen38-flash MBPP/336
+CALL qwen38-flash generation MBPP/336 attempt=1
+RUN qwen38-flash MBPP/337
+CALL qwen38-flash generation MBPP/337 attempt=1
+RUN qwen38-flash MBPP/338
+CALL qwen38-flash generation MBPP/338 attempt=1
+RUN qwen38-flash MBPP/339
+CALL qwen38-flash generation MBPP/339 attempt=1
+CALL qwen38-flash selfcheck MBPP/338 attempt=1
+CALL qwen38-flash steelman MBPP/338 attempt=1
+CALL qwen38-flash selfcheck MBPP/336 attempt=1
+CALL qwen38-flash steelman MBPP/336 attempt=1
+CALL qwen38-flash selfcheck MBPP/335 attempt=1
+CALL qwen38-flash steelman MBPP/335 attempt=1
+RUN qwen38-flash MBPP/340
+CALL qwen38-flash generation MBPP/340 attempt=1
+CALL qwen38-flash steelman MBPP/340 attempt=1
+CALL qwen38-flash selfcheck MBPP/340 attempt=1
+CALL qwen38-flash selfcheck MBPP/314 attempt=1
+CALL qwen38-flash steelman MBPP/314 attempt=1
+RUN qwen38-flash MBPP/341
+CALL qwen38-flash generation MBPP/341 attempt=1
+RUN qwen38-flash MBPP/342
+CALL qwen38-flash generation MBPP/342 attempt=1
+CALL qwen38-flash selfcheck MBPP/341 attempt=1
+CALL qwen38-flash steelman MBPP/341 attempt=1
+CALL qwen38-flash selfcheck MBPP/321 attempt=1
+CALL qwen38-flash steelman MBPP/321 attempt=1
+RUN qwen38-flash MBPP/343
+CALL qwen38-flash generation MBPP/343 attempt=1
+RUN qwen38-flash MBPP/344
+CALL qwen38-flash generation MBPP/344 attempt=1
+CALL qwen38-flash steelman MBPP/343 attempt=1
+CALL qwen38-flash selfcheck MBPP/343 attempt=1
+CALL qwen38-flash selfcheck MBPP/344 attempt=1
+CALL qwen38-flash steelman MBPP/344 attempt=1
+RUN qwen38-flash MBPP/345
+CALL qwen38-flash generation MBPP/345 attempt=1
+CALL qwen38-flash selfcheck MBPP/337 attempt=1
+CALL qwen38-flash steelman MBPP/337 attempt=1
+CALL qwen38-flash steelman MBPP/345 attempt=1
+CALL qwen38-flash selfcheck MBPP/345 attempt=1
+CALL qwen38-flash selfcheck MBPP/260 attempt=1
+CALL qwen38-flash steelman MBPP/260 attempt=1
+CALL qwen38-flash steelman MBPP/324 attempt=1
+CALL qwen38-flash selfcheck MBPP/324 attempt=1
+RUN qwen38-flash MBPP/346
+CALL qwen38-flash generation MBPP/346 attempt=1
+CALL qwen38-flash steelman MBPP/342 attempt=1
+CALL qwen38-flash selfcheck MBPP/342 attempt=1
+RUN qwen38-flash MBPP/347
+CALL qwen38-flash generation MBPP/347 attempt=1
+RUN qwen38-flash MBPP/348
+CALL qwen38-flash generation MBPP/348 attempt=1
+CALL qwen38-flash selfcheck MBPP/347 attempt=1
+CALL qwen38-flash steelman MBPP/347 attempt=1
+RUN qwen38-flash MBPP/349
+CALL qwen38-flash generation MBPP/349 attempt=1
+RUN qwen38-flash MBPP/350
+CALL qwen38-flash generation MBPP/350 attempt=1
+CALL qwen38-flash selfcheck MBPP/349 attempt=1
+CALL qwen38-flash steelman MBPP/349 attempt=1
+CALL qwen38-flash selfcheck MBPP/350 attempt=1
+CALL qwen38-flash steelman MBPP/350 attempt=1
+RUN qwen38-flash MBPP/351
+CALL qwen38-flash generation MBPP/351 attempt=1
+RUN qwen38-flash MBPP/352
+CALL qwen38-flash generation MBPP/352 attempt=1
+RUN qwen38-flash MBPP/353
+CALL qwen38-flash generation MBPP/353 attempt=1
+CALL qwen38-flash selfcheck MBPP/352 attempt=1
+CALL qwen38-flash steelman MBPP/352 attempt=1
+RUN qwen38-flash MBPP/354
+CALL qwen38-flash generation MBPP/354 attempt=1
+CALL qwen38-flash steelman MBPP/306 attempt=1
+CALL qwen38-flash selfcheck MBPP/306 attempt=1
+CALL qwen38-flash selfcheck MBPP/351 attempt=1
+CALL qwen38-flash steelman MBPP/351 attempt=1
+RUN qwen38-flash MBPP/355
+CALL qwen38-flash generation MBPP/355 attempt=1
+RUN qwen38-flash MBPP/356
+CALL qwen38-flash generation MBPP/356 attempt=1
+CALL qwen38-flash selfcheck MBPP/356 attempt=1
+CALL qwen38-flash steelman MBPP/356 attempt=1
+CALL qwen38-flash steelman MBPP/354 attempt=1
+CALL qwen38-flash selfcheck MBPP/354 attempt=1
+RUN qwen38-flash MBPP/357
+CALL qwen38-flash generation MBPP/357 attempt=1
+RUN qwen38-flash MBPP/358
+CALL qwen38-flash generation MBPP/358 attempt=1
+CALL qwen38-flash steelman MBPP/357 attempt=1
+CALL qwen38-flash selfcheck MBPP/357 attempt=1
+CALL qwen38-flash selfcheck MBPP/358 attempt=1
+CALL qwen38-flash steelman MBPP/358 attempt=1
+RUN qwen38-flash MBPP/359
+CALL qwen38-flash generation MBPP/359 attempt=1
+RUN qwen38-flash MBPP/360
+CALL qwen38-flash generation MBPP/360 attempt=1
+CALL qwen38-flash steelman MBPP/353 attempt=1
+CALL qwen38-flash selfcheck MBPP/353 attempt=1
+RUN qwen38-flash MBPP/361
+CALL qwen38-flash generation MBPP/361 attempt=1
+CALL qwen38-flash selfcheck MBPP/361 attempt=1
+CALL qwen38-flash steelman MBPP/361 attempt=1
+RUN qwen38-flash MBPP/362
+CALL qwen38-flash generation MBPP/362 attempt=1
+RUN qwen38-flash MBPP/363
+CALL qwen38-flash generation MBPP/363 attempt=1
+RUN qwen38-flash MBPP/364
+CALL qwen38-flash generation MBPP/364 attempt=1
+CALL qwen38-flash steelman MBPP/362 attempt=1
+CALL qwen38-flash selfcheck MBPP/362 attempt=1
+CALL qwen38-flash selfcheck MBPP/364 attempt=1
+CALL qwen38-flash steelman MBPP/364 attempt=1
+RUN qwen38-flash MBPP/365
+CALL qwen38-flash generation MBPP/365 attempt=1
+CALL qwen38-flash selfcheck MBPP/365 attempt=1
+CALL qwen38-flash steelman MBPP/365 attempt=1
+CALL qwen38-flash selfcheck MBPP/363 attempt=1
+CALL qwen38-flash steelman MBPP/363 attempt=1
+RUN qwen38-flash MBPP/366
+CALL qwen38-flash generation MBPP/366 attempt=1
+RUN qwen38-flash MBPP/367
+CALL qwen38-flash generation MBPP/367 attempt=1
+CALL qwen38-flash selfcheck MBPP/367 attempt=1
+CALL qwen38-flash steelman MBPP/367 attempt=1
+RUN qwen38-flash MBPP/368
+CALL qwen38-flash generation MBPP/368 attempt=1
+CALL qwen38-flash steelman MBPP/368 attempt=1
+CALL qwen38-flash selfcheck MBPP/368 attempt=1
+CALL qwen38-flash selfcheck MBPP/366 attempt=1
+CALL qwen38-flash steelman MBPP/366 attempt=1
+RUN qwen38-flash MBPP/369
+CALL qwen38-flash generation MBPP/369 attempt=1
+RUN qwen38-flash MBPP/370
+CALL qwen38-flash generation MBPP/370 attempt=1
+CALL qwen38-flash steelman MBPP/369 attempt=1
+CALL qwen38-flash selfcheck MBPP/369 attempt=1
+RUN qwen38-flash MBPP/371
+CALL qwen38-flash generation MBPP/371 attempt=1
+RUN qwen38-flash MBPP/372
+CALL qwen38-flash generation MBPP/372 attempt=1
+CALL qwen38-flash selfcheck MBPP/359 attempt=1
+CALL qwen38-flash steelman MBPP/359 attempt=1
+CALL qwen38-flash selfcheck MBPP/371 attempt=1
+CALL qwen38-flash steelman MBPP/371 attempt=1
+CALL qwen38-flash selfcheck MBPP/372 attempt=1
+CALL qwen38-flash steelman MBPP/372 attempt=1
+RUN qwen38-flash MBPP/373
+CALL qwen38-flash generation MBPP/373 attempt=1
+CALL qwen38-flash selfcheck MBPP/373 attempt=1
+CALL qwen38-flash steelman MBPP/373 attempt=1
+RUN qwen38-flash MBPP/374
+CALL qwen38-flash generation MBPP/374 attempt=1
+CALL qwen38-flash selfcheck MBPP/374 attempt=1
+CALL qwen38-flash steelman MBPP/374 attempt=1
+RUN qwen38-flash MBPP/375
+CALL qwen38-flash generation MBPP/375 attempt=1
+CALL qwen38-flash steelman MBPP/317 attempt=1
+CALL qwen38-flash selfcheck MBPP/317 attempt=1
+CALL qwen38-flash selfcheck MBPP/346 attempt=1
+CALL qwen38-flash steelman MBPP/346 attempt=1
+CALL qwen38-flash selfcheck MBPP/339 attempt=1
+CALL qwen38-flash steelman MBPP/339 attempt=1
+CALL qwen38-flash selfcheck MBPP/375 attempt=1
+CALL qwen38-flash steelman MBPP/375 attempt=1
+RUN qwen38-flash MBPP/376
+CALL qwen38-flash generation MBPP/376 attempt=1
+RUN qwen38-flash MBPP/377
+CALL qwen38-flash generation MBPP/377 attempt=1
+CALL qwen38-flash steelman MBPP/377 attempt=1
+CALL qwen38-flash selfcheck MBPP/377 attempt=1
+RUN qwen38-flash MBPP/378
+CALL qwen38-flash generation MBPP/378 attempt=1
+CALL qwen38-flash selfcheck MBPP/378 attempt=1
+CALL qwen38-flash steelman MBPP/378 attempt=1
+RUN qwen38-flash MBPP/379
+CALL qwen38-flash generation MBPP/379 attempt=1
+CALL qwen38-flash selfcheck MBPP/379 attempt=1
+CALL qwen38-flash steelman MBPP/379 attempt=1
+RUN qwen38-flash MBPP/380
+CALL qwen38-flash generation MBPP/380 attempt=1
+CALL qwen38-flash selfcheck MBPP/355 attempt=1
+CALL qwen38-flash steelman MBPP/355 attempt=1
+RUN qwen38-flash MBPP/381
+CALL qwen38-flash generation MBPP/381 attempt=1
+RUN qwen38-flash MBPP/382
+CALL qwen38-flash generation MBPP/382 attempt=1
+CALL qwen38-flash selfcheck MBPP/381 attempt=1
+CALL qwen38-flash steelman MBPP/381 attempt=1
+RUN qwen38-flash MBPP/383
+CALL qwen38-flash generation MBPP/383 attempt=1
+CALL qwen38-flash selfcheck MBPP/380 attempt=1
+CALL qwen38-flash steelman MBPP/380 attempt=1
+RUN qwen38-flash MBPP/384
+CALL qwen38-flash generation MBPP/384 attempt=1
+CALL qwen38-flash selfcheck MBPP/384 attempt=1
+CALL qwen38-flash steelman MBPP/384 attempt=1
+CALL qwen38-flash selfcheck MBPP/376 attempt=1
+CALL qwen38-flash steelman MBPP/376 attempt=1
+CALL qwen38-flash steelman MBPP/348 attempt=1
+CALL qwen38-flash selfcheck MBPP/348 attempt=1
+CALL qwen38-flash steelman MBPP/370 attempt=1
+CALL qwen38-flash selfcheck MBPP/370 attempt=1
+RUN qwen38-flash MBPP/385
+CALL qwen38-flash generation MBPP/385 attempt=1
+RUN qwen38-flash MBPP/386
+CALL qwen38-flash generation MBPP/386 attempt=1
+CALL qwen38-flash selfcheck MBPP/360 attempt=1
+CALL qwen38-flash steelman MBPP/360 attempt=1
+RUN qwen38-flash MBPP/387
+CALL qwen38-flash generation MBPP/387 attempt=1
+CALL qwen38-flash selfcheck MBPP/385 attempt=1
+CALL qwen38-flash steelman MBPP/385 attempt=1
+RUN qwen38-flash MBPP/388
+CALL qwen38-flash generation MBPP/388 attempt=1
+CALL qwen38-flash selfcheck MBPP/388 attempt=1
+CALL qwen38-flash steelman MBPP/388 attempt=1
+RUN qwen38-flash MBPP/389
+CALL qwen38-flash generation MBPP/389 attempt=1
+RUN qwen38-flash MBPP/390
+CALL qwen38-flash generation MBPP/390 attempt=1
+CALL qwen38-flash steelman MBPP/387 attempt=1
+CALL qwen38-flash selfcheck MBPP/387 attempt=1
+CALL qwen38-flash steelman MBPP/389 attempt=1
+CALL qwen38-flash selfcheck MBPP/389 attempt=1
+CALL qwen38-flash selfcheck MBPP/390 attempt=1
+CALL qwen38-flash steelman MBPP/390 attempt=1
+RUN qwen38-flash MBPP/391
+CALL qwen38-flash generation MBPP/391 attempt=1
+RUN qwen38-flash MBPP/393
+CALL qwen38-flash generation MBPP/393 attempt=1
+CALL qwen38-flash selfcheck MBPP/383 attempt=1
+CALL qwen38-flash steelman MBPP/383 attempt=1
+CALL qwen38-flash selfcheck MBPP/393 attempt=1
+CALL qwen38-flash steelman MBPP/393 attempt=1
+RUN qwen38-flash MBPP/394
+CALL qwen38-flash generation MBPP/394 attempt=1
+RUN qwen38-flash MBPP/395
+CALL qwen38-flash generation MBPP/395 attempt=1
+CALL qwen38-flash selfcheck MBPP/394 attempt=1
+CALL qwen38-flash steelman MBPP/394 attempt=1
+CALL qwen38-flash selfcheck MBPP/395 attempt=1
+CALL qwen38-flash steelman MBPP/395 attempt=1
+CALL qwen38-flash steelman MBPP/382 attempt=1
+CALL qwen38-flash selfcheck MBPP/382 attempt=1
+RUN qwen38-flash MBPP/396
+CALL qwen38-flash generation MBPP/396 attempt=1
+RUN qwen38-flash MBPP/397
+CALL qwen38-flash generation MBPP/397 attempt=1
+CALL qwen38-flash steelman MBPP/397 attempt=1
+CALL qwen38-flash selfcheck MBPP/397 attempt=1
+CALL qwen38-flash selfcheck MBPP/396 attempt=1
+CALL qwen38-flash steelman MBPP/396 attempt=1
+RUN qwen38-flash MBPP/398
+CALL qwen38-flash generation MBPP/398 attempt=1
+CALL qwen38-flash selfcheck MBPP/398 attempt=1
+CALL qwen38-flash steelman MBPP/398 attempt=1
+RUN qwen38-flash MBPP/399
+CALL qwen38-flash generation MBPP/399 attempt=1
+RUN qwen38-flash MBPP/400
+CALL qwen38-flash generation MBPP/400 attempt=1
+RUN qwen38-flash MBPP/401
+CALL qwen38-flash generation MBPP/401 attempt=1
+CALL qwen38-flash selfcheck MBPP/401 attempt=1
+CALL qwen38-flash steelman MBPP/401 attempt=1
+RUN qwen38-flash MBPP/402
+CALL qwen38-flash generation MBPP/402 attempt=1
+CALL qwen38-flash selfcheck MBPP/400 attempt=1
+CALL qwen38-flash steelman MBPP/400 attempt=1
+RUN qwen38-flash MBPP/404
+CALL qwen38-flash generation MBPP/404 attempt=1
+RUN qwen38-flash MBPP/405
+CALL qwen38-flash generation MBPP/405 attempt=1
+CALL qwen38-flash selfcheck MBPP/404 attempt=1
+CALL qwen38-flash steelman MBPP/404 attempt=1
+CALL qwen38-flash selfcheck MBPP/405 attempt=1
+CALL qwen38-flash steelman MBPP/405 attempt=1
+RUN qwen38-flash MBPP/406
+CALL qwen38-flash generation MBPP/406 attempt=1
+RUN qwen38-flash MBPP/407
+CALL qwen38-flash generation MBPP/407 attempt=1
+CALL qwen38-flash selfcheck MBPP/406 attempt=1
+CALL qwen38-flash steelman MBPP/406 attempt=1
+CALL qwen38-flash selfcheck MBPP/407 attempt=1
+CALL qwen38-flash steelman MBPP/407 attempt=1
+RUN qwen38-flash MBPP/408
+CALL qwen38-flash generation MBPP/408 attempt=1
+RUN qwen38-flash MBPP/409
+CALL qwen38-flash generation MBPP/409 attempt=1
+CALL qwen38-flash selfcheck MBPP/409 attempt=1
+CALL qwen38-flash steelman MBPP/409 attempt=1
+RUN qwen38-flash MBPP/410
+CALL qwen38-flash generation MBPP/410 attempt=1
+CALL qwen38-flash selfcheck MBPP/386 attempt=1
+CALL qwen38-flash steelman MBPP/386 attempt=1
+RUN qwen38-flash MBPP/411
+CALL qwen38-flash generation MBPP/411 attempt=1
+RUN qwen38-flash MBPP/412
+CALL qwen38-flash generation MBPP/412 attempt=1
+CALL qwen38-flash selfcheck MBPP/412 attempt=1
+CALL qwen38-flash steelman MBPP/412 attempt=1
+RUN qwen38-flash MBPP/413
+CALL qwen38-flash generation MBPP/413 attempt=1
+CALL qwen38-flash selfcheck MBPP/413 attempt=1
+CALL qwen38-flash steelman MBPP/413 attempt=1
+RUN qwen38-flash MBPP/414
+CALL qwen38-flash generation MBPP/414 attempt=1
+RUN qwen38-flash MBPP/415
+CALL qwen38-flash generation MBPP/415 attempt=1
+RUN qwen38-flash MBPP/416
+CALL qwen38-flash generation MBPP/416 attempt=1
+CALL qwen38-flash selfcheck MBPP/410 attempt=1
+CALL qwen38-flash steelman MBPP/410 attempt=1
+CALL qwen38-flash selfcheck MBPP/414 attempt=1
+CALL qwen38-flash steelman MBPP/414 attempt=1
+CALL qwen38-flash selfcheck MBPP/391 attempt=1
+CALL qwen38-flash steelman MBPP/391 attempt=1
+RUN qwen38-flash MBPP/417
+CALL qwen38-flash generation MBPP/417 attempt=1
+CALL qwen38-flash steelman MBPP/417 attempt=1
+CALL qwen38-flash selfcheck MBPP/417 attempt=1
+CALL qwen38-flash selfcheck MBPP/399 attempt=1
+CALL qwen38-flash steelman MBPP/399 attempt=1
+CALL qwen38-flash selfcheck MBPP/415 attempt=1
+CALL qwen38-flash steelman MBPP/415 attempt=1
+CALL qwen38-flash selfcheck MBPP/416 attempt=1
+CALL qwen38-flash steelman MBPP/416 attempt=1
+RUN qwen38-flash MBPP/418
+CALL qwen38-flash generation MBPP/418 attempt=1
+CALL qwen38-flash selfcheck MBPP/418 attempt=1
+CALL qwen38-flash steelman MBPP/418 attempt=1
+RUN qwen38-flash MBPP/419
+CALL qwen38-flash generation MBPP/419 attempt=1
+CALL qwen38-flash selfcheck MBPP/419 attempt=1
+CALL qwen38-flash steelman MBPP/419 attempt=1
+CALL qwen38-flash selfcheck MBPP/408 attempt=1
+CALL qwen38-flash steelman MBPP/408 attempt=1
+RUN qwen38-flash MBPP/420
+CALL qwen38-flash generation MBPP/420 attempt=1
+RUN qwen38-flash MBPP/421
+CALL qwen38-flash generation MBPP/421 attempt=1
+CALL qwen38-flash selfcheck MBPP/421 attempt=1
+CALL qwen38-flash steelman MBPP/421 attempt=1
+RUN qwen38-flash MBPP/422
+CALL qwen38-flash generation MBPP/422 attempt=1
+CALL qwen38-flash selfcheck MBPP/420 attempt=1
+CALL qwen38-flash steelman MBPP/420 attempt=1
+RUN qwen38-flash MBPP/423
+CALL qwen38-flash generation MBPP/423 attempt=1
+RUN qwen38-flash MBPP/424
+CALL qwen38-flash generation MBPP/424 attempt=1
+CALL qwen38-flash selfcheck MBPP/422 attempt=1
+CALL qwen38-flash steelman MBPP/422 attempt=1
+CALL qwen38-flash selfcheck MBPP/424 attempt=1
+CALL qwen38-flash steelman MBPP/424 attempt=1
+RUN qwen38-flash MBPP/425
+CALL qwen38-flash generation MBPP/425 attempt=1
+RUN qwen38-flash MBPP/426
+CALL qwen38-flash generation MBPP/426 attempt=1
+RUN qwen38-flash MBPP/427
+CALL qwen38-flash generation MBPP/427 attempt=1
+CALL qwen38-flash steelman MBPP/426 attempt=1
+CALL qwen38-flash selfcheck MBPP/426 attempt=1
+CALL qwen38-flash selfcheck MBPP/427 attempt=1
+CALL qwen38-flash steelman MBPP/427 attempt=1
+CALL qwen38-flash selfcheck MBPP/423 attempt=1
+CALL qwen38-flash steelman MBPP/423 attempt=1
+RUN qwen38-flash MBPP/428
+CALL qwen38-flash generation MBPP/428 attempt=1
+CALL qwen38-flash selfcheck MBPP/428 attempt=1
+CALL qwen38-flash steelman MBPP/428 attempt=1
+RUN qwen38-flash MBPP/429
+CALL qwen38-flash generation MBPP/429 attempt=1
+RUN qwen38-flash MBPP/430
+CALL qwen38-flash generation MBPP/430 attempt=1
+RUN qwen38-flash MBPP/431
+CALL qwen38-flash generation MBPP/431 attempt=1
+CALL qwen38-flash selfcheck MBPP/431 attempt=1
+CALL qwen38-flash steelman MBPP/431 attempt=1
+CALL qwen38-flash steelman MBPP/411 attempt=1
+CALL qwen38-flash selfcheck MBPP/411 attempt=1
+RUN qwen38-flash MBPP/432
+CALL qwen38-flash generation MBPP/432 attempt=1
+CALL qwen38-flash selfcheck MBPP/425 attempt=1
+CALL qwen38-flash steelman MBPP/425 attempt=1
+RUN qwen38-flash MBPP/433
+CALL qwen38-flash generation MBPP/433 attempt=1
+CALL qwen38-flash selfcheck MBPP/432 attempt=1
+CALL qwen38-flash steelman MBPP/432 attempt=1
+CALL qwen38-flash selfcheck MBPP/429 attempt=1
+CALL qwen38-flash steelman MBPP/429 attempt=1
+CALL qwen38-flash selfcheck MBPP/433 attempt=1
+CALL qwen38-flash steelman MBPP/433 attempt=1
+RUN qwen38-flash MBPP/434
+CALL qwen38-flash generation MBPP/434 attempt=1
+RUN qwen38-flash MBPP/435
+CALL qwen38-flash generation MBPP/435 attempt=1
+RUN qwen38-flash MBPP/436
+CALL qwen38-flash generation MBPP/436 attempt=1
+CALL qwen38-flash selfcheck MBPP/435 attempt=1
+CALL qwen38-flash steelman MBPP/435 attempt=1
+RUN qwen38-flash MBPP/437
+CALL qwen38-flash generation MBPP/437 attempt=1
+CALL qwen38-flash selfcheck MBPP/436 attempt=1
+CALL qwen38-flash steelman MBPP/436 attempt=1
+RUN qwen38-flash MBPP/438
+CALL qwen38-flash generation MBPP/438 attempt=1
+CALL qwen38-flash selfcheck MBPP/402 attempt=1
+CALL qwen38-flash steelman MBPP/402 attempt=1
+RUN qwen38-flash MBPP/439
+CALL qwen38-flash generation MBPP/439 attempt=1
+RUN qwen38-flash MBPP/440
+CALL qwen38-flash generation MBPP/440 attempt=1
+CALL qwen38-flash selfcheck MBPP/434 attempt=1
+CALL qwen38-flash steelman MBPP/434 attempt=1
+CALL qwen38-flash selfcheck MBPP/439 attempt=1
+CALL qwen38-flash steelman MBPP/439 attempt=1
+CALL qwen38-flash selfcheck MBPP/437 attempt=1
+CALL qwen38-flash steelman MBPP/437 attempt=1
+RUN qwen38-flash MBPP/441
+CALL qwen38-flash generation MBPP/441 attempt=1
+CALL qwen38-flash steelman MBPP/441 attempt=1
+CALL qwen38-flash selfcheck MBPP/441 attempt=1
+RUN qwen38-flash MBPP/442
+CALL qwen38-flash generation MBPP/442 attempt=1
+CALL qwen38-flash steelman MBPP/442 attempt=1
+CALL qwen38-flash selfcheck MBPP/442 attempt=1
+RUN qwen38-flash MBPP/443
+CALL qwen38-flash generation MBPP/443 attempt=1
+CALL qwen38-flash selfcheck MBPP/443 attempt=1
+CALL qwen38-flash steelman MBPP/443 attempt=1
+RUN qwen38-flash MBPP/444
+CALL qwen38-flash generation MBPP/444 attempt=1
+RUN qwen38-flash MBPP/445
+CALL qwen38-flash generation MBPP/445 attempt=1
+CALL qwen38-flash selfcheck MBPP/445 attempt=1
+CALL qwen38-flash steelman MBPP/445 attempt=1
+RUN qwen38-flash MBPP/446
+CALL qwen38-flash generation MBPP/446 attempt=1
+RUN qwen38-flash MBPP/447
+CALL qwen38-flash generation MBPP/447 attempt=1
+CALL qwen38-flash selfcheck MBPP/447 attempt=1
+CALL qwen38-flash steelman MBPP/447 attempt=1
+RUN qwen38-flash MBPP/448
+CALL qwen38-flash generation MBPP/448 attempt=1
+RUN qwen38-flash MBPP/449
+CALL qwen38-flash generation MBPP/449 attempt=1
+RUN qwen38-flash MBPP/450
+CALL qwen38-flash generation MBPP/450 attempt=1
+CALL qwen38-flash selfcheck MBPP/444 attempt=1
+CALL qwen38-flash steelman MBPP/444 attempt=1
+RUN qwen38-flash MBPP/451
+CALL qwen38-flash generation MBPP/451 attempt=1
+CALL qwen38-flash selfcheck MBPP/450 attempt=1
+CALL qwen38-flash steelman MBPP/450 attempt=1
+CALL qwen38-flash selfcheck MBPP/446 attempt=1
+CALL qwen38-flash steelman MBPP/446 attempt=1
+CALL qwen38-flash selfcheck MBPP/451 attempt=1
+CALL qwen38-flash steelman MBPP/451 attempt=1
+RUN qwen38-flash MBPP/452
+CALL qwen38-flash generation MBPP/452 attempt=1
+RUN qwen38-flash MBPP/453
+CALL qwen38-flash generation MBPP/453 attempt=1
+RUN qwen38-flash MBPP/454
+CALL qwen38-flash generation MBPP/454 attempt=1
+CALL qwen38-flash steelman MBPP/452 attempt=1
+CALL qwen38-flash selfcheck MBPP/452 attempt=1
+CALL qwen38-flash selfcheck MBPP/448 attempt=1
+CALL qwen38-flash steelman MBPP/448 attempt=1
+CALL qwen38-flash selfcheck MBPP/453 attempt=1
+CALL qwen38-flash steelman MBPP/453 attempt=1
+RUN qwen38-flash MBPP/455
+CALL qwen38-flash generation MBPP/455 attempt=1
+CALL qwen38-flash selfcheck MBPP/440 attempt=1
+CALL qwen38-flash steelman MBPP/440 attempt=1
+CALL qwen38-flash steelman MBPP/455 attempt=1
+CALL qwen38-flash selfcheck MBPP/455 attempt=1
+RUN qwen38-flash MBPP/456
+CALL qwen38-flash generation MBPP/456 attempt=1
+RUN qwen38-flash MBPP/457
+CALL qwen38-flash generation MBPP/457 attempt=1
+CALL qwen38-flash selfcheck MBPP/456 attempt=1
+CALL qwen38-flash steelman MBPP/456 attempt=1
+CALL qwen38-flash selfcheck MBPP/457 attempt=1
+CALL qwen38-flash steelman MBPP/457 attempt=1
+RUN qwen38-flash MBPP/458
+CALL qwen38-flash generation MBPP/458 attempt=1
+RUN qwen38-flash MBPP/459
+CALL qwen38-flash generation MBPP/459 attempt=1
+CALL qwen38-flash selfcheck MBPP/458 attempt=1
+CALL qwen38-flash steelman MBPP/458 attempt=1
+CALL qwen38-flash selfcheck MBPP/449 attempt=1
+CALL qwen38-flash steelman MBPP/449 attempt=1
+CALL qwen38-flash selfcheck MBPP/459 attempt=1
+CALL qwen38-flash steelman MBPP/459 attempt=1
+RUN qwen38-flash MBPP/460
+CALL qwen38-flash generation MBPP/460 attempt=1
+RUN qwen38-flash MBPP/461
+CALL qwen38-flash generation MBPP/461 attempt=1
+CALL qwen38-flash selfcheck MBPP/460 attempt=1
+CALL qwen38-flash steelman MBPP/460 attempt=1
+CALL qwen38-flash selfcheck MBPP/461 attempt=1
+CALL qwen38-flash steelman MBPP/461 attempt=1
+RUN qwen38-flash MBPP/462
+CALL qwen38-flash generation MBPP/462 attempt=1
+RUN qwen38-flash MBPP/463
+CALL qwen38-flash generation MBPP/463 attempt=1
+RUN qwen38-flash MBPP/464
+CALL qwen38-flash generation MBPP/464 attempt=1
+RUN qwen38-flash MBPP/465
+CALL qwen38-flash generation MBPP/465 attempt=1
+CALL qwen38-flash steelman MBPP/463 attempt=1
+CALL qwen38-flash selfcheck MBPP/463 attempt=1
+CALL qwen38-flash selfcheck MBPP/464 attempt=1
+CALL qwen38-flash steelman MBPP/464 attempt=1
+RUN qwen38-flash MBPP/466
+CALL qwen38-flash generation MBPP/466 attempt=1
+CALL qwen38-flash selfcheck MBPP/462 attempt=1
+CALL qwen38-flash steelman MBPP/462 attempt=1
+CALL qwen38-flash selfcheck MBPP/438 attempt=1
+CALL qwen38-flash steelman MBPP/438 attempt=1
+CALL qwen38-flash selfcheck MBPP/465 attempt=1
+CALL qwen38-flash steelman MBPP/465 attempt=1
+RUN qwen38-flash MBPP/467
+CALL qwen38-flash generation MBPP/467 attempt=1
+CALL qwen38-flash selfcheck MBPP/466 attempt=1
+CALL qwen38-flash steelman MBPP/466 attempt=1
+RUN qwen38-flash MBPP/468
+CALL qwen38-flash generation MBPP/468 attempt=1
+CALL qwen38-flash steelman MBPP/467 attempt=1
+CALL qwen38-flash selfcheck MBPP/467 attempt=1
+RUN qwen38-flash MBPP/469
+CALL qwen38-flash generation MBPP/469 attempt=1
+RUN qwen38-flash MBPP/470
+CALL qwen38-flash generation MBPP/470 attempt=1
+RUN qwen38-flash MBPP/471
+CALL qwen38-flash generation MBPP/471 attempt=1
+RUN qwen38-flash MBPP/472
+CALL qwen38-flash generation MBPP/472 attempt=1
+CALL qwen38-flash steelman MBPP/472 attempt=1
+CALL qwen38-flash selfcheck MBPP/472 attempt=1
+CALL qwen38-flash selfcheck MBPP/471 attempt=1
+CALL qwen38-flash steelman MBPP/471 attempt=1
+RUN qwen38-flash MBPP/473
+CALL qwen38-flash generation MBPP/473 attempt=1
+RUN qwen38-flash MBPP/474
+CALL qwen38-flash generation MBPP/474 attempt=1
+RUN qwen38-flash MBPP/475
+CALL qwen38-flash generation MBPP/475 attempt=1
+CALL qwen38-flash steelman MBPP/474 attempt=1
+CALL qwen38-flash selfcheck MBPP/474 attempt=1
+RUN qwen38-flash MBPP/476
+CALL qwen38-flash generation MBPP/476 attempt=1
+CALL qwen38-flash steelman MBPP/476 attempt=1
+CALL qwen38-flash selfcheck MBPP/476 attempt=1
+CALL qwen38-flash selfcheck MBPP/469 attempt=1
+CALL qwen38-flash steelman MBPP/469 attempt=1
+CALL qwen38-flash selfcheck MBPP/475 attempt=1
+CALL qwen38-flash steelman MBPP/475 attempt=1
+RUN qwen38-flash MBPP/477
+CALL qwen38-flash generation MBPP/477 attempt=1
+CALL qwen38-flash steelman MBPP/477 attempt=1
+CALL qwen38-flash selfcheck MBPP/477 attempt=1
+RUN qwen38-flash MBPP/478
+CALL qwen38-flash generation MBPP/478 attempt=1
+CALL qwen38-flash selfcheck MBPP/470 attempt=1
+CALL qwen38-flash steelman MBPP/470 attempt=1
+RUN qwen38-flash MBPP/479
+CALL qwen38-flash generation MBPP/479 attempt=1
+CALL qwen38-flash selfcheck MBPP/478 attempt=1
+CALL qwen38-flash steelman MBPP/478 attempt=1
+CALL qwen38-flash selfcheck MBPP/479 attempt=1
+CALL qwen38-flash steelman MBPP/479 attempt=1
+RUN qwen38-flash MBPP/480
+CALL qwen38-flash generation MBPP/480 attempt=1
+RUN qwen38-flash MBPP/481
+CALL qwen38-flash generation MBPP/481 attempt=1
+CALL qwen38-flash selfcheck MBPP/480 attempt=1
+CALL qwen38-flash steelman MBPP/480 attempt=1
+RUN qwen38-flash MBPP/482
+CALL qwen38-flash generation MBPP/482 attempt=1
+CALL qwen38-flash selfcheck MBPP/473 attempt=1
+CALL qwen38-flash steelman MBPP/473 attempt=1
+RUN qwen38-flash MBPP/483
+CALL qwen38-flash generation MBPP/483 attempt=1
+CALL qwen38-flash selfcheck MBPP/482 attempt=1
+CALL qwen38-flash steelman MBPP/482 attempt=1
+CALL qwen38-flash selfcheck MBPP/454 attempt=1
+CALL qwen38-flash steelman MBPP/454 attempt=1
+RUN qwen38-flash MBPP/484
+CALL qwen38-flash generation MBPP/484 attempt=1
+RUN qwen38-flash MBPP/485
+CALL qwen38-flash generation MBPP/485 attempt=1
+RUN qwen38-flash MBPP/486
+CALL qwen38-flash generation MBPP/486 attempt=1
+RUN qwen38-flash MBPP/487
+CALL qwen38-flash generation MBPP/487 attempt=1
+CALL qwen38-flash steelman MBPP/430 attempt=1
+CALL qwen38-flash selfcheck MBPP/430 attempt=1
+CALL qwen38-flash selfcheck MBPP/487 attempt=1
+CALL qwen38-flash steelman MBPP/487 attempt=1
+RUN qwen38-flash MBPP/488
+CALL qwen38-flash generation MBPP/488 attempt=1
+RUN qwen38-flash MBPP/489
+CALL qwen38-flash generation MBPP/489 attempt=1
+CALL qwen38-flash selfcheck MBPP/489 attempt=1
+CALL qwen38-flash steelman MBPP/489 attempt=1
+CALL qwen38-flash selfcheck MBPP/484 attempt=1
+CALL qwen38-flash steelman MBPP/484 attempt=1
+CALL qwen38-flash selfcheck MBPP/486 attempt=1
+CALL qwen38-flash steelman MBPP/486 attempt=1
+RUN qwen38-flash MBPP/490
+CALL qwen38-flash generation MBPP/490 attempt=1
+RUN qwen38-flash MBPP/491
+CALL qwen38-flash generation MBPP/491 attempt=1
+CALL qwen38-flash selfcheck MBPP/468 attempt=1
+CALL qwen38-flash steelman MBPP/468 attempt=1
+CALL qwen38-flash selfcheck MBPP/491 attempt=1
+CALL qwen38-flash steelman MBPP/491 attempt=1
+RUN qwen38-flash MBPP/492
+CALL qwen38-flash generation MBPP/492 attempt=1
+CALL qwen38-flash selfcheck MBPP/490 attempt=1
+CALL qwen38-flash steelman MBPP/490 attempt=1
+CALL qwen38-flash selfcheck MBPP/492 attempt=1
+CALL qwen38-flash steelman MBPP/492 attempt=1
+RUN qwen38-flash MBPP/493
+CALL qwen38-flash generation MBPP/493 attempt=1
+RUN qwen38-flash MBPP/494
+CALL qwen38-flash generation MBPP/494 attempt=1
+CALL qwen38-flash selfcheck MBPP/494 attempt=1
+CALL qwen38-flash steelman MBPP/494 attempt=1
+CALL qwen38-flash steelman MBPP/485 attempt=1
+CALL qwen38-flash selfcheck MBPP/485 attempt=1
+RUN qwen38-flash MBPP/495
+CALL qwen38-flash generation MBPP/495 attempt=1
+CALL qwen38-flash selfcheck MBPP/495 attempt=1
+CALL qwen38-flash steelman MBPP/495 attempt=1
+CALL qwen38-flash steelman MBPP/493 attempt=1
+CALL qwen38-flash selfcheck MBPP/493 attempt=1
+RUN qwen38-flash MBPP/496
+CALL qwen38-flash generation MBPP/496 attempt=1
+RUN qwen38-flash MBPP/497
+CALL qwen38-flash generation MBPP/497 attempt=1
+CALL qwen38-flash selfcheck MBPP/488 attempt=1
+CALL qwen38-flash steelman MBPP/488 attempt=1
+CALL qwen38-flash selfcheck MBPP/497 attempt=1
+CALL qwen38-flash steelman MBPP/497 attempt=1
+RUN qwen38-flash MBPP/498
+CALL qwen38-flash generation MBPP/498 attempt=1
+CALL qwen38-flash steelman MBPP/498 attempt=1
+CALL qwen38-flash selfcheck MBPP/498 attempt=1
+RUN qwen38-flash MBPP/499
+CALL qwen38-flash generation MBPP/499 attempt=1
+RUN qwen38-flash MBPP/500
+CALL qwen38-flash generation MBPP/500 attempt=1
+CALL qwen38-flash selfcheck MBPP/499 attempt=1
+CALL qwen38-flash steelman MBPP/499 attempt=1
+RUN qwen38-flash MBPP/501
+CALL qwen38-flash generation MBPP/501 attempt=1
+CALL qwen38-flash selfcheck MBPP/481 attempt=1
+CALL qwen38-flash steelman MBPP/481 attempt=1
+CALL qwen38-flash selfcheck MBPP/500 attempt=1
+CALL qwen38-flash steelman MBPP/500 attempt=1
+RUN qwen38-flash MBPP/502
+CALL qwen38-flash generation MBPP/502 attempt=1
+CALL qwen38-flash steelman MBPP/502 attempt=1
+CALL qwen38-flash selfcheck MBPP/502 attempt=1
+CALL qwen38-flash steelman MBPP/496 attempt=1
+CALL qwen38-flash selfcheck MBPP/496 attempt=1
+RUN qwen38-flash MBPP/503
+CALL qwen38-flash generation MBPP/503 attempt=1
+RUN qwen38-flash MBPP/504
+CALL qwen38-flash generation MBPP/504 attempt=1
+CALL qwen38-flash steelman MBPP/501 attempt=1
+CALL qwen38-flash selfcheck MBPP/501 attempt=1
+CALL qwen38-flash selfcheck MBPP/503 attempt=1
+CALL qwen38-flash steelman MBPP/503 attempt=1
+CALL qwen38-flash selfcheck MBPP/504 attempt=1
+CALL qwen38-flash steelman MBPP/504 attempt=1
+RUN qwen38-flash MBPP/505
+CALL qwen38-flash generation MBPP/505 attempt=1
+CALL qwen38-flash selfcheck MBPP/505 attempt=1
+CALL qwen38-flash steelman MBPP/505 attempt=1
+RUN qwen38-flash MBPP/506
+CALL qwen38-flash generation MBPP/506 attempt=1
+CALL qwen38-flash selfcheck MBPP/506 attempt=1
+CALL qwen38-flash steelman MBPP/506 attempt=1
+RUN qwen38-flash MBPP/507
+CALL qwen38-flash generation MBPP/507 attempt=1
+CALL qwen38-flash selfcheck MBPP/507 attempt=1
+CALL qwen38-flash steelman MBPP/507 attempt=1
+RUN qwen38-flash MBPP/508
+CALL qwen38-flash generation MBPP/508 attempt=1
+RUN qwen38-flash MBPP/509
+CALL qwen38-flash generation MBPP/509 attempt=1
+RUN qwen38-flash MBPP/510
+CALL qwen38-flash generation MBPP/510 attempt=1
+RUN qwen38-flash MBPP/511
+CALL qwen38-flash generation MBPP/511 attempt=1
+CALL qwen38-flash selfcheck MBPP/509 attempt=1
+CALL qwen38-flash steelman MBPP/509 attempt=1
+RUN qwen38-flash MBPP/512
+CALL qwen38-flash generation MBPP/512 attempt=1
+RUN qwen38-flash MBPP/513
+CALL qwen38-flash generation MBPP/513 attempt=1
+CALL qwen38-flash selfcheck MBPP/513 attempt=1
+CALL qwen38-flash steelman MBPP/513 attempt=1
+CALL qwen38-flash selfcheck MBPP/483 attempt=1
+CALL qwen38-flash steelman MBPP/483 attempt=1
+CALL qwen38-flash selfcheck MBPP/512 attempt=1
+CALL qwen38-flash steelman MBPP/512 attempt=1
+RUN qwen38-flash MBPP/514
+CALL qwen38-flash generation MBPP/514 attempt=1
+CALL qwen38-flash selfcheck MBPP/514 attempt=1
+CALL qwen38-flash steelman MBPP/514 attempt=1
+CALL qwen38-flash selfcheck MBPP/511 attempt=1
+CALL qwen38-flash steelman MBPP/511 attempt=1
+RUN qwen38-flash MBPP/515
+CALL qwen38-flash generation MBPP/515 attempt=1
+RUN qwen38-flash MBPP/516
+CALL qwen38-flash generation MBPP/516 attempt=1
+RUN qwen38-flash MBPP/517
+CALL qwen38-flash generation MBPP/517 attempt=1
+CALL qwen38-flash selfcheck MBPP/517 attempt=1
+CALL qwen38-flash steelman MBPP/517 attempt=1
+RUN qwen38-flash MBPP/518
+CALL qwen38-flash generation MBPP/518 attempt=1
+RUN qwen38-flash MBPP/519
+CALL qwen38-flash generation MBPP/519 attempt=1
+CALL qwen38-flash selfcheck MBPP/508 attempt=1
+CALL qwen38-flash steelman MBPP/508 attempt=1
+CALL qwen38-flash steelman MBPP/518 attempt=1
+CALL qwen38-flash selfcheck MBPP/518 attempt=1
+RUN qwen38-flash MBPP/520
+CALL qwen38-flash generation MBPP/520 attempt=1
+CALL qwen38-flash steelman MBPP/520 attempt=1
+CALL qwen38-flash selfcheck MBPP/520 attempt=1
+RUN qwen38-flash MBPP/521
+CALL qwen38-flash generation MBPP/521 attempt=1
+RUN qwen38-flash MBPP/522
+CALL qwen38-flash generation MBPP/522 attempt=1
+CALL qwen38-flash steelman MBPP/515 attempt=1
+CALL qwen38-flash selfcheck MBPP/515 attempt=1
+CALL qwen38-flash selfcheck MBPP/522 attempt=1
+CALL qwen38-flash steelman MBPP/522 attempt=1
+RUN qwen38-flash MBPP/523
+CALL qwen38-flash generation MBPP/523 attempt=1
+RUN qwen38-flash MBPP/524
+CALL qwen38-flash generation MBPP/524 attempt=1
+CALL qwen38-flash selfcheck MBPP/523 attempt=1
+CALL qwen38-flash steelman MBPP/523 attempt=1
+RUN qwen38-flash MBPP/525
+CALL qwen38-flash generation MBPP/525 attempt=1
+CALL qwen38-flash selfcheck MBPP/521 attempt=1
+CALL qwen38-flash steelman MBPP/521 attempt=1
+RUN qwen38-flash MBPP/526
+CALL qwen38-flash generation MBPP/526 attempt=1
+RUN qwen38-flash MBPP/527
+CALL qwen38-flash generation MBPP/527 attempt=1
+CALL qwen38-flash selfcheck MBPP/527 attempt=1
+CALL qwen38-flash steelman MBPP/527 attempt=1
+RUN qwen38-flash MBPP/528
+CALL qwen38-flash generation MBPP/528 attempt=1
+CALL qwen38-flash selfcheck MBPP/528 attempt=1
+CALL qwen38-flash steelman MBPP/528 attempt=1
+RUN qwen38-flash MBPP/529
+CALL qwen38-flash generation MBPP/529 attempt=1
+RUN qwen38-flash MBPP/530
+CALL qwen38-flash generation MBPP/530 attempt=1
+CALL qwen38-flash selfcheck MBPP/530 attempt=1
+CALL qwen38-flash steelman MBPP/530 attempt=1
+RUN qwen38-flash MBPP/532
+CALL qwen38-flash generation MBPP/532 attempt=1
+CALL qwen38-flash selfcheck MBPP/529 attempt=1
+CALL qwen38-flash steelman MBPP/529 attempt=1
+CALL qwen38-flash selfcheck MBPP/532 attempt=1
+CALL qwen38-flash steelman MBPP/532 attempt=1
+RUN qwen38-flash MBPP/533
+CALL qwen38-flash generation MBPP/533 attempt=1
+CALL qwen38-flash steelman MBPP/526 attempt=1
+CALL qwen38-flash selfcheck MBPP/526 attempt=1
+CALL qwen38-flash steelman MBPP/533 attempt=1
+CALL qwen38-flash selfcheck MBPP/533 attempt=1
+RUN qwen38-flash MBPP/534
+CALL qwen38-flash generation MBPP/534 attempt=1
+CALL qwen38-flash selfcheck MBPP/524 attempt=1
+CALL qwen38-flash steelman MBPP/524 attempt=1
+RUN qwen38-flash MBPP/535
+CALL qwen38-flash generation MBPP/535 attempt=1
+RUN qwen38-flash MBPP/536
+CALL qwen38-flash generation MBPP/536 attempt=1
+CALL qwen38-flash selfcheck MBPP/516 attempt=1
+CALL qwen38-flash steelman MBPP/516 attempt=1
+CALL qwen38-flash selfcheck MBPP/535 attempt=1
+CALL qwen38-flash steelman MBPP/535 attempt=1
+CALL qwen38-flash selfcheck MBPP/534 attempt=1
+CALL qwen38-flash steelman MBPP/534 attempt=1
+CALL qwen38-flash selfcheck MBPP/536 attempt=1
+CALL qwen38-flash steelman MBPP/536 attempt=1
+RUN qwen38-flash MBPP/537
+CALL qwen38-flash generation MBPP/537 attempt=1
+RUN qwen38-flash MBPP/538
+CALL qwen38-flash generation MBPP/538 attempt=1
+CALL qwen38-flash steelman MBPP/537 attempt=1
+CALL qwen38-flash selfcheck MBPP/537 attempt=1
+CALL qwen38-flash selfcheck MBPP/538 attempt=1
+CALL qwen38-flash steelman MBPP/538 attempt=1
+RUN qwen38-flash MBPP/539
+CALL qwen38-flash generation MBPP/539 attempt=1
+RUN qwen38-flash MBPP/540
+CALL qwen38-flash generation MBPP/540 attempt=1
+RUN qwen38-flash MBPP/541
+CALL qwen38-flash generation MBPP/541 attempt=1
+CALL qwen38-flash selfcheck MBPP/541 attempt=1
+CALL qwen38-flash steelman MBPP/541 attempt=1
+CALL qwen38-flash selfcheck MBPP/540 attempt=1
+CALL qwen38-flash steelman MBPP/540 attempt=1
+RUN qwen38-flash MBPP/542
+CALL qwen38-flash generation MBPP/542 attempt=1
+CALL qwen38-flash selfcheck MBPP/542 attempt=1
+CALL qwen38-flash steelman MBPP/542 attempt=1
+RUN qwen38-flash MBPP/543
+CALL qwen38-flash generation MBPP/543 attempt=1
+RUN qwen38-flash MBPP/544
+CALL qwen38-flash generation MBPP/544 attempt=1
+CALL qwen38-flash selfcheck MBPP/543 attempt=1
+CALL qwen38-flash steelman MBPP/543 attempt=1
+CALL qwen38-flash selfcheck MBPP/539 attempt=1
+CALL qwen38-flash steelman MBPP/539 attempt=1
+RUN qwen38-flash MBPP/545
+CALL qwen38-flash generation MBPP/545 attempt=1
+CALL qwen38-flash selfcheck MBPP/544 attempt=1
+CALL qwen38-flash steelman MBPP/544 attempt=1
+RUN qwen38-flash MBPP/546
+CALL qwen38-flash generation MBPP/546 attempt=1
+CALL qwen38-flash selfcheck MBPP/546 attempt=1
+CALL qwen38-flash steelman MBPP/546 attempt=1
+RUN qwen38-flash MBPP/547
+CALL qwen38-flash generation MBPP/547 attempt=1
+RUN qwen38-flash MBPP/548
+CALL qwen38-flash generation MBPP/548 attempt=1
+RUN qwen38-flash MBPP/549
+CALL qwen38-flash generation MBPP/549 attempt=1
+RUN qwen38-flash MBPP/550
+CALL qwen38-flash generation MBPP/550 attempt=1
+CALL qwen38-flash selfcheck MBPP/548 attempt=1
+CALL qwen38-flash steelman MBPP/548 attempt=1
+RUN qwen38-flash MBPP/551
+CALL qwen38-flash generation MBPP/551 attempt=1
+RUN qwen38-flash MBPP/552
+CALL qwen38-flash generation MBPP/552 attempt=1
+RUN qwen38-flash MBPP/553
+CALL qwen38-flash generation MBPP/553 attempt=1
+CALL qwen38-flash selfcheck MBPP/551 attempt=1
+CALL qwen38-flash steelman MBPP/551 attempt=1
+CALL qwen38-flash selfcheck MBPP/545 attempt=1
+CALL qwen38-flash steelman MBPP/545 attempt=1
+CALL qwen38-flash selfcheck MBPP/552 attempt=1
+CALL qwen38-flash steelman MBPP/552 attempt=1
+CALL qwen38-flash selfcheck MBPP/547 attempt=1
+CALL qwen38-flash steelman MBPP/547 attempt=1
+RUN qwen38-flash MBPP/554
+CALL qwen38-flash generation MBPP/554 attempt=1
+CALL qwen38-flash selfcheck MBPP/519 attempt=1
+CALL qwen38-flash steelman MBPP/519 attempt=1
+RUN qwen38-flash MBPP/555
+CALL qwen38-flash generation MBPP/555 attempt=1
+CALL qwen38-flash steelman MBPP/554 attempt=1
+CALL qwen38-flash selfcheck MBPP/554 attempt=1
+CALL qwen38-flash selfcheck MBPP/549 attempt=1
+CALL qwen38-flash steelman MBPP/549 attempt=1
+CALL qwen38-flash selfcheck MBPP/555 attempt=1
+CALL qwen38-flash steelman MBPP/555 attempt=1
+RUN qwen38-flash MBPP/556
+CALL qwen38-flash generation MBPP/556 attempt=1
+RUN qwen38-flash MBPP/557
+CALL qwen38-flash generation MBPP/557 attempt=1
+CALL qwen38-flash selfcheck MBPP/550 attempt=1
+CALL qwen38-flash steelman MBPP/550 attempt=1
+CALL qwen38-flash selfcheck MBPP/557 attempt=1
+CALL qwen38-flash steelman MBPP/557 attempt=1
+CALL qwen38-flash selfcheck MBPP/556 attempt=1
+CALL qwen38-flash steelman MBPP/556 attempt=1
+CALL qwen38-flash selfcheck MBPP/553 attempt=1
+CALL qwen38-flash steelman MBPP/553 attempt=1
+RUN qwen38-flash MBPP/558
+CALL qwen38-flash generation MBPP/558 attempt=1
+RUN qwen38-flash MBPP/559
+CALL qwen38-flash generation MBPP/559 attempt=1
+RUN qwen38-flash MBPP/560
+CALL qwen38-flash generation MBPP/560 attempt=1
+RUN qwen38-flash MBPP/561
+CALL qwen38-flash generation MBPP/561 attempt=1
+CALL qwen38-flash selfcheck MBPP/559 attempt=1
+CALL qwen38-flash steelman MBPP/559 attempt=1
+RUN qwen38-flash MBPP/562
+CALL qwen38-flash generation MBPP/562 attempt=1
+CALL qwen38-flash selfcheck MBPP/562 attempt=1
+CALL qwen38-flash steelman MBPP/562 attempt=1
+RUN qwen38-flash MBPP/563
+CALL qwen38-flash generation MBPP/563 attempt=1
+RUN qwen38-flash MBPP/564
+CALL qwen38-flash generation MBPP/564 attempt=1
+RUN qwen38-flash MBPP/565
+CALL qwen38-flash generation MBPP/565 attempt=1
+CALL qwen38-flash selfcheck MBPP/565 attempt=1
+CALL qwen38-flash steelman MBPP/565 attempt=1
+RUN qwen38-flash MBPP/566
+CALL qwen38-flash generation MBPP/566 attempt=1
+CALL qwen38-flash selfcheck MBPP/564 attempt=1
+CALL qwen38-flash steelman MBPP/564 attempt=1
+CALL qwen38-flash selfcheck MBPP/566 attempt=1
+CALL qwen38-flash steelman MBPP/566 attempt=1
+RUN qwen38-flash MBPP/567
+CALL qwen38-flash generation MBPP/567 attempt=1
+CALL qwen38-flash selfcheck MBPP/558 attempt=1
+CALL qwen38-flash steelman MBPP/558 attempt=1
+CALL qwen38-flash selfcheck MBPP/567 attempt=1
+CALL qwen38-flash steelman MBPP/567 attempt=1
+RUN qwen38-flash MBPP/568
+CALL qwen38-flash generation MBPP/568 attempt=1
+RUN qwen38-flash MBPP/569
+CALL qwen38-flash generation MBPP/569 attempt=1
+RUN qwen38-flash MBPP/570
+CALL qwen38-flash generation MBPP/570 attempt=1
+CALL qwen38-flash selfcheck MBPP/569 attempt=1
+CALL qwen38-flash steelman MBPP/569 attempt=1
+CALL qwen38-flash selfcheck MBPP/568 attempt=1
+CALL qwen38-flash steelman MBPP/568 attempt=1
+CALL qwen38-flash selfcheck MBPP/510 attempt=1
+CALL qwen38-flash steelman MBPP/510 attempt=1
+RUN qwen38-flash MBPP/571
+CALL qwen38-flash generation MBPP/571 attempt=1
+RUN qwen38-flash MBPP/572
+CALL qwen38-flash generation MBPP/572 attempt=1
+RUN qwen38-flash MBPP/573
+CALL qwen38-flash generation MBPP/573 attempt=1
+CALL qwen38-flash selfcheck MBPP/573 attempt=1
+CALL qwen38-flash steelman MBPP/573 attempt=1
+RUN qwen38-flash MBPP/574
+CALL qwen38-flash generation MBPP/574 attempt=1
+CALL qwen38-flash steelman MBPP/574 attempt=1
+CALL qwen38-flash selfcheck MBPP/574 attempt=1
+CALL qwen38-flash selfcheck MBPP/525 attempt=1
+CALL qwen38-flash steelman MBPP/525 attempt=1
+RUN qwen38-flash MBPP/576
+CALL qwen38-flash generation MBPP/576 attempt=1
+RUN qwen38-flash MBPP/577
+CALL qwen38-flash generation MBPP/577 attempt=1
+CALL qwen38-flash selfcheck MBPP/576 attempt=1
+CALL qwen38-flash steelman MBPP/576 attempt=1
+CALL qwen38-flash steelman MBPP/563 attempt=1
+CALL qwen38-flash selfcheck MBPP/563 attempt=1
+CALL qwen38-flash selfcheck MBPP/577 attempt=1
+CALL qwen38-flash steelman MBPP/577 attempt=1
+RUN qwen38-flash MBPP/578
+CALL qwen38-flash generation MBPP/578 attempt=1
+RUN qwen38-flash MBPP/579
+CALL qwen38-flash generation MBPP/579 attempt=1
+CALL qwen38-flash selfcheck MBPP/570 attempt=1
+CALL qwen38-flash steelman MBPP/570 attempt=1
+CALL qwen38-flash selfcheck MBPP/561 attempt=1
+CALL qwen38-flash steelman MBPP/561 attempt=1
+CALL qwen38-flash steelman MBPP/578 attempt=1
+CALL qwen38-flash selfcheck MBPP/578 attempt=1
+RUN qwen38-flash MBPP/580
+CALL qwen38-flash generation MBPP/580 attempt=1
+CALL qwen38-flash selfcheck MBPP/572 attempt=1
+CALL qwen38-flash steelman MBPP/572 attempt=1
+CALL qwen38-flash steelman MBPP/580 attempt=1
+CALL qwen38-flash selfcheck MBPP/580 attempt=1
+CALL qwen38-flash selfcheck MBPP/579 attempt=1
+CALL qwen38-flash steelman MBPP/579 attempt=1
+RUN qwen38-flash MBPP/581
+CALL qwen38-flash generation MBPP/581 attempt=1
+RUN qwen38-flash MBPP/582
+CALL qwen38-flash generation MBPP/582 attempt=1
+CALL qwen38-flash steelman MBPP/582 attempt=1
+CALL qwen38-flash selfcheck MBPP/582 attempt=1
+RUN qwen38-flash MBPP/583
+CALL qwen38-flash generation MBPP/583 attempt=1
+RUN qwen38-flash MBPP/584
+CALL qwen38-flash generation MBPP/584 attempt=1
+RUN qwen38-flash MBPP/585
+CALL qwen38-flash generation MBPP/585 attempt=1
+CALL qwen38-flash selfcheck MBPP/584 attempt=1
+CALL qwen38-flash steelman MBPP/584 attempt=1
+CALL qwen38-flash steelman MBPP/583 attempt=1
+CALL qwen38-flash selfcheck MBPP/583 attempt=1
+CALL qwen38-flash steelman MBPP/581 attempt=1
+CALL qwen38-flash selfcheck MBPP/581 attempt=1
+RUN qwen38-flash MBPP/586
+CALL qwen38-flash generation MBPP/586 attempt=1
+RUN qwen38-flash MBPP/587
+CALL qwen38-flash generation MBPP/587 attempt=1
+CALL qwen38-flash selfcheck MBPP/587 attempt=1
+CALL qwen38-flash steelman MBPP/587 attempt=1
+RUN qwen38-flash MBPP/588
+CALL qwen38-flash generation MBPP/588 attempt=1
+RUN qwen38-flash MBPP/589
+CALL qwen38-flash generation MBPP/589 attempt=1
+CALL qwen38-flash steelman MBPP/588 attempt=1
+CALL qwen38-flash selfcheck MBPP/588 attempt=1
+RUN qwen38-flash MBPP/590
+CALL qwen38-flash generation MBPP/590 attempt=1
+RUN qwen38-flash MBPP/591
+CALL qwen38-flash generation MBPP/591 attempt=1
+CALL qwen38-flash selfcheck MBPP/560 attempt=1
+CALL qwen38-flash steelman MBPP/560 attempt=1
+CALL qwen38-flash selfcheck MBPP/590 attempt=1
+CALL qwen38-flash steelman MBPP/590 attempt=1
+CALL qwen38-flash steelman MBPP/591 attempt=1
+CALL qwen38-flash selfcheck MBPP/591 attempt=1
+CALL qwen38-flash selfcheck MBPP/571 attempt=1
+CALL qwen38-flash steelman MBPP/571 attempt=1
+RUN qwen38-flash MBPP/592
+CALL qwen38-flash generation MBPP/592 attempt=1
+RUN qwen38-flash MBPP/593
+CALL qwen38-flash generation MBPP/593 attempt=1
+RUN qwen38-flash MBPP/594
+CALL qwen38-flash generation MBPP/594 attempt=1
+RUN qwen38-flash MBPP/595
+CALL qwen38-flash generation MBPP/595 attempt=1
+CALL qwen38-flash selfcheck MBPP/585 attempt=1
+CALL qwen38-flash steelman MBPP/585 attempt=1
+CALL qwen38-flash selfcheck MBPP/593 attempt=1
+CALL qwen38-flash steelman MBPP/593 attempt=1
+CALL qwen38-flash selfcheck MBPP/589 attempt=1
+CALL qwen38-flash steelman MBPP/589 attempt=1
+CALL qwen38-flash steelman MBPP/595 attempt=1
+CALL qwen38-flash selfcheck MBPP/595 attempt=1
+CALL qwen38-flash steelman MBPP/594 attempt=1
+CALL qwen38-flash selfcheck MBPP/594 attempt=1
+RUN qwen38-flash MBPP/597
+CALL qwen38-flash generation MBPP/597 attempt=1
+RUN qwen38-flash MBPP/598
+CALL qwen38-flash generation MBPP/598 attempt=1
+CALL qwen38-flash selfcheck MBPP/598 attempt=1
+CALL qwen38-flash steelman MBPP/598 attempt=1
+RUN qwen38-flash MBPP/599
+CALL qwen38-flash generation MBPP/599 attempt=1
+CALL qwen38-flash steelman MBPP/599 attempt=1
+CALL qwen38-flash selfcheck MBPP/599 attempt=1
+RUN qwen38-flash MBPP/600
+CALL qwen38-flash generation MBPP/600 attempt=1
+RUN qwen38-flash MBPP/601
+CALL qwen38-flash generation MBPP/601 attempt=1
+CALL qwen38-flash selfcheck MBPP/600 attempt=1
+CALL qwen38-flash steelman MBPP/600 attempt=1
+RUN qwen38-flash MBPP/602
+CALL qwen38-flash generation MBPP/602 attempt=1
+RUN qwen38-flash MBPP/603
+CALL qwen38-flash generation MBPP/603 attempt=1
+CALL qwen38-flash selfcheck MBPP/601 attempt=1
+CALL qwen38-flash steelman MBPP/601 attempt=1
+CALL qwen38-flash steelman MBPP/602 attempt=1
+CALL qwen38-flash selfcheck MBPP/602 attempt=1
+CALL qwen38-flash selfcheck MBPP/597 attempt=1
+CALL qwen38-flash steelman MBPP/597 attempt=1
+RUN qwen38-flash MBPP/604
+CALL qwen38-flash generation MBPP/604 attempt=1
+CALL qwen38-flash selfcheck MBPP/604 attempt=1
+CALL qwen38-flash steelman MBPP/604 attempt=1
+RUN qwen38-flash MBPP/605
+CALL qwen38-flash generation MBPP/605 attempt=1
+CALL qwen38-flash selfcheck MBPP/605 attempt=1
+CALL qwen38-flash steelman MBPP/605 attempt=1
+CALL qwen38-flash selfcheck MBPP/586 attempt=1
+CALL qwen38-flash steelman MBPP/586 attempt=1
+RUN qwen38-flash MBPP/606
+CALL qwen38-flash generation MBPP/606 attempt=1
+RUN qwen38-flash MBPP/607
+CALL qwen38-flash generation MBPP/607 attempt=1
+CALL qwen38-flash selfcheck MBPP/606 attempt=1
+CALL qwen38-flash steelman MBPP/606 attempt=1
+RUN qwen38-flash MBPP/608
+CALL qwen38-flash generation MBPP/608 attempt=1
+RUN qwen38-flash MBPP/609
+CALL qwen38-flash generation MBPP/609 attempt=1
+RUN qwen38-flash MBPP/610
+CALL qwen38-flash generation MBPP/610 attempt=1
+RUN qwen38-flash MBPP/611
+CALL qwen38-flash generation MBPP/611 attempt=1
+CALL qwen38-flash selfcheck MBPP/608 attempt=1
+CALL qwen38-flash steelman MBPP/608 attempt=1
+RUN qwen38-flash MBPP/612
+CALL qwen38-flash generation MBPP/612 attempt=1
+CALL qwen38-flash selfcheck MBPP/610 attempt=1
+CALL qwen38-flash steelman MBPP/610 attempt=1
+RUN qwen38-flash MBPP/613
+CALL qwen38-flash generation MBPP/613 attempt=1
+CALL qwen38-flash steelman MBPP/611 attempt=1
+CALL qwen38-flash selfcheck MBPP/611 attempt=1
+CALL qwen38-flash selfcheck MBPP/607 attempt=1
+CALL qwen38-flash steelman MBPP/607 attempt=1
+RUN qwen38-flash MBPP/614
+CALL qwen38-flash generation MBPP/614 attempt=1
+RUN qwen38-flash MBPP/615
+CALL qwen38-flash generation MBPP/615 attempt=1
+CALL qwen38-flash selfcheck MBPP/614 attempt=1
+CALL qwen38-flash steelman MBPP/614 attempt=1
+CALL qwen38-flash selfcheck MBPP/612 attempt=1
+CALL qwen38-flash steelman MBPP/612 attempt=1
+RUN qwen38-flash MBPP/616
+CALL qwen38-flash generation MBPP/616 attempt=1
+CALL qwen38-flash steelman MBPP/592 attempt=1
+CALL qwen38-flash selfcheck MBPP/592 attempt=1
+CALL qwen38-flash selfcheck MBPP/615 attempt=1
+CALL qwen38-flash steelman MBPP/615 attempt=1
+CALL qwen38-flash selfcheck MBPP/616 attempt=1
+CALL qwen38-flash steelman MBPP/616 attempt=1
+RUN qwen38-flash MBPP/617
+CALL qwen38-flash generation MBPP/617 attempt=1
+RUN qwen38-flash MBPP/618
+CALL qwen38-flash generation MBPP/618 attempt=1
+CALL qwen38-flash selfcheck MBPP/618 attempt=1
+CALL qwen38-flash steelman MBPP/618 attempt=1
+RUN qwen38-flash MBPP/619
+CALL qwen38-flash generation MBPP/619 attempt=1
+RUN qwen38-flash MBPP/620
+CALL qwen38-flash generation MBPP/620 attempt=1
+CALL qwen38-flash selfcheck MBPP/619 attempt=1
+CALL qwen38-flash steelman MBPP/619 attempt=1
+RUN qwen38-flash MBPP/621
+CALL qwen38-flash generation MBPP/621 attempt=1
+RUN qwen38-flash MBPP/622
+CALL qwen38-flash generation MBPP/622 attempt=1
+RUN qwen38-flash MBPP/623
+CALL qwen38-flash generation MBPP/623 attempt=1
+RUN qwen38-flash MBPP/624
+CALL qwen38-flash generation MBPP/624 attempt=1
+CALL qwen38-flash selfcheck MBPP/623 attempt=1
+CALL qwen38-flash steelman MBPP/623 attempt=1
+CALL qwen38-flash steelman MBPP/617 attempt=1
+CALL qwen38-flash selfcheck MBPP/617 attempt=1
+CALL qwen38-flash selfcheck MBPP/624 attempt=1
+CALL qwen38-flash steelman MBPP/624 attempt=1
+RUN qwen38-flash MBPP/625
+CALL qwen38-flash generation MBPP/625 attempt=1
+CALL qwen38-flash selfcheck MBPP/625 attempt=1
+CALL qwen38-flash steelman MBPP/625 attempt=1
+RUN qwen38-flash MBPP/626
+CALL qwen38-flash generation MBPP/626 attempt=1
+RUN qwen38-flash MBPP/627
+CALL qwen38-flash generation MBPP/627 attempt=1
+RUN qwen38-flash MBPP/628
+CALL qwen38-flash generation MBPP/628 attempt=1
+CALL qwen38-flash selfcheck MBPP/628 attempt=1
+CALL qwen38-flash steelman MBPP/628 attempt=1
+CALL qwen38-flash steelman MBPP/626 attempt=1
+CALL qwen38-flash selfcheck MBPP/626 attempt=1
+RUN qwen38-flash MBPP/629
+CALL qwen38-flash generation MBPP/629 attempt=1
+RUN qwen38-flash MBPP/630
+CALL qwen38-flash generation MBPP/630 attempt=1
+CALL qwen38-flash selfcheck MBPP/622 attempt=1
+CALL qwen38-flash steelman MBPP/622 attempt=1
+CALL qwen38-flash steelman MBPP/629 attempt=1
+CALL qwen38-flash selfcheck MBPP/629 attempt=1
+CALL qwen38-flash selfcheck MBPP/630 attempt=1
+CALL qwen38-flash steelman MBPP/630 attempt=1
+RUN qwen38-flash MBPP/631
+CALL qwen38-flash generation MBPP/631 attempt=1
+CALL qwen38-flash steelman MBPP/627 attempt=1
+CALL qwen38-flash selfcheck MBPP/627 attempt=1
+CALL qwen38-flash selfcheck MBPP/631 attempt=1
+CALL qwen38-flash steelman MBPP/631 attempt=1
+CALL qwen38-flash selfcheck MBPP/621 attempt=1
+CALL qwen38-flash steelman MBPP/621 attempt=1
+RUN qwen38-flash MBPP/632
+CALL qwen38-flash generation MBPP/632 attempt=1
+CALL qwen38-flash selfcheck MBPP/632 attempt=1
+CALL qwen38-flash steelman MBPP/632 attempt=1
+CALL qwen38-flash selfcheck MBPP/620 attempt=1
+CALL qwen38-flash steelman MBPP/620 attempt=1
+RUN qwen38-flash MBPP/633
+CALL qwen38-flash generation MBPP/633 attempt=1
+RUN qwen38-flash MBPP/634
+CALL qwen38-flash generation MBPP/634 attempt=1
+RUN qwen38-flash MBPP/635
+CALL qwen38-flash generation MBPP/635 attempt=1
+CALL qwen38-flash selfcheck MBPP/635 attempt=1
+CALL qwen38-flash steelman MBPP/635 attempt=1
+CALL qwen38-flash steelman MBPP/634 attempt=1
+CALL qwen38-flash selfcheck MBPP/634 attempt=1
+RUN qwen38-flash MBPP/636
+CALL qwen38-flash generation MBPP/636 attempt=1
+RUN qwen38-flash MBPP/637
+CALL qwen38-flash generation MBPP/637 attempt=1
+CALL qwen38-flash selfcheck MBPP/633 attempt=1
+CALL qwen38-flash steelman MBPP/633 attempt=1
+RUN qwen38-flash MBPP/638
+CALL qwen38-flash generation MBPP/638 attempt=1
+RUN qwen38-flash MBPP/639
+CALL qwen38-flash generation MBPP/639 attempt=1
+CALL qwen38-flash steelman MBPP/639 attempt=1
+CALL qwen38-flash selfcheck MBPP/639 attempt=1
+CALL qwen38-flash selfcheck MBPP/638 attempt=1
+CALL qwen38-flash steelman MBPP/638 attempt=1
+RUN qwen38-flash MBPP/640
+CALL qwen38-flash generation MBPP/640 attempt=1
+RUN qwen38-flash MBPP/641
+CALL qwen38-flash generation MBPP/641 attempt=1
+CALL qwen38-flash steelman MBPP/641 attempt=1
+CALL qwen38-flash selfcheck MBPP/641 attempt=1
+CALL qwen38-flash steelman MBPP/637 attempt=1
+CALL qwen38-flash selfcheck MBPP/637 attempt=1
+RUN qwen38-flash MBPP/642
+CALL qwen38-flash generation MBPP/642 attempt=1
+CALL qwen38-flash selfcheck MBPP/640 attempt=1
+CALL qwen38-flash steelman MBPP/640 attempt=1
+RUN qwen38-flash MBPP/643
+CALL qwen38-flash generation MBPP/643 attempt=1
+RUN qwen38-flash MBPP/644
+CALL qwen38-flash generation MBPP/644 attempt=1
+RUN qwen38-flash MBPP/645
+CALL qwen38-flash generation MBPP/645 attempt=1
+RUN qwen38-flash MBPP/646
+CALL qwen38-flash generation MBPP/646 attempt=1
+RUN qwen38-flash MBPP/647
+CALL qwen38-flash generation MBPP/647 attempt=1
+CALL qwen38-flash selfcheck MBPP/647 attempt=1
+CALL qwen38-flash steelman MBPP/647 attempt=1
+CALL qwen38-flash selfcheck MBPP/645 attempt=1
+CALL qwen38-flash steelman MBPP/645 attempt=1
+CALL qwen38-flash selfcheck MBPP/643 attempt=1
+CALL qwen38-flash steelman MBPP/643 attempt=1
+RUN qwen38-flash MBPP/648
+CALL qwen38-flash generation MBPP/648 attempt=1
+CALL qwen38-flash selfcheck MBPP/636 attempt=1
+CALL qwen38-flash steelman MBPP/636 attempt=1
+CALL qwen38-flash selfcheck MBPP/648 attempt=1
+CALL qwen38-flash steelman MBPP/648 attempt=1
+RUN qwen38-flash MBPP/649
+CALL qwen38-flash generation MBPP/649 attempt=1
+RUN qwen38-flash MBPP/650
+CALL qwen38-flash generation MBPP/650 attempt=1
+RUN qwen38-flash MBPP/651
+CALL qwen38-flash generation MBPP/651 attempt=1
+RUN qwen38-flash MBPP/652
+CALL qwen38-flash generation MBPP/652 attempt=1
+CALL qwen38-flash selfcheck MBPP/651 attempt=1
+CALL qwen38-flash steelman MBPP/651 attempt=1
+RUN qwen38-flash MBPP/653
+CALL qwen38-flash generation MBPP/653 attempt=1
+RUN qwen38-flash MBPP/654
+CALL qwen38-flash generation MBPP/654 attempt=1
+CALL qwen38-flash selfcheck MBPP/653 attempt=1
+CALL qwen38-flash steelman MBPP/653 attempt=1
+CALL qwen38-flash selfcheck MBPP/652 attempt=1
+CALL qwen38-flash steelman MBPP/652 attempt=1
+CALL qwen38-flash selfcheck MBPP/654 attempt=1
+CALL qwen38-flash steelman MBPP/654 attempt=1
+CALL qwen38-flash selfcheck MBPP/646 attempt=1
+CALL qwen38-flash steelman MBPP/646 attempt=1
+CALL qwen38-flash steelman MBPP/650 attempt=1
+CALL qwen38-flash selfcheck MBPP/650 attempt=1
+CALL qwen38-flash selfcheck MBPP/642 attempt=1
+CALL qwen38-flash steelman MBPP/642 attempt=1
+RUN qwen38-flash MBPP/655
+CALL qwen38-flash generation MBPP/655 attempt=1
+CALL qwen38-flash selfcheck MBPP/644 attempt=1
+CALL qwen38-flash steelman MBPP/644 attempt=1
+CALL qwen38-flash steelman MBPP/655 attempt=1
+CALL qwen38-flash selfcheck MBPP/655 attempt=1
+RUN qwen38-flash MBPP/656
+CALL qwen38-flash generation MBPP/656 attempt=1
+RUN qwen38-flash MBPP/657
+CALL qwen38-flash generation MBPP/657 attempt=1
+RUN qwen38-flash MBPP/658
+CALL qwen38-flash generation MBPP/658 attempt=1
+CALL qwen38-flash selfcheck MBPP/613 attempt=1
+CALL qwen38-flash steelman MBPP/613 attempt=1
+RUN qwen38-flash MBPP/659
+CALL qwen38-flash generation MBPP/659 attempt=1
+CALL qwen38-flash selfcheck MBPP/658 attempt=1
+CALL qwen38-flash steelman MBPP/658 attempt=1
+CALL qwen38-flash selfcheck MBPP/659 attempt=1
+CALL qwen38-flash steelman MBPP/659 attempt=1
+RUN qwen38-flash MBPP/660
+CALL qwen38-flash generation MBPP/660 attempt=1
+RUN qwen38-flash MBPP/661
+CALL qwen38-flash generation MBPP/661 attempt=1
+RUN qwen38-flash MBPP/662
+CALL qwen38-flash generation MBPP/662 attempt=1
+RUN qwen38-flash MBPP/664
+CALL qwen38-flash generation MBPP/664 attempt=1
+CALL qwen38-flash selfcheck MBPP/662 attempt=1
+CALL qwen38-flash steelman MBPP/662 attempt=1
+CALL qwen38-flash selfcheck MBPP/656 attempt=1
+CALL qwen38-flash steelman MBPP/656 attempt=1
+CALL qwen38-flash selfcheck MBPP/664 attempt=1
+CALL qwen38-flash steelman MBPP/664 attempt=1
+RUN qwen38-flash MBPP/665
+CALL qwen38-flash generation MBPP/665 attempt=1
+CALL qwen38-flash selfcheck MBPP/665 attempt=1
+CALL qwen38-flash steelman MBPP/665 attempt=1
+RUN qwen38-flash MBPP/666
+CALL qwen38-flash generation MBPP/666 attempt=1
+CALL qwen38-flash steelman MBPP/666 attempt=1
+CALL qwen38-flash selfcheck MBPP/666 attempt=1
+RUN qwen38-flash MBPP/667
+CALL qwen38-flash generation MBPP/667 attempt=1
+CALL qwen38-flash selfcheck MBPP/667 attempt=1
+CALL qwen38-flash steelman MBPP/667 attempt=1
+RUN qwen38-flash MBPP/668
+CALL qwen38-flash generation MBPP/668 attempt=1
+RUN qwen38-flash MBPP/669
+CALL qwen38-flash generation MBPP/669 attempt=1
+RUN qwen38-flash MBPP/670
+CALL qwen38-flash generation MBPP/670 attempt=1
+RUN qwen38-flash MBPP/671
+CALL qwen38-flash generation MBPP/671 attempt=1
+CALL qwen38-flash selfcheck MBPP/670 attempt=1
+CALL qwen38-flash steelman MBPP/670 attempt=1
+RUN qwen38-flash MBPP/672
+CALL qwen38-flash generation MBPP/672 attempt=1
+RUN qwen38-flash MBPP/673
+CALL qwen38-flash generation MBPP/673 attempt=1
+CALL qwen38-flash selfcheck MBPP/672 attempt=1
+CALL qwen38-flash steelman MBPP/672 attempt=1
+CALL qwen38-flash selfcheck MBPP/669 attempt=1
+CALL qwen38-flash steelman MBPP/669 attempt=1
+RUN qwen38-flash MBPP/674
+CALL qwen38-flash generation MBPP/674 attempt=1
+CALL qwen38-flash steelman MBPP/673 attempt=1
+CALL qwen38-flash selfcheck MBPP/673 attempt=1
+RUN qwen38-flash MBPP/675
+CALL qwen38-flash generation MBPP/675 attempt=1
+CALL qwen38-flash steelman MBPP/674 attempt=1
+CALL qwen38-flash selfcheck MBPP/674 attempt=1
+CALL qwen38-flash steelman MBPP/671 attempt=1
+CALL qwen38-flash selfcheck MBPP/671 attempt=1
+CALL qwen38-flash steelman MBPP/661 attempt=1
+CALL qwen38-flash selfcheck MBPP/661 attempt=1
+CALL qwen38-flash selfcheck MBPP/675 attempt=1
+CALL qwen38-flash steelman MBPP/675 attempt=1
+RUN qwen38-flash MBPP/677
+CALL qwen38-flash generation MBPP/677 attempt=1
+CALL qwen38-flash selfcheck MBPP/657 attempt=1
+CALL qwen38-flash steelman MBPP/657 attempt=1
+CALL qwen38-flash selfcheck MBPP/677 attempt=1
+CALL qwen38-flash steelman MBPP/677 attempt=1
+RUN qwen38-flash MBPP/678
+CALL qwen38-flash generation MBPP/678 attempt=1
+CALL qwen38-flash selfcheck MBPP/678 attempt=1
+CALL qwen38-flash steelman MBPP/678 attempt=1
+RUN qwen38-flash MBPP/679
+CALL qwen38-flash generation MBPP/679 attempt=1
+RUN qwen38-flash MBPP/680
+CALL qwen38-flash generation MBPP/680 attempt=1
+RUN qwen38-flash MBPP/681
+CALL qwen38-flash generation MBPP/681 attempt=1
+CALL qwen38-flash selfcheck MBPP/680 attempt=1
+CALL qwen38-flash steelman MBPP/680 attempt=1
+CALL qwen38-flash selfcheck MBPP/668 attempt=1
+CALL qwen38-flash steelman MBPP/668 attempt=1
+CALL qwen38-flash selfcheck MBPP/681 attempt=1
+CALL qwen38-flash steelman MBPP/681 attempt=1
+RUN qwen38-flash MBPP/682
+CALL qwen38-flash generation MBPP/682 attempt=1
+CALL qwen38-flash selfcheck MBPP/682 attempt=1
+CALL qwen38-flash steelman MBPP/682 attempt=1
+RUN qwen38-flash MBPP/683
+CALL qwen38-flash generation MBPP/683 attempt=1
+RUN qwen38-flash MBPP/684
+CALL qwen38-flash generation MBPP/684 attempt=1
+RUN qwen38-flash MBPP/685
+CALL qwen38-flash generation MBPP/685 attempt=1
+RUN qwen38-flash MBPP/686
+CALL qwen38-flash generation MBPP/686 attempt=1
+RUN qwen38-flash MBPP/687
+CALL qwen38-flash generation MBPP/687 attempt=1
+CALL qwen38-flash selfcheck MBPP/686 attempt=1
+CALL qwen38-flash steelman MBPP/686 attempt=1
+CALL qwen38-flash selfcheck MBPP/685 attempt=1
+CALL qwen38-flash steelman MBPP/685 attempt=1
+CALL qwen38-flash selfcheck MBPP/687 attempt=1
+CALL qwen38-flash steelman MBPP/687 attempt=1
+CALL qwen38-flash selfcheck MBPP/609 attempt=1
+CALL qwen38-flash steelman MBPP/609 attempt=1
+CALL qwen38-flash selfcheck MBPP/684 attempt=1
+CALL qwen38-flash steelman MBPP/684 attempt=1
+CALL qwen38-flash selfcheck MBPP/683 attempt=1
+CALL qwen38-flash steelman MBPP/683 attempt=1
+CALL qwen38-flash selfcheck MBPP/649 attempt=1
+CALL qwen38-flash steelman MBPP/649 attempt=1
+RUN qwen38-flash MBPP/688
+CALL qwen38-flash generation MBPP/688 attempt=1
+RUN qwen38-flash MBPP/689
+CALL qwen38-flash generation MBPP/689 attempt=1
+RUN qwen38-flash MBPP/690
+CALL qwen38-flash generation MBPP/690 attempt=1
+CALL qwen38-flash selfcheck MBPP/690 attempt=1
+CALL qwen38-flash steelman MBPP/690 attempt=1
+RUN qwen38-flash MBPP/691
+CALL qwen38-flash generation MBPP/691 attempt=1
+CALL qwen38-flash selfcheck MBPP/688 attempt=1
+CALL qwen38-flash steelman MBPP/688 attempt=1
+CALL qwen38-flash selfcheck MBPP/691 attempt=1
+CALL qwen38-flash steelman MBPP/691 attempt=1
+CALL qwen38-flash selfcheck MBPP/689 attempt=1
+CALL qwen38-flash steelman MBPP/689 attempt=1
+RUN qwen38-flash MBPP/692
+CALL qwen38-flash generation MBPP/692 attempt=1
+RUN qwen38-flash MBPP/693
+CALL qwen38-flash generation MBPP/693 attempt=1
+CALL qwen38-flash selfcheck MBPP/693 attempt=1
+CALL qwen38-flash steelman MBPP/693 attempt=1
+RUN qwen38-flash MBPP/694
+CALL qwen38-flash generation MBPP/694 attempt=1
+RUN qwen38-flash MBPP/695
+CALL qwen38-flash generation MBPP/695 attempt=1
+CALL qwen38-flash selfcheck MBPP/694 attempt=1
+CALL qwen38-flash steelman MBPP/694 attempt=1
+RUN qwen38-flash MBPP/696
+CALL qwen38-flash generation MBPP/696 attempt=1
+RUN qwen38-flash MBPP/697
+CALL qwen38-flash generation MBPP/697 attempt=1
+RUN qwen38-flash MBPP/698
+CALL qwen38-flash generation MBPP/698 attempt=1
+CALL qwen38-flash selfcheck MBPP/697 attempt=1
+CALL qwen38-flash steelman MBPP/697 attempt=1
+RUN qwen38-flash MBPP/699
+CALL qwen38-flash generation MBPP/699 attempt=1
+RUN qwen38-flash MBPP/700
+CALL qwen38-flash generation MBPP/700 attempt=1
+CALL qwen38-flash selfcheck MBPP/700 attempt=1
+CALL qwen38-flash steelman MBPP/700 attempt=1
+CALL qwen38-flash selfcheck MBPP/679 attempt=1
+CALL qwen38-flash steelman MBPP/679 attempt=1
+CALL qwen38-flash selfcheck MBPP/692 attempt=1
+CALL qwen38-flash steelman MBPP/692 attempt=1
+RUN qwen38-flash MBPP/701
+CALL qwen38-flash generation MBPP/701 attempt=1
+CALL qwen38-flash selfcheck MBPP/699 attempt=1
+CALL qwen38-flash steelman MBPP/699 attempt=1
+CALL qwen38-flash steelman MBPP/701 attempt=1
+CALL qwen38-flash selfcheck MBPP/701 attempt=1
+RUN qwen38-flash MBPP/702
+CALL qwen38-flash generation MBPP/702 attempt=1
+CALL qwen38-flash selfcheck MBPP/695 attempt=1
+CALL qwen38-flash steelman MBPP/695 attempt=1
+CALL qwen38-flash selfcheck MBPP/702 attempt=1
+CALL qwen38-flash steelman MBPP/702 attempt=1
+RUN qwen38-flash MBPP/703
+CALL qwen38-flash generation MBPP/703 attempt=1
+CALL qwen38-flash selfcheck MBPP/703 attempt=1
+CALL qwen38-flash steelman MBPP/703 attempt=1
+RUN qwen38-flash MBPP/704
+CALL qwen38-flash generation MBPP/704 attempt=1
+RUN qwen38-flash MBPP/705
+CALL qwen38-flash generation MBPP/705 attempt=1
+CALL qwen38-flash selfcheck MBPP/704 attempt=1
+CALL qwen38-flash steelman MBPP/704 attempt=1
+RUN qwen38-flash MBPP/706
+CALL qwen38-flash generation MBPP/706 attempt=1
+CALL qwen38-flash selfcheck MBPP/698 attempt=1
+CALL qwen38-flash steelman MBPP/698 attempt=1
+CALL qwen38-flash selfcheck MBPP/705 attempt=1
+CALL qwen38-flash steelman MBPP/705 attempt=1
+RUN qwen38-flash MBPP/707
+CALL qwen38-flash generation MBPP/707 attempt=1
+CALL qwen38-flash selfcheck MBPP/706 attempt=1
+CALL qwen38-flash steelman MBPP/706 attempt=1
+RUN qwen38-flash MBPP/708
+CALL qwen38-flash generation MBPP/708 attempt=1
+RUN qwen38-flash MBPP/709
+CALL qwen38-flash generation MBPP/709 attempt=1
+CALL qwen38-flash steelman MBPP/708 attempt=1
+CALL qwen38-flash selfcheck MBPP/708 attempt=1
+RUN qwen38-flash MBPP/710
+CALL qwen38-flash generation MBPP/710 attempt=1
+CALL qwen38-flash steelman MBPP/710 attempt=1
+CALL qwen38-flash selfcheck MBPP/710 attempt=1
+RUN qwen38-flash MBPP/711
+CALL qwen38-flash generation MBPP/711 attempt=1
+CALL qwen38-flash selfcheck MBPP/707 attempt=1
+CALL qwen38-flash steelman MBPP/707 attempt=1
+RUN qwen38-flash MBPP/712
+CALL qwen38-flash generation MBPP/712 attempt=1
+RUN qwen38-flash MBPP/713
+CALL qwen38-flash generation MBPP/713 attempt=1
+RUN qwen38-flash MBPP/714
+CALL qwen38-flash generation MBPP/714 attempt=1
+RUN qwen38-flash MBPP/715
+CALL qwen38-flash generation MBPP/715 attempt=1
+CALL qwen38-flash selfcheck MBPP/709 attempt=1
+CALL qwen38-flash steelman MBPP/709 attempt=1
+CALL qwen38-flash selfcheck MBPP/713 attempt=1
+CALL qwen38-flash steelman MBPP/713 attempt=1
+CALL qwen38-flash selfcheck MBPP/715 attempt=1
+CALL qwen38-flash steelman MBPP/715 attempt=1
+CALL qwen38-flash selfcheck MBPP/714 attempt=1
+CALL qwen38-flash steelman MBPP/714 attempt=1
+RUN qwen38-flash MBPP/716
+CALL qwen38-flash generation MBPP/716 attempt=1
+RUN qwen38-flash MBPP/718
+CALL qwen38-flash generation MBPP/718 attempt=1
+CALL qwen38-flash selfcheck MBPP/716 attempt=1
+CALL qwen38-flash steelman MBPP/716 attempt=1
+RUN qwen38-flash MBPP/719
+CALL qwen38-flash generation MBPP/719 attempt=1
+CALL qwen38-flash selfcheck MBPP/718 attempt=1
+CALL qwen38-flash steelman MBPP/718 attempt=1
+RUN qwen38-flash MBPP/720
+CALL qwen38-flash generation MBPP/720 attempt=1
+CALL qwen38-flash selfcheck MBPP/696 attempt=1
+CALL qwen38-flash steelman MBPP/696 attempt=1
+RUN qwen38-flash MBPP/721
+CALL qwen38-flash generation MBPP/721 attempt=1
+CALL qwen38-flash selfcheck MBPP/720 attempt=1
+CALL qwen38-flash steelman MBPP/720 attempt=1
+RUN qwen38-flash MBPP/722
+CALL qwen38-flash generation MBPP/722 attempt=1
+RUN qwen38-flash MBPP/723
+CALL qwen38-flash generation MBPP/723 attempt=1
+RUN qwen38-flash MBPP/724
+CALL qwen38-flash generation MBPP/724 attempt=1
+CALL qwen38-flash selfcheck MBPP/719 attempt=1
+CALL qwen38-flash steelman MBPP/719 attempt=1
+RUN qwen38-flash MBPP/725
+CALL qwen38-flash generation MBPP/725 attempt=1
+CALL qwen38-flash selfcheck MBPP/721 attempt=1
+CALL qwen38-flash steelman MBPP/721 attempt=1
+CALL qwen38-flash selfcheck MBPP/723 attempt=1
+CALL qwen38-flash steelman MBPP/723 attempt=1
+CALL qwen38-flash steelman MBPP/711 attempt=1
+CALL qwen38-flash selfcheck MBPP/711 attempt=1
+RUN qwen38-flash MBPP/726
+CALL qwen38-flash generation MBPP/726 attempt=1
+CALL qwen38-flash selfcheck MBPP/725 attempt=1
+CALL qwen38-flash steelman MBPP/725 attempt=1
+CALL qwen38-flash selfcheck MBPP/724 attempt=1
+CALL qwen38-flash steelman MBPP/724 attempt=1
+CALL qwen38-flash steelman MBPP/726 attempt=1
+CALL qwen38-flash selfcheck MBPP/726 attempt=1
+RUN qwen38-flash MBPP/727
+CALL qwen38-flash generation MBPP/727 attempt=1
+RUN qwen38-flash MBPP/728
+CALL qwen38-flash generation MBPP/728 attempt=1
+CALL qwen38-flash steelman MBPP/727 attempt=1
+CALL qwen38-flash selfcheck MBPP/727 attempt=1
+RUN qwen38-flash MBPP/729
+CALL qwen38-flash generation MBPP/729 attempt=1
+RUN qwen38-flash MBPP/730
+CALL qwen38-flash generation MBPP/730 attempt=1
+CALL qwen38-flash selfcheck MBPP/729 attempt=1
+CALL qwen38-flash steelman MBPP/729 attempt=1
+CALL qwen38-flash selfcheck MBPP/722 attempt=1
+CALL qwen38-flash steelman MBPP/722 attempt=1
+CALL qwen38-flash selfcheck MBPP/730 attempt=1
+CALL qwen38-flash steelman MBPP/730 attempt=1
+RUN qwen38-flash MBPP/731
+CALL qwen38-flash generation MBPP/731 attempt=1
+CALL qwen38-flash selfcheck MBPP/731 attempt=1
+CALL qwen38-flash steelman MBPP/731 attempt=1
+RUN qwen38-flash MBPP/732
+CALL qwen38-flash generation MBPP/732 attempt=1
+RUN qwen38-flash MBPP/733
+CALL qwen38-flash generation MBPP/733 attempt=1
+CALL qwen38-flash selfcheck MBPP/732 attempt=1
+CALL qwen38-flash steelman MBPP/732 attempt=1
+CALL qwen38-flash selfcheck MBPP/728 attempt=1
+CALL qwen38-flash steelman MBPP/728 attempt=1
+CALL qwen38-flash selfcheck MBPP/733 attempt=1
+CALL qwen38-flash steelman MBPP/733 attempt=1
+RUN qwen38-flash MBPP/734
+CALL qwen38-flash generation MBPP/734 attempt=1
+RUN qwen38-flash MBPP/735
+CALL qwen38-flash generation MBPP/735 attempt=1
+RUN qwen38-flash MBPP/736
+CALL qwen38-flash generation MBPP/736 attempt=1
+RUN qwen38-flash MBPP/737
+CALL qwen38-flash generation MBPP/737 attempt=1
+CALL qwen38-flash selfcheck MBPP/737 attempt=1
+CALL qwen38-flash steelman MBPP/737 attempt=1
+CALL qwen38-flash steelman MBPP/736 attempt=1
+CALL qwen38-flash selfcheck MBPP/736 attempt=1
+CALL qwen38-flash selfcheck MBPP/734 attempt=1
+CALL qwen38-flash steelman MBPP/734 attempt=1
+CALL qwen38-flash steelman MBPP/735 attempt=1
+CALL qwen38-flash selfcheck MBPP/735 attempt=1
+RUN qwen38-flash MBPP/738
+CALL qwen38-flash generation MBPP/738 attempt=1
+RUN qwen38-flash MBPP/739
+CALL qwen38-flash generation MBPP/739 attempt=1
+RUN qwen38-flash MBPP/740
+CALL qwen38-flash generation MBPP/740 attempt=1
+RUN qwen38-flash MBPP/741
+CALL qwen38-flash generation MBPP/741 attempt=1
+RUN qwen38-flash MBPP/742
+CALL qwen38-flash generation MBPP/742 attempt=1
+CALL qwen38-flash selfcheck MBPP/740 attempt=1
+CALL qwen38-flash steelman MBPP/740 attempt=1
+CALL qwen38-flash selfcheck MBPP/712 attempt=1
+CALL qwen38-flash steelman MBPP/712 attempt=1
+RUN qwen38-flash MBPP/743
+CALL qwen38-flash generation MBPP/743 attempt=1
+RUN qwen38-flash MBPP/744
+CALL qwen38-flash generation MBPP/744 attempt=1
+CALL qwen38-flash steelman MBPP/744 attempt=1
+CALL qwen38-flash selfcheck MBPP/744 attempt=1
+CALL qwen38-flash steelman MBPP/743 attempt=1
+CALL qwen38-flash selfcheck MBPP/743 attempt=1
+CALL qwen38-flash selfcheck MBPP/741 attempt=1
+CALL qwen38-flash steelman MBPP/741 attempt=1
+RUN qwen38-flash MBPP/745
+CALL qwen38-flash generation MBPP/745 attempt=1
+RUN qwen38-flash MBPP/746
+CALL qwen38-flash generation MBPP/746 attempt=1
+CALL qwen38-flash steelman MBPP/739 attempt=1
+CALL qwen38-flash selfcheck MBPP/739 attempt=1
+RUN qwen38-flash MBPP/747
+CALL qwen38-flash generation MBPP/747 attempt=1
+CALL qwen38-flash selfcheck MBPP/745 attempt=1
+CALL qwen38-flash steelman MBPP/745 attempt=1
+RUN qwen38-flash MBPP/748
+CALL qwen38-flash generation MBPP/748 attempt=1
+RUN qwen38-flash MBPP/749
+CALL qwen38-flash generation MBPP/749 attempt=1
+RUN qwen38-flash MBPP/750
+CALL qwen38-flash generation MBPP/750 attempt=1
+CALL qwen38-flash selfcheck MBPP/747 attempt=1
+CALL qwen38-flash steelman MBPP/747 attempt=1
+CALL qwen38-flash selfcheck MBPP/749 attempt=1
+CALL qwen38-flash steelman MBPP/749 attempt=1
+RUN qwen38-flash MBPP/751
+CALL qwen38-flash generation MBPP/751 attempt=1
+CALL qwen38-flash selfcheck MBPP/742 attempt=1
+CALL qwen38-flash steelman MBPP/742 attempt=1
+CALL qwen38-flash selfcheck MBPP/751 attempt=1
+CALL qwen38-flash steelman MBPP/751 attempt=1
+RUN qwen38-flash MBPP/752
+CALL qwen38-flash generation MBPP/752 attempt=1
+CALL qwen38-flash selfcheck MBPP/752 attempt=1
+CALL qwen38-flash steelman MBPP/752 attempt=1
+RUN qwen38-flash MBPP/753
+CALL qwen38-flash generation MBPP/753 attempt=1
+RUN qwen38-flash MBPP/754
+CALL qwen38-flash generation MBPP/754 attempt=1
+RUN qwen38-flash MBPP/755
+CALL qwen38-flash generation MBPP/755 attempt=1
+CALL qwen38-flash selfcheck MBPP/750 attempt=1
+CALL qwen38-flash steelman MBPP/750 attempt=1
+RUN qwen38-flash MBPP/756
+CALL qwen38-flash generation MBPP/756 attempt=1
+CALL qwen38-flash steelman MBPP/753 attempt=1
+CALL qwen38-flash selfcheck MBPP/753 attempt=1
+CALL qwen38-flash selfcheck MBPP/755 attempt=1
+CALL qwen38-flash steelman MBPP/755 attempt=1
+RUN qwen38-flash MBPP/757
+CALL qwen38-flash generation MBPP/757 attempt=1
+RUN qwen38-flash MBPP/758
+CALL qwen38-flash generation MBPP/758 attempt=1
+RUN qwen38-flash MBPP/760
+CALL qwen38-flash generation MBPP/760 attempt=1
+CALL qwen38-flash selfcheck MBPP/760 attempt=1
+CALL qwen38-flash steelman MBPP/760 attempt=1
+CALL qwen38-flash selfcheck MBPP/748 attempt=1
+CALL qwen38-flash steelman MBPP/748 attempt=1
+CALL qwen38-flash selfcheck MBPP/738 attempt=1
+CALL qwen38-flash steelman MBPP/738 attempt=1
+CALL qwen38-flash selfcheck MBPP/746 attempt=1
+CALL qwen38-flash steelman MBPP/746 attempt=1
+RUN qwen38-flash MBPP/761
+CALL qwen38-flash generation MBPP/761 attempt=1
+CALL qwen38-flash steelman MBPP/757 attempt=1
+CALL qwen38-flash selfcheck MBPP/757 attempt=1
+CALL qwen38-flash steelman MBPP/660 attempt=1
+CALL qwen38-flash selfcheck MBPP/660 attempt=1
+RUN qwen38-flash MBPP/762
+CALL qwen38-flash generation MBPP/762 attempt=1
+CALL qwen38-flash selfcheck MBPP/762 attempt=1
+CALL qwen38-flash steelman MBPP/762 attempt=1
+RUN qwen38-flash MBPP/763
+CALL qwen38-flash generation MBPP/763 attempt=1
+RUN qwen38-flash MBPP/764
+CALL qwen38-flash generation MBPP/764 attempt=1
+RUN qwen38-flash MBPP/765
+CALL qwen38-flash generation MBPP/765 attempt=1
+CALL qwen38-flash selfcheck MBPP/756 attempt=1
+CALL qwen38-flash steelman MBPP/756 attempt=1
+RUN qwen38-flash MBPP/766
+CALL qwen38-flash generation MBPP/766 attempt=1
+CALL qwen38-flash steelman MBPP/763 attempt=1
+CALL qwen38-flash selfcheck MBPP/763 attempt=1
+RUN qwen38-flash MBPP/767
+CALL qwen38-flash generation MBPP/767 attempt=1
+CALL qwen38-flash selfcheck MBPP/766 attempt=1
+CALL qwen38-flash steelman MBPP/766 attempt=1
+CALL qwen38-flash steelman MBPP/767 attempt=1
+CALL qwen38-flash selfcheck MBPP/767 attempt=1
+CALL qwen38-flash selfcheck MBPP/764 attempt=1
+CALL qwen38-flash steelman MBPP/764 attempt=1
+CALL qwen38-flash selfcheck MBPP/758 attempt=1
+CALL qwen38-flash steelman MBPP/758 attempt=1
+RUN qwen38-flash MBPP/768
+CALL qwen38-flash generation MBPP/768 attempt=1
+RUN qwen38-flash MBPP/770
+CALL qwen38-flash generation MBPP/770 attempt=1
+CALL qwen38-flash steelman MBPP/768 attempt=1
+CALL qwen38-flash selfcheck MBPP/768 attempt=1
+RUN qwen38-flash MBPP/771
+CALL qwen38-flash generation MBPP/771 attempt=1
+RUN qwen38-flash MBPP/772
+CALL qwen38-flash generation MBPP/772 attempt=1
+CALL qwen38-flash selfcheck MBPP/771 attempt=1
+CALL qwen38-flash steelman MBPP/771 attempt=1
+CALL qwen38-flash selfcheck MBPP/761 attempt=1
+CALL qwen38-flash steelman MBPP/761 attempt=1
+CALL qwen38-flash selfcheck MBPP/772 attempt=1
+CALL qwen38-flash steelman MBPP/772 attempt=1
+RUN qwen38-flash MBPP/773
+CALL qwen38-flash generation MBPP/773 attempt=1
+CALL qwen38-flash selfcheck MBPP/770 attempt=1
+CALL qwen38-flash steelman MBPP/770 attempt=1
+RUN qwen38-flash MBPP/774
+CALL qwen38-flash generation MBPP/774 attempt=1
+CALL qwen38-flash selfcheck MBPP/774 attempt=1
+CALL qwen38-flash steelman MBPP/774 attempt=1
+RUN qwen38-flash MBPP/775
+CALL qwen38-flash generation MBPP/775 attempt=1
+RUN qwen38-flash MBPP/776
+CALL qwen38-flash generation MBPP/776 attempt=1
+CALL qwen38-flash steelman MBPP/775 attempt=1
+CALL qwen38-flash selfcheck MBPP/775 attempt=1
+RUN qwen38-flash MBPP/777
+CALL qwen38-flash generation MBPP/777 attempt=1
+CALL qwen38-flash steelman MBPP/777 attempt=1
+CALL qwen38-flash selfcheck MBPP/777 attempt=1
+RUN qwen38-flash MBPP/778
+CALL qwen38-flash generation MBPP/778 attempt=1
+CALL qwen38-flash steelman MBPP/778 attempt=1
+CALL qwen38-flash selfcheck MBPP/778 attempt=1
+RUN qwen38-flash MBPP/779
+CALL qwen38-flash generation MBPP/779 attempt=1
+RUN qwen38-flash MBPP/780
+CALL qwen38-flash generation MBPP/780 attempt=1
+CALL qwen38-flash selfcheck MBPP/773 attempt=1
+CALL qwen38-flash steelman MBPP/773 attempt=1
+RUN qwen38-flash MBPP/781
+CALL qwen38-flash generation MBPP/781 attempt=1
+CALL qwen38-flash selfcheck MBPP/754 attempt=1
+CALL qwen38-flash steelman MBPP/754 attempt=1
+RUN qwen38-flash MBPP/782
+CALL qwen38-flash generation MBPP/782 attempt=1
+CALL qwen38-flash selfcheck MBPP/781 attempt=1
+CALL qwen38-flash steelman MBPP/781 attempt=1
+RUN qwen38-flash MBPP/783
+CALL qwen38-flash generation MBPP/783 attempt=1
+RUN qwen38-flash MBPP/784
+CALL qwen38-flash generation MBPP/784 attempt=1
+CALL qwen38-flash selfcheck MBPP/779 attempt=1
+CALL qwen38-flash steelman MBPP/779 attempt=1
+RUN qwen38-flash MBPP/785
+CALL qwen38-flash generation MBPP/785 attempt=1
+CALL qwen38-flash selfcheck MBPP/782 attempt=1
+CALL qwen38-flash steelman MBPP/782 attempt=1
+CALL qwen38-flash steelman MBPP/776 attempt=1
+CALL qwen38-flash selfcheck MBPP/776 attempt=1
+RUN qwen38-flash MBPP/786
+CALL qwen38-flash generation MBPP/786 attempt=1
+CALL qwen38-flash selfcheck MBPP/786 attempt=1
+CALL qwen38-flash steelman MBPP/786 attempt=1
+CALL qwen38-flash steelman MBPP/784 attempt=1
+CALL qwen38-flash selfcheck MBPP/784 attempt=1
+RUN qwen38-flash MBPP/787
+CALL qwen38-flash generation MBPP/787 attempt=1
+RUN qwen38-flash MBPP/788
+CALL qwen38-flash generation MBPP/788 attempt=1
+RUN qwen38-flash MBPP/789
+CALL qwen38-flash generation MBPP/789 attempt=1
+CALL qwen38-flash selfcheck MBPP/787 attempt=1
+CALL qwen38-flash steelman MBPP/787 attempt=1
+CALL qwen38-flash steelman MBPP/783 attempt=1
+CALL qwen38-flash selfcheck MBPP/783 attempt=1
+CALL qwen38-flash selfcheck MBPP/785 attempt=1
+CALL qwen38-flash steelman MBPP/785 attempt=1
+RUN qwen38-flash MBPP/790
+CALL qwen38-flash generation MBPP/790 attempt=1
+CALL qwen38-flash selfcheck MBPP/789 attempt=1
+CALL qwen38-flash steelman MBPP/789 attempt=1
+CALL qwen38-flash selfcheck MBPP/790 attempt=1
+CALL qwen38-flash steelman MBPP/790 attempt=1
+RUN qwen38-flash MBPP/791
+CALL qwen38-flash generation MBPP/791 attempt=1
+RUN qwen38-flash MBPP/792
+CALL qwen38-flash generation MBPP/792 attempt=1
+RUN qwen38-flash MBPP/793
+CALL qwen38-flash generation MBPP/793 attempt=1
+CALL qwen38-flash steelman MBPP/788 attempt=1
+CALL qwen38-flash selfcheck MBPP/788 attempt=1
+CALL qwen38-flash selfcheck MBPP/793 attempt=1
+CALL qwen38-flash steelman MBPP/793 attempt=1
+CALL qwen38-flash selfcheck MBPP/792 attempt=1
+CALL qwen38-flash steelman MBPP/792 attempt=1
+RUN qwen38-flash MBPP/794
+CALL qwen38-flash generation MBPP/794 attempt=1
+RUN qwen38-flash MBPP/795
+CALL qwen38-flash generation MBPP/795 attempt=1
+RUN qwen38-flash MBPP/796
+CALL qwen38-flash generation MBPP/796 attempt=1
+CALL qwen38-flash selfcheck MBPP/796 attempt=1
+CALL qwen38-flash steelman MBPP/796 attempt=1
+RUN qwen38-flash MBPP/797
+CALL qwen38-flash generation MBPP/797 attempt=1
+RUN qwen38-flash MBPP/798
+CALL qwen38-flash generation MBPP/798 attempt=1
+CALL qwen38-flash selfcheck MBPP/794 attempt=1
+CALL qwen38-flash steelman MBPP/794 attempt=1
+CALL qwen38-flash selfcheck MBPP/798 attempt=1
+CALL qwen38-flash steelman MBPP/798 attempt=1
+RUN qwen38-flash MBPP/799
+CALL qwen38-flash generation MBPP/799 attempt=1
+CALL qwen38-flash selfcheck MBPP/797 attempt=1
+CALL qwen38-flash steelman MBPP/797 attempt=1
+RUN qwen38-flash MBPP/800
+CALL qwen38-flash generation MBPP/800 attempt=1
+CALL qwen38-flash selfcheck MBPP/780 attempt=1
+CALL qwen38-flash steelman MBPP/780 attempt=1
+CALL qwen38-flash selfcheck MBPP/800 attempt=1
+CALL qwen38-flash steelman MBPP/800 attempt=1
+RUN qwen38-flash MBPP/801
+CALL qwen38-flash generation MBPP/801 attempt=1
+CALL qwen38-flash selfcheck MBPP/801 attempt=1
+CALL qwen38-flash steelman MBPP/801 attempt=1
+CALL qwen38-flash selfcheck MBPP/795 attempt=1
+CALL qwen38-flash steelman MBPP/795 attempt=1
+CALL qwen38-flash selfcheck MBPP/791 attempt=1
+CALL qwen38-flash steelman MBPP/791 attempt=1
+CALL qwen38-flash selfcheck MBPP/765 attempt=1
+CALL qwen38-flash steelman MBPP/765 attempt=1
+RUN qwen38-flash MBPP/802
+CALL qwen38-flash generation MBPP/802 attempt=1
+RUN qwen38-flash MBPP/803
+CALL qwen38-flash generation MBPP/803 attempt=1
+RUN qwen38-flash MBPP/804
+CALL qwen38-flash generation MBPP/804 attempt=1
+CALL qwen38-flash selfcheck MBPP/803 attempt=1
+CALL qwen38-flash steelman MBPP/803 attempt=1
+RUN qwen38-flash MBPP/805
+CALL qwen38-flash generation MBPP/805 attempt=1
+CALL qwen38-flash selfcheck MBPP/805 attempt=1
+CALL qwen38-flash steelman MBPP/805 attempt=1
+RUN qwen38-flash MBPP/806
+CALL qwen38-flash generation MBPP/806 attempt=1
+CALL qwen38-flash selfcheck MBPP/804 attempt=1
+CALL qwen38-flash steelman MBPP/804 attempt=1
+CALL qwen38-flash selfcheck MBPP/806 attempt=1
+CALL qwen38-flash steelman MBPP/806 attempt=1
+RUN qwen38-flash MBPP/807
+CALL qwen38-flash generation MBPP/807 attempt=1
+CALL qwen38-flash selfcheck MBPP/807 attempt=1
+CALL qwen38-flash steelman MBPP/807 attempt=1
+RUN qwen38-flash MBPP/808
+CALL qwen38-flash generation MBPP/808 attempt=1
+RUN qwen38-flash MBPP/809
+CALL qwen38-flash generation MBPP/809 attempt=1
+RUN qwen38-flash MBPP/810
+CALL qwen38-flash generation MBPP/810 attempt=1
+CALL qwen38-flash selfcheck MBPP/809 attempt=1
+CALL qwen38-flash steelman MBPP/809 attempt=1
+RUN qwen38-flash MBPP/811
+CALL qwen38-flash generation MBPP/811 attempt=1
+CALL qwen38-flash selfcheck MBPP/811 attempt=1
+CALL qwen38-flash steelman MBPP/811 attempt=1
+RUN qwen38-flash MBPP/812
+CALL qwen38-flash generation MBPP/812 attempt=1
+RUN qwen38-flash MBPP/813
+CALL qwen38-flash generation MBPP/813 attempt=1
+CALL qwen38-flash selfcheck MBPP/813 attempt=1
+CALL qwen38-flash steelman MBPP/813 attempt=1
+CALL qwen38-flash selfcheck MBPP/812 attempt=1
+CALL qwen38-flash steelman MBPP/812 attempt=1
+RUN qwen38-flash MBPP/814
+CALL qwen38-flash generation MBPP/814 attempt=1
+RUN qwen38-flash MBPP/815
+CALL qwen38-flash generation MBPP/815 attempt=1
+CALL qwen38-flash selfcheck MBPP/814 attempt=1
+CALL qwen38-flash steelman MBPP/814 attempt=1
+CALL qwen38-flash selfcheck MBPP/815 attempt=1
+CALL qwen38-flash steelman MBPP/815 attempt=1
+RUN qwen38-flash MBPP/816
+CALL qwen38-flash generation MBPP/816 attempt=1
+RUN qwen38-flash MBPP/817
+CALL qwen38-flash generation MBPP/817 attempt=1
+CALL qwen38-flash steelman MBPP/799 attempt=1
+CALL qwen38-flash selfcheck MBPP/799 attempt=1
+CALL qwen38-flash selfcheck MBPP/817 attempt=1
+CALL qwen38-flash steelman MBPP/817 attempt=1
+RUN qwen38-flash MBPP/818
+CALL qwen38-flash generation MBPP/818 attempt=1
+RUN qwen38-flash MBPP/819
+CALL qwen38-flash generation MBPP/819 attempt=1
+RUN qwen38-flash MBPP/820
+CALL qwen38-flash generation MBPP/820 attempt=1
+CALL qwen38-flash selfcheck MBPP/818 attempt=1
+CALL qwen38-flash steelman MBPP/818 attempt=1
+RUN qwen38-flash MBPP/821
+CALL qwen38-flash generation MBPP/821 attempt=1
+CALL qwen38-flash selfcheck MBPP/816 attempt=1
+CALL qwen38-flash steelman MBPP/816 attempt=1
+CALL qwen38-flash selfcheck MBPP/821 attempt=1
+CALL qwen38-flash steelman MBPP/821 attempt=1
+RUN qwen38-flash MBPP/822
+CALL qwen38-flash generation MBPP/822 attempt=1
+CALL qwen38-flash selfcheck MBPP/820 attempt=1
+CALL qwen38-flash steelman MBPP/820 attempt=1
+RUN qwen38-flash MBPP/823
+CALL qwen38-flash generation MBPP/823 attempt=1
+CALL qwen38-flash selfcheck MBPP/822 attempt=1
+CALL qwen38-flash steelman MBPP/822 attempt=1
+CALL qwen38-flash selfcheck MBPP/823 attempt=1
+CALL qwen38-flash steelman MBPP/823 attempt=1
+RUN qwen38-flash MBPP/824
+CALL qwen38-flash generation MBPP/824 attempt=1
+RUN qwen38-flash MBPP/825
+CALL qwen38-flash generation MBPP/825 attempt=1
+CALL qwen38-flash selfcheck MBPP/824 attempt=1
+CALL qwen38-flash steelman MBPP/824 attempt=1
+CALL qwen38-flash selfcheck MBPP/825 attempt=1
+CALL qwen38-flash steelman MBPP/825 attempt=1
+RUN qwen38-flash MBPP/826
+CALL qwen38-flash generation MBPP/826 attempt=1
+RUN qwen38-flash MBPP/827
+CALL qwen38-flash generation MBPP/827 attempt=1
+CALL qwen38-flash selfcheck MBPP/810 attempt=1
+CALL qwen38-flash steelman MBPP/810 attempt=1
+RUN qwen38-flash MBPP/828
+CALL qwen38-flash generation MBPP/828 attempt=1
+CALL qwen38-flash selfcheck MBPP/819 attempt=1
+CALL qwen38-flash steelman MBPP/819 attempt=1
+CALL qwen38-flash selfcheck MBPP/828 attempt=1
+CALL qwen38-flash steelman MBPP/828 attempt=1
+CALL qwen38-flash selfcheck MBPP/827 attempt=1
+CALL qwen38-flash steelman MBPP/827 attempt=1
+RUN qwen38-flash MBPP/829
+CALL qwen38-flash generation MBPP/829 attempt=1
+RUN qwen38-flash MBPP/830
+CALL qwen38-flash generation MBPP/830 attempt=1
+RUN qwen38-flash MBPP/831
+CALL qwen38-flash generation MBPP/831 attempt=1
+CALL qwen38-flash selfcheck MBPP/831 attempt=1
+CALL qwen38-flash steelman MBPP/831 attempt=1
+RUN qwen38-flash MBPP/832
+CALL qwen38-flash generation MBPP/832 attempt=1
+RUN qwen38-flash MBPP/833
+CALL qwen38-flash generation MBPP/833 attempt=1
+CALL qwen38-flash steelman MBPP/826 attempt=1
+CALL qwen38-flash selfcheck MBPP/826 attempt=1
+CALL qwen38-flash steelman MBPP/833 attempt=1
+CALL qwen38-flash selfcheck MBPP/833 attempt=1
+RUN qwen38-flash MBPP/834
+CALL qwen38-flash generation MBPP/834 attempt=1
+RUN qwen38-flash MBPP/835
+CALL qwen38-flash generation MBPP/835 attempt=1
+RUN qwen38-flash MBPP/837
+CALL qwen38-flash generation MBPP/837 attempt=1
+CALL qwen38-flash selfcheck MBPP/835 attempt=1
+CALL qwen38-flash steelman MBPP/835 attempt=1
+CALL qwen38-flash steelman MBPP/832 attempt=1
+CALL qwen38-flash selfcheck MBPP/832 attempt=1
+RUN qwen38-flash MBPP/838
+CALL qwen38-flash generation MBPP/838 attempt=1
+CALL qwen38-flash steelman MBPP/837 attempt=1
+CALL qwen38-flash selfcheck MBPP/837 attempt=1
+CALL qwen38-flash selfcheck MBPP/834 attempt=1
+CALL qwen38-flash steelman MBPP/834 attempt=1
+RUN qwen38-flash MBPP/839
+CALL qwen38-flash generation MBPP/839 attempt=1
+RUN qwen38-flash MBPP/840
+CALL qwen38-flash generation MBPP/840 attempt=1
+RUN qwen38-flash MBPP/841
+CALL qwen38-flash generation MBPP/841 attempt=1
+CALL qwen38-flash selfcheck MBPP/839 attempt=1
+CALL qwen38-flash steelman MBPP/839 attempt=1
+CALL qwen38-flash selfcheck MBPP/841 attempt=1
+CALL qwen38-flash steelman MBPP/841 attempt=1
+RUN qwen38-flash MBPP/842
+CALL qwen38-flash generation MBPP/842 attempt=1
+CALL qwen38-flash selfcheck MBPP/829 attempt=1
+CALL qwen38-flash steelman MBPP/829 attempt=1
+CALL qwen38-flash steelman MBPP/842 attempt=1
+CALL qwen38-flash selfcheck MBPP/842 attempt=1
+RUN qwen38-flash MBPP/843
+CALL qwen38-flash generation MBPP/843 attempt=1
+RUN qwen38-flash MBPP/844
+CALL qwen38-flash generation MBPP/844 attempt=1
+RUN qwen38-flash MBPP/845
+CALL qwen38-flash generation MBPP/845 attempt=1
+RUN qwen38-flash MBPP/846
+CALL qwen38-flash generation MBPP/846 attempt=1
+CALL qwen38-flash selfcheck MBPP/845 attempt=1
+CALL qwen38-flash steelman MBPP/845 attempt=1
+RUN qwen38-flash MBPP/847
+CALL qwen38-flash generation MBPP/847 attempt=1
+CALL qwen38-flash selfcheck MBPP/847 attempt=1
+CALL qwen38-flash steelman MBPP/847 attempt=1
+RUN qwen38-flash MBPP/848
+CALL qwen38-flash generation MBPP/848 attempt=1
+CALL qwen38-flash selfcheck MBPP/848 attempt=1
+CALL qwen38-flash steelman MBPP/848 attempt=1
+CALL qwen38-flash selfcheck MBPP/808 attempt=1
+CALL qwen38-flash steelman MBPP/808 attempt=1
+RUN qwen38-flash MBPP/849
+CALL qwen38-flash generation MBPP/849 attempt=1
+RUN qwen38-flash MBPP/850
+CALL qwen38-flash generation MBPP/850 attempt=1
+CALL qwen38-flash selfcheck MBPP/843 attempt=1
+CALL qwen38-flash steelman MBPP/843 attempt=1
+CALL qwen38-flash selfcheck MBPP/849 attempt=1
+CALL qwen38-flash steelman MBPP/849 attempt=1
+RUN qwen38-flash MBPP/851
+CALL qwen38-flash generation MBPP/851 attempt=1
+RUN qwen38-flash MBPP/852
+CALL qwen38-flash generation MBPP/852 attempt=1
+CALL qwen38-flash steelman MBPP/838 attempt=1
+CALL qwen38-flash selfcheck MBPP/838 attempt=1
+CALL qwen38-flash steelman MBPP/851 attempt=1
+CALL qwen38-flash selfcheck MBPP/851 attempt=1
+CALL qwen38-flash steelman MBPP/852 attempt=1
+CALL qwen38-flash selfcheck MBPP/852 attempt=1
+CALL qwen38-flash selfcheck MBPP/850 attempt=1
+CALL qwen38-flash steelman MBPP/850 attempt=1
+RUN qwen38-flash MBPP/853
+CALL qwen38-flash generation MBPP/853 attempt=1
+RUN qwen38-flash MBPP/854
+CALL qwen38-flash generation MBPP/854 attempt=1
+RUN qwen38-flash MBPP/855
+CALL qwen38-flash generation MBPP/855 attempt=1
+CALL qwen38-flash selfcheck MBPP/802 attempt=1
+CALL qwen38-flash steelman MBPP/802 attempt=1
+CALL qwen38-flash selfcheck MBPP/855 attempt=1
+CALL qwen38-flash steelman MBPP/855 attempt=1
+CALL qwen38-flash selfcheck MBPP/846 attempt=1
+CALL qwen38-flash steelman MBPP/846 attempt=1
+CALL qwen38-flash steelman MBPP/854 attempt=1
+CALL qwen38-flash selfcheck MBPP/854 attempt=1
+RUN qwen38-flash MBPP/856
+CALL qwen38-flash generation MBPP/856 attempt=1
+CALL qwen38-flash selfcheck MBPP/853 attempt=1
+CALL qwen38-flash steelman MBPP/853 attempt=1
+RUN qwen38-flash MBPP/857
+CALL qwen38-flash generation MBPP/857 attempt=1
+CALL qwen38-flash steelman MBPP/856 attempt=1
+CALL qwen38-flash selfcheck MBPP/856 attempt=1
+RUN qwen38-flash MBPP/858
+CALL qwen38-flash generation MBPP/858 attempt=1
+CALL qwen38-flash selfcheck MBPP/858 attempt=1
+CALL qwen38-flash steelman MBPP/858 attempt=1
+CALL qwen38-flash selfcheck MBPP/857 attempt=1
+CALL qwen38-flash steelman MBPP/857 attempt=1
+RUN qwen38-flash MBPP/859
+CALL qwen38-flash generation MBPP/859 attempt=1
+RUN qwen38-flash MBPP/860
+CALL qwen38-flash generation MBPP/860 attempt=1
+RUN qwen38-flash MBPP/861
+CALL qwen38-flash generation MBPP/861 attempt=1
+RUN qwen38-flash MBPP/862
+CALL qwen38-flash generation MBPP/862 attempt=1
+CALL qwen38-flash selfcheck MBPP/859 attempt=1
+CALL qwen38-flash steelman MBPP/859 attempt=1
+CALL qwen38-flash selfcheck MBPP/861 attempt=1
+CALL qwen38-flash steelman MBPP/861 attempt=1
+CALL qwen38-flash steelman MBPP/840 attempt=1
+CALL qwen38-flash selfcheck MBPP/840 attempt=1
+CALL qwen38-flash selfcheck MBPP/862 attempt=1
+CALL qwen38-flash steelman MBPP/862 attempt=1
+CALL qwen38-flash selfcheck MBPP/830 attempt=1
+CALL qwen38-flash steelman MBPP/830 attempt=1
+RUN qwen38-flash MBPP/863
+CALL qwen38-flash generation MBPP/863 attempt=1
+CALL qwen38-flash selfcheck MBPP/863 attempt=1
+CALL qwen38-flash steelman MBPP/863 attempt=1
+RUN qwen38-flash MBPP/864
+CALL qwen38-flash generation MBPP/864 attempt=1
+RUN qwen38-flash MBPP/865
+CALL qwen38-flash generation MBPP/865 attempt=1
+CALL qwen38-flash selfcheck MBPP/860 attempt=1
+CALL qwen38-flash steelman MBPP/860 attempt=1
+CALL qwen38-flash selfcheck MBPP/864 attempt=1
+CALL qwen38-flash steelman MBPP/864 attempt=1
+RUN qwen38-flash MBPP/866
+CALL qwen38-flash generation MBPP/866 attempt=1
+RUN qwen38-flash MBPP/867
+CALL qwen38-flash generation MBPP/867 attempt=1
+RUN qwen38-flash MBPP/868
+CALL qwen38-flash generation MBPP/868 attempt=1
+CALL qwen38-flash selfcheck MBPP/867 attempt=1
+CALL qwen38-flash steelman MBPP/867 attempt=1
+RUN qwen38-flash MBPP/869
+CALL qwen38-flash generation MBPP/869 attempt=1
+CALL qwen38-flash selfcheck MBPP/868 attempt=1
+CALL qwen38-flash steelman MBPP/868 attempt=1
+RUN qwen38-flash MBPP/870
+CALL qwen38-flash generation MBPP/870 attempt=1
+CALL qwen38-flash selfcheck MBPP/866 attempt=1
+CALL qwen38-flash steelman MBPP/866 attempt=1
+RUN qwen38-flash MBPP/871
+CALL qwen38-flash generation MBPP/871 attempt=1
+RUN qwen38-flash MBPP/872
+CALL qwen38-flash generation MBPP/872 attempt=1
+CALL qwen38-flash selfcheck MBPP/870 attempt=1
+CALL qwen38-flash steelman MBPP/870 attempt=1
+CALL qwen38-flash selfcheck MBPP/871 attempt=1
+CALL qwen38-flash steelman MBPP/871 attempt=1
+RUN qwen38-flash MBPP/873
+CALL qwen38-flash generation MBPP/873 attempt=1
+RUN qwen38-flash MBPP/874
+CALL qwen38-flash generation MBPP/874 attempt=1
+RUN qwen38-flash MBPP/875
+CALL qwen38-flash generation MBPP/875 attempt=1
+RUN qwen38-flash MBPP/876
+CALL qwen38-flash generation MBPP/876 attempt=1
+CALL qwen38-flash steelman MBPP/873 attempt=1
+CALL qwen38-flash selfcheck MBPP/873 attempt=1
+RUN qwen38-flash MBPP/877
+CALL qwen38-flash generation MBPP/877 attempt=1
+CALL qwen38-flash selfcheck MBPP/877 attempt=1
+CALL qwen38-flash steelman MBPP/877 attempt=1
+RUN qwen38-flash MBPP/878
+CALL qwen38-flash generation MBPP/878 attempt=1
+CALL qwen38-flash selfcheck MBPP/876 attempt=1
+CALL qwen38-flash steelman MBPP/876 attempt=1
+RUN qwen38-flash MBPP/879
+CALL qwen38-flash generation MBPP/879 attempt=1
+RUN qwen38-flash MBPP/880
+CALL qwen38-flash generation MBPP/880 attempt=1
+CALL qwen38-flash selfcheck MBPP/869 attempt=1
+CALL qwen38-flash steelman MBPP/869 attempt=1
+RUN qwen38-flash MBPP/881
+CALL qwen38-flash generation MBPP/881 attempt=1
+CALL qwen38-flash selfcheck MBPP/874 attempt=1
+CALL qwen38-flash steelman MBPP/874 attempt=1
+RUN qwen38-flash MBPP/882
+CALL qwen38-flash generation MBPP/882 attempt=1
+CALL qwen38-flash steelman MBPP/875 attempt=1
+CALL qwen38-flash selfcheck MBPP/875 attempt=1
+CALL qwen38-flash selfcheck MBPP/865 attempt=1
+CALL qwen38-flash steelman MBPP/865 attempt=1
+RUN qwen38-flash MBPP/883
+CALL qwen38-flash generation MBPP/883 attempt=1
+CALL qwen38-flash steelman MBPP/881 attempt=1
+CALL qwen38-flash selfcheck MBPP/881 attempt=1
+CALL qwen38-flash selfcheck MBPP/882 attempt=1
+CALL qwen38-flash steelman MBPP/882 attempt=1
+CALL qwen38-flash selfcheck MBPP/878 attempt=1
+CALL qwen38-flash steelman MBPP/878 attempt=1
+CALL qwen38-flash selfcheck MBPP/883 attempt=1
+CALL qwen38-flash steelman MBPP/883 attempt=1
+RUN qwen38-flash MBPP/884
+CALL qwen38-flash generation MBPP/884 attempt=1
+RUN qwen38-flash MBPP/885
+CALL qwen38-flash generation MBPP/885 attempt=1
+RUN qwen38-flash MBPP/886
+CALL qwen38-flash generation MBPP/886 attempt=1
+RUN qwen38-flash MBPP/887
+CALL qwen38-flash generation MBPP/887 attempt=1
+CALL qwen38-flash selfcheck MBPP/887 attempt=1
+CALL qwen38-flash steelman MBPP/887 attempt=1
+CALL qwen38-flash selfcheck MBPP/886 attempt=1
+CALL qwen38-flash steelman MBPP/886 attempt=1
+CALL qwen38-flash selfcheck MBPP/885 attempt=1
+CALL qwen38-flash steelman MBPP/885 attempt=1
+RUN qwen38-flash MBPP/888
+CALL qwen38-flash generation MBPP/888 attempt=1
+CALL qwen38-flash selfcheck MBPP/879 attempt=1
+CALL qwen38-flash steelman MBPP/879 attempt=1
+CALL qwen38-flash selfcheck MBPP/880 attempt=1
+CALL qwen38-flash steelman MBPP/880 attempt=1
+RUN qwen38-flash MBPP/889
+CALL qwen38-flash generation MBPP/889 attempt=1
+CALL qwen38-flash selfcheck MBPP/889 attempt=1
+CALL qwen38-flash steelman MBPP/889 attempt=1
+RUN qwen38-flash MBPP/890
+CALL qwen38-flash generation MBPP/890 attempt=1
+RUN qwen38-flash MBPP/891
+CALL qwen38-flash generation MBPP/891 attempt=1
+RUN qwen38-flash MBPP/892
+CALL qwen38-flash generation MBPP/892 attempt=1
+RUN qwen38-flash MBPP/893
+CALL qwen38-flash generation MBPP/893 attempt=1
+CALL qwen38-flash selfcheck MBPP/888 attempt=1
+CALL qwen38-flash steelman MBPP/888 attempt=1
+CALL qwen38-flash selfcheck MBPP/892 attempt=1
+CALL qwen38-flash steelman MBPP/892 attempt=1
+CALL qwen38-flash selfcheck MBPP/893 attempt=1
+CALL qwen38-flash steelman MBPP/893 attempt=1
+CALL qwen38-flash steelman MBPP/891 attempt=1
+CALL qwen38-flash selfcheck MBPP/891 attempt=1
+RUN qwen38-flash MBPP/894
+CALL qwen38-flash generation MBPP/894 attempt=1
+RUN qwen38-flash MBPP/895
+CALL qwen38-flash generation MBPP/895 attempt=1
+RUN qwen38-flash MBPP/896
+CALL qwen38-flash generation MBPP/896 attempt=1
+CALL qwen38-flash selfcheck MBPP/896 attempt=1
+CALL qwen38-flash steelman MBPP/896 attempt=1
+RUN qwen38-flash MBPP/897
+CALL qwen38-flash generation MBPP/897 attempt=1
+RUN qwen38-flash MBPP/898
+CALL qwen38-flash generation MBPP/898 attempt=1
+RUN qwen38-flash MBPP/899
+CALL qwen38-flash generation MBPP/899 attempt=1
+RUN qwen38-flash MBPP/901
+CALL qwen38-flash generation MBPP/901 attempt=1
+CALL qwen38-flash selfcheck MBPP/901 attempt=1
+CALL qwen38-flash steelman MBPP/901 attempt=1
+RUN qwen38-flash MBPP/902
+CALL qwen38-flash generation MBPP/902 attempt=1
+CALL qwen38-flash selfcheck MBPP/894 attempt=1
+CALL qwen38-flash steelman MBPP/894 attempt=1
+RUN qwen38-flash MBPP/903
+CALL qwen38-flash generation MBPP/903 attempt=1
+CALL qwen38-flash selfcheck MBPP/902 attempt=1
+CALL qwen38-flash steelman MBPP/902 attempt=1
+CALL qwen38-flash selfcheck MBPP/898 attempt=1
+CALL qwen38-flash steelman MBPP/898 attempt=1
+CALL qwen38-flash selfcheck MBPP/897 attempt=1
+CALL qwen38-flash steelman MBPP/897 attempt=1
+RUN qwen38-flash MBPP/904
+CALL qwen38-flash generation MBPP/904 attempt=1
+CALL qwen38-flash selfcheck MBPP/904 attempt=1
+CALL qwen38-flash steelman MBPP/904 attempt=1
+RUN qwen38-flash MBPP/905
+CALL qwen38-flash generation MBPP/905 attempt=1
+RUN qwen38-flash MBPP/906
+CALL qwen38-flash generation MBPP/906 attempt=1
+CALL qwen38-flash selfcheck MBPP/905 attempt=1
+CALL qwen38-flash steelman MBPP/905 attempt=1
+RUN qwen38-flash MBPP/907
+CALL qwen38-flash generation MBPP/907 attempt=1
+CALL qwen38-flash selfcheck MBPP/903 attempt=1
+CALL qwen38-flash steelman MBPP/903 attempt=1
+RUN qwen38-flash MBPP/908
+CALL qwen38-flash generation MBPP/908 attempt=1
+RUN qwen38-flash MBPP/909
+CALL qwen38-flash generation MBPP/909 attempt=1
+CALL qwen38-flash selfcheck MBPP/890 attempt=1
+CALL qwen38-flash steelman MBPP/890 attempt=1
+CALL qwen38-flash selfcheck MBPP/844 attempt=1
+CALL qwen38-flash steelman MBPP/844 attempt=1
+CALL qwen38-flash selfcheck MBPP/895 attempt=1
+CALL qwen38-flash steelman MBPP/895 attempt=1
+CALL qwen38-flash selfcheck MBPP/884 attempt=1
+CALL qwen38-flash steelman MBPP/884 attempt=1
+RUN qwen38-flash MBPP/910
+CALL qwen38-flash generation MBPP/910 attempt=1
+CALL qwen38-flash selfcheck MBPP/909 attempt=1
+CALL qwen38-flash steelman MBPP/909 attempt=1
+CALL qwen38-flash selfcheck MBPP/908 attempt=1
+CALL qwen38-flash steelman MBPP/908 attempt=1
+RUN qwen38-flash MBPP/911
+CALL qwen38-flash generation MBPP/911 attempt=1
+CALL qwen38-flash selfcheck MBPP/907 attempt=1
+CALL qwen38-flash steelman MBPP/907 attempt=1
+RUN qwen38-flash MBPP/914
+CALL qwen38-flash generation MBPP/914 attempt=1
+RUN qwen38-flash MBPP/915
+CALL qwen38-flash generation MBPP/915 attempt=1
+CALL qwen38-flash selfcheck MBPP/911 attempt=1
+CALL qwen38-flash steelman MBPP/911 attempt=1
+CALL qwen38-flash selfcheck MBPP/914 attempt=1
+CALL qwen38-flash steelman MBPP/914 attempt=1
+RUN qwen38-flash MBPP/916
+CALL qwen38-flash generation MBPP/916 attempt=1
+CALL qwen38-flash selfcheck MBPP/906 attempt=1
+CALL qwen38-flash steelman MBPP/906 attempt=1
+CALL qwen38-flash selfcheck MBPP/916 attempt=1
+CALL qwen38-flash steelman MBPP/916 attempt=1
+CALL qwen38-flash steelman MBPP/872 attempt=1
+CALL qwen38-flash selfcheck MBPP/872 attempt=1
+RUN qwen38-flash MBPP/917
+CALL qwen38-flash generation MBPP/917 attempt=1
+RUN qwen38-flash MBPP/918
+CALL qwen38-flash generation MBPP/918 attempt=1
+CALL qwen38-flash selfcheck MBPP/918 attempt=1
+CALL qwen38-flash steelman MBPP/918 attempt=1
+RUN qwen38-flash MBPP/919
+CALL qwen38-flash generation MBPP/919 attempt=1
+CALL qwen38-flash selfcheck MBPP/919 attempt=1
+CALL qwen38-flash steelman MBPP/919 attempt=1
+CALL qwen38-flash selfcheck MBPP/917 attempt=1
+CALL qwen38-flash steelman MBPP/917 attempt=1
+RUN qwen38-flash MBPP/920
+CALL qwen38-flash generation MBPP/920 attempt=1
+RUN qwen38-flash MBPP/921
+CALL qwen38-flash generation MBPP/921 attempt=1
+CALL qwen38-flash selfcheck MBPP/915 attempt=1
+CALL qwen38-flash steelman MBPP/915 attempt=1
+RUN qwen38-flash MBPP/922
+CALL qwen38-flash generation MBPP/922 attempt=1
+CALL qwen38-flash selfcheck MBPP/920 attempt=1
+CALL qwen38-flash steelman MBPP/920 attempt=1
+RUN qwen38-flash MBPP/923
+CALL qwen38-flash generation MBPP/923 attempt=1
+RUN qwen38-flash MBPP/924
+CALL qwen38-flash generation MBPP/924 attempt=1
+RUN qwen38-flash MBPP/925
+CALL qwen38-flash generation MBPP/925 attempt=1
+CALL qwen38-flash selfcheck MBPP/924 attempt=1
+CALL qwen38-flash steelman MBPP/924 attempt=1
+CALL qwen38-flash selfcheck MBPP/923 attempt=1
+CALL qwen38-flash steelman MBPP/923 attempt=1
+CALL qwen38-flash selfcheck MBPP/925 attempt=1
+CALL qwen38-flash steelman MBPP/925 attempt=1
+RUN qwen38-flash MBPP/926
+CALL qwen38-flash generation MBPP/926 attempt=1
+RUN qwen38-flash MBPP/928
+CALL qwen38-flash generation MBPP/928 attempt=1
+CALL qwen38-flash selfcheck MBPP/899 attempt=1
+CALL qwen38-flash steelman MBPP/899 attempt=1
+RUN qwen38-flash MBPP/929
+CALL qwen38-flash generation MBPP/929 attempt=1
+CALL qwen38-flash selfcheck MBPP/921 attempt=1
+CALL qwen38-flash steelman MBPP/921 attempt=1
+RUN qwen38-flash MBPP/930
+CALL qwen38-flash generation MBPP/930 attempt=1
+CALL qwen38-flash selfcheck MBPP/928 attempt=1
+CALL qwen38-flash steelman MBPP/928 attempt=1
+RUN qwen38-flash MBPP/931
+CALL qwen38-flash generation MBPP/931 attempt=1
+RUN qwen38-flash MBPP/932
+CALL qwen38-flash generation MBPP/932 attempt=1
+CALL qwen38-flash steelman MBPP/931 attempt=1
+CALL qwen38-flash selfcheck MBPP/931 attempt=1
+CALL qwen38-flash steelman MBPP/932 attempt=1
+CALL qwen38-flash selfcheck MBPP/932 attempt=1
+RUN qwen38-flash MBPP/933
+CALL qwen38-flash generation MBPP/933 attempt=1
+CALL qwen38-flash selfcheck MBPP/933 attempt=1
+CALL qwen38-flash steelman MBPP/933 attempt=1
+RUN qwen38-flash MBPP/934
+CALL qwen38-flash generation MBPP/934 attempt=1
+CALL qwen38-flash selfcheck MBPP/922 attempt=1
+CALL qwen38-flash steelman MBPP/922 attempt=1
+RUN qwen38-flash MBPP/935
+CALL qwen38-flash generation MBPP/935 attempt=1
+CALL qwen38-flash selfcheck MBPP/935 attempt=1
+CALL qwen38-flash steelman MBPP/935 attempt=1
+RUN qwen38-flash MBPP/936
+CALL qwen38-flash generation MBPP/936 attempt=1
+RUN qwen38-flash MBPP/937
+CALL qwen38-flash generation MBPP/937 attempt=1
+CALL qwen38-flash selfcheck MBPP/934 attempt=1
+CALL qwen38-flash steelman MBPP/934 attempt=1
+RUN qwen38-flash MBPP/939
+CALL qwen38-flash generation MBPP/939 attempt=1
+CALL qwen38-flash selfcheck MBPP/937 attempt=1
+CALL qwen38-flash steelman MBPP/937 attempt=1
+CALL qwen38-flash selfcheck MBPP/926 attempt=1
+CALL qwen38-flash steelman MBPP/926 attempt=1
+RUN qwen38-flash MBPP/940
+CALL qwen38-flash generation MBPP/940 attempt=1
+CALL qwen38-flash selfcheck MBPP/940 attempt=1
+CALL qwen38-flash steelman MBPP/940 attempt=1
+RUN qwen38-flash MBPP/941
+CALL qwen38-flash generation MBPP/941 attempt=1
+CALL qwen38-flash steelman MBPP/941 attempt=1
+CALL qwen38-flash selfcheck MBPP/941 attempt=1
+RUN qwen38-flash MBPP/942
+CALL qwen38-flash generation MBPP/942 attempt=1
+RUN qwen38-flash MBPP/943
+CALL qwen38-flash generation MBPP/943 attempt=1
+CALL qwen38-flash selfcheck MBPP/930 attempt=1
+CALL qwen38-flash steelman MBPP/930 attempt=1
+CALL qwen38-flash selfcheck MBPP/943 attempt=1
+CALL qwen38-flash steelman MBPP/943 attempt=1
+RUN qwen38-flash MBPP/944
+CALL qwen38-flash generation MBPP/944 attempt=1
+RUN qwen38-flash MBPP/945
+CALL qwen38-flash generation MBPP/945 attempt=1
+CALL qwen38-flash selfcheck MBPP/945 attempt=1
+CALL qwen38-flash steelman MBPP/945 attempt=1
+RUN qwen38-flash MBPP/946
+CALL qwen38-flash generation MBPP/946 attempt=1
+RUN qwen38-flash MBPP/947
+CALL qwen38-flash generation MBPP/947 attempt=1
+RUN qwen38-flash MBPP/948
+CALL qwen38-flash generation MBPP/948 attempt=1
+CALL qwen38-flash steelman MBPP/947 attempt=1
+CALL qwen38-flash selfcheck MBPP/947 attempt=1
+CALL qwen38-flash selfcheck MBPP/948 attempt=1
+CALL qwen38-flash steelman MBPP/948 attempt=1
+CALL qwen38-flash selfcheck MBPP/939 attempt=1
+CALL qwen38-flash steelman MBPP/939 attempt=1
+RUN qwen38-flash MBPP/949
+CALL qwen38-flash generation MBPP/949 attempt=1
+RUN qwen38-flash MBPP/950
+CALL qwen38-flash generation MBPP/950 attempt=1
+RUN qwen38-flash MBPP/951
+CALL qwen38-flash generation MBPP/951 attempt=1
+CALL qwen38-flash selfcheck MBPP/946 attempt=1
+CALL qwen38-flash steelman MBPP/946 attempt=1
+CALL qwen38-flash selfcheck MBPP/950 attempt=1
+CALL qwen38-flash steelman MBPP/950 attempt=1
+CALL qwen38-flash selfcheck MBPP/949 attempt=1
+CALL qwen38-flash steelman MBPP/949 attempt=1
+RUN qwen38-flash MBPP/952
+CALL qwen38-flash generation MBPP/952 attempt=1
+CALL qwen38-flash selfcheck MBPP/942 attempt=1
+CALL qwen38-flash steelman MBPP/942 attempt=1
+RUN qwen38-flash MBPP/953
+CALL qwen38-flash generation MBPP/953 attempt=1
+CALL qwen38-flash selfcheck MBPP/944 attempt=1
+CALL qwen38-flash steelman MBPP/944 attempt=1
+CALL qwen38-flash selfcheck MBPP/953 attempt=1
+CALL qwen38-flash steelman MBPP/953 attempt=1
+RUN qwen38-flash MBPP/954
+CALL qwen38-flash generation MBPP/954 attempt=1
+CALL qwen38-flash selfcheck MBPP/954 attempt=1
+CALL qwen38-flash steelman MBPP/954 attempt=1
+CALL qwen38-flash steelman MBPP/910 attempt=1
+CALL qwen38-flash selfcheck MBPP/910 attempt=1
+RUN qwen38-flash MBPP/955
+CALL qwen38-flash generation MBPP/955 attempt=1
+RUN qwen38-flash MBPP/956
+CALL qwen38-flash generation MBPP/956 attempt=1
+RUN qwen38-flash MBPP/957
+CALL qwen38-flash generation MBPP/957 attempt=1
+CALL qwen38-flash selfcheck MBPP/955 attempt=1
+CALL qwen38-flash steelman MBPP/955 attempt=1
+RUN qwen38-flash MBPP/958
+CALL qwen38-flash generation MBPP/958 attempt=1
+RUN qwen38-flash MBPP/959
+CALL qwen38-flash generation MBPP/959 attempt=1
+CALL qwen38-flash selfcheck MBPP/959 attempt=1
+CALL qwen38-flash steelman MBPP/959 attempt=1
+CALL qwen38-flash steelman MBPP/957 attempt=1
+CALL qwen38-flash selfcheck MBPP/957 attempt=1
+CALL qwen38-flash selfcheck MBPP/956 attempt=1
+CALL qwen38-flash steelman MBPP/956 attempt=1
+CALL qwen38-flash selfcheck MBPP/958 attempt=1
+CALL qwen38-flash steelman MBPP/958 attempt=1
+CALL qwen38-flash selfcheck MBPP/929 attempt=1
+CALL qwen38-flash steelman MBPP/929 attempt=1
+RUN qwen38-flash MBPP/960
+CALL qwen38-flash generation MBPP/960 attempt=1
+CALL qwen38-flash steelman MBPP/951 attempt=1
+CALL qwen38-flash selfcheck MBPP/951 attempt=1
+RUN qwen38-flash MBPP/961
+CALL qwen38-flash generation MBPP/961 attempt=1
+RUN qwen38-flash MBPP/962
+CALL qwen38-flash generation MBPP/962 attempt=1
+CALL qwen38-flash selfcheck MBPP/961 attempt=1
+CALL qwen38-flash steelman MBPP/961 attempt=1
+CALL qwen38-flash selfcheck MBPP/962 attempt=1
+CALL qwen38-flash steelman MBPP/962 attempt=1
+RUN qwen38-flash MBPP/963
+CALL qwen38-flash generation MBPP/963 attempt=1
+CALL qwen38-flash selfcheck MBPP/963 attempt=1
+CALL qwen38-flash steelman MBPP/963 attempt=1
+RUN qwen38-flash MBPP/964
+CALL qwen38-flash generation MBPP/964 attempt=1
+CALL qwen38-flash selfcheck MBPP/964 attempt=1
+CALL qwen38-flash steelman MBPP/964 attempt=1
+RUN qwen38-flash MBPP/965
+CALL qwen38-flash generation MBPP/965 attempt=1
+RUN qwen38-flash MBPP/966
+CALL qwen38-flash generation MBPP/966 attempt=1
+CALL qwen38-flash selfcheck MBPP/966 attempt=1
+CALL qwen38-flash steelman MBPP/966 attempt=1
+CALL qwen38-flash selfcheck MBPP/965 attempt=1
+CALL qwen38-flash steelman MBPP/965 attempt=1
+RUN qwen38-flash MBPP/967
+CALL qwen38-flash generation MBPP/967 attempt=1
+RUN qwen38-flash MBPP/968
+CALL qwen38-flash generation MBPP/968 attempt=1
+RUN qwen38-flash MBPP/969
+CALL qwen38-flash generation MBPP/969 attempt=1
+RUN qwen38-flash MBPP/970
+CALL qwen38-flash generation MBPP/970 attempt=1
+CALL qwen38-flash steelman MBPP/970 attempt=1
+CALL qwen38-flash selfcheck MBPP/970 attempt=1
+CALL qwen38-flash selfcheck MBPP/967 attempt=1
+CALL qwen38-flash steelman MBPP/967 attempt=1
+RUN qwen38-flash MBPP/971
+CALL qwen38-flash generation MBPP/971 attempt=1
+RUN qwen38-flash MBPP/972
+CALL qwen38-flash generation MBPP/972 attempt=1
+RUN qwen38-flash MBPP/973
+CALL qwen38-flash generation MBPP/973 attempt=1
+RUN qwen38-flash MBPP/974
+CALL qwen38-flash generation MBPP/974 attempt=1
+CALL qwen38-flash selfcheck MBPP/973 attempt=1
+CALL qwen38-flash steelman MBPP/973 attempt=1
+CALL qwen38-flash steelman MBPP/974 attempt=1
+CALL qwen38-flash selfcheck MBPP/974 attempt=1
+CALL qwen38-flash selfcheck MBPP/972 attempt=1
+CALL qwen38-flash steelman MBPP/972 attempt=1
+CALL qwen38-flash selfcheck MBPP/969 attempt=1
+CALL qwen38-flash steelman MBPP/969 attempt=1
+CALL qwen38-flash steelman MBPP/952 attempt=1
+CALL qwen38-flash selfcheck MBPP/952 attempt=1
+CALL qwen38-flash selfcheck MBPP/936 attempt=1
+CALL qwen38-flash steelman MBPP/936 attempt=1
+CALL qwen38-flash selfcheck MBPP/960 attempt=1
+CALL qwen38-flash steelman MBPP/960 attempt=1
+CALL qwen38-flash selfcheck MBPP/910 attempt=2
+CALL qwen38-flash steelman MBPP/968 attempt=1
+CALL qwen38-flash selfcheck MBPP/968 attempt=1
+CALL qwen38-flash selfcheck MBPP/971 attempt=1
+CALL qwen38-flash steelman MBPP/971 attempt=1
+{
+  "mode": "assert_visible_qwen",
+  "completed": 947,
+  "skipped": 0
+}
