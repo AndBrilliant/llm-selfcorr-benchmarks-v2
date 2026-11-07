@@ -77,9 +77,12 @@ def main():
     out.append("Cross-evaluation matrix analysis")
     out.append("================================")
     out.append("Each frozen production candidate is judged by the four other families in both")
-    out.append("arms; the generator's own judgments come from the production ledger. Rates use")
-    out.append("the paired stratum (ground truth assigned, parsed terminal verdict in both arms")
-    out.append("of the comparison). Malformed cross records are reported, never imputed.")
+    out.append("arms; the generator's own judgments come from the production ledger. Displayed")
+    out.append("arm rates use every record with ground truth assigned and a parsed terminal")
+    out.append("verdict in that arm (arm-level denominators, shown per cell). The self-versus-")
+    out.append("external discordance analysis is candidate-paired: it uses only incorrect")
+    out.append("candidates with a valid verdict in both the cross arm and the generator's")
+    out.append("production arm. Malformed cross records are reported, never imputed.")
     out.append("")
 
     for arm in ("selfcheck", "steelman"):
@@ -102,14 +105,56 @@ def main():
                 k1 = sum(1 for r in sel if r[5] == 1 and r[4]); n1 = sum(1 for r in sel if r[5] == 1)
                 w0, w1 = wilson(k0, n0), wilson(k1, n1)
                 out.append(f"{'':12} {NAMES[g]:14} {n0+n1:>6} {100*k0/n0:6.1f} [{100*w0[0]:.1f},{100*w0[1]:.1f}]   {100*k1/n1:6.1f} [{100*w1[0]:.1f},{100*w1[1]:.1f}]")
-            # paired discordance: E-cross vs generator-self on the same incorrect candidates
-            b = c = 0
+            # paired discordance on the same incorrect candidates, both arms valid:
+            #   ext_rej_g_acc: external evaluator REJECTS while the generating family's
+            #                  own evaluator ACCEPTS (own family more permissive)
+            #   ext_acc_g_rej: external evaluator ACCEPTS while the own evaluator REJECTS
+            ext_rej_g_acc = ext_acc_g_rej = 0
+            per_task = defaultdict(lambda: [0, 0])  # task -> [ext_rej_g_acc, ext_acc_g_rej]
             for r in rows:
                 e_, g_, t_, arm_, ev, T, self_v = r
                 if e_ == e and arm_ == arm and T == 0 and self_v in V:
-                    b += ev and not V[self_v]
-                    c += (not ev) and V[self_v]
-            out.append(f"{'':12} discordance vs generator-self on T=0: E rejects & G accepts = {b}, E accepts & G rejects = {c}, exact p = {mcnemar(b,c):.6g}")
+                    if (not ev) and V[self_v]:
+                        ext_rej_g_acc += 1
+                        per_task[t_][0] += 1
+                    elif ev and not V[self_v]:
+                        ext_acc_g_rej += 1
+                        per_task[t_][1] += 1
+            p_disc = mcnemar(ext_rej_g_acc, ext_acc_g_rej)
+            out.append(
+                f"{'':12} discordance vs generator-self on T=0 (paired, both arms valid):"
+            )
+            out.append(
+                f"{'':12}   external rejects & own accepts (own family more permissive) = {ext_rej_g_acc};"
+            )
+            out.append(
+                f"{'':12}   external accepts & own rejects = {ext_acc_g_rej};"
+                f" exact McNemar p = {p_disc:.6g}"
+            )
+            # task-clustered sensitivity: candidates from the same task share the benchmark
+            # problem, so cluster by task with a paired cluster bootstrap on the net count
+            import random
+            random.seed(20261107)
+            tasks = sorted(per_task)
+            if tasks:
+                diffs = {tt: per_task[tt][0] - per_task[tt][1] for tt in tasks}
+                B = 4000
+                boots = []
+                for _ in range(B):
+                    s = 0
+                    for _ in range(len(tasks)):
+                        s += diffs[tasks[random.randrange(len(tasks))]]
+                    boots.append(s)
+                boots.sort()
+                lo, hi = boots[int(0.025 * B)], boots[int(0.975 * B)]
+                same_dir = sum(1 for tt in tasks if diffs[tt] > 0)
+                opp_dir = sum(1 for tt in tasks if diffs[tt] < 0)
+                out.append(
+                    f"{'':12}   task-clustered paired bootstrap on the net discordance count"
+                    f" (n_tasks={len(tasks)}): 95% CI [{lo}, {hi}];"
+                    f" tasks net toward own-family permissiveness: {same_dir},"
+                    f" opposite: {opp_dir}"
+                )
             out.append("")
 
     out.append("malformed cross records (reported, never imputed):")
