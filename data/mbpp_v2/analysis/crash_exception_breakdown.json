@@ -1,0 +1,12 @@
+{
+ "total_crashes": 736,
+ "by_exception": {
+  "Other exception": 111,
+  "TypeError": 591,
+  "AttributeError": 5,
+  "Blocked AST guard": 12,
+  "NameError": 9,
+  "ValueError": 8
+ },
+ "method": "test_reason string classification of production candidates with runtime crashes"
+}
