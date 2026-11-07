@@ -1,0 +1,92 @@
+Cross-evaluation matrix analysis
+================================
+Each frozen production candidate is judged by the four other families in both
+arms; the generator's own judgments come from the production ledger. Rates use
+the paired stratum (ground truth assigned, parsed terminal verdict in both arms
+of the comparison). Malformed cross records are reported, never imputed.
+
+--- arm: selfcheck ---
+evaluator    cand family    n_pair          FAR% [95% CI]          TAR% [95% CI]
+GPT-5.4      (own)             947   90.1 [86.9,92.5]     97.1 [95.2,98.2]
+             DeepSeek          938   88.6 [85.1,91.4]     95.2 [93.1,96.7]
+             GLM               942   74.4 [69.2,78.9]     89.0 [86.3,91.2]
+             Qwen              943   82.7 [78.7,86.0]     94.9 [92.7,96.5]
+             GPT-6-Luna        947   88.5 [85.1,91.2]     96.3 [94.3,97.6]
+             discordance vs generator-self on T=0: E rejects & G accepts = 50, E accepts & G rejects = 199, exact p = 3.16988e-22
+
+DeepSeek     (own)             927   96.9 [94.7,98.2]     98.9 [97.6,99.5]
+             GPT-5.4           932   79.0 [74.8,82.6]     97.2 [95.4,98.4]
+             GLM               927   80.9 [76.1,85.0]     92.8 [90.5,94.6]
+             Qwen              933   87.6 [84.0,90.4]     97.9 [96.3,98.8]
+             GPT-6-Luna        933   86.7 [83.1,89.6]     98.0 [96.4,98.9]
+             discordance vs generator-self on T=0: E rejects & G accepts = 55, E accepts & G rejects = 188, exact p = 3.34885e-18
+
+GLM          (own)             927   88.8 [84.8,91.9]     97.4 [95.9,98.4]
+             GPT-5.4           924   72.8 [68.3,76.8]     97.4 [95.7,98.5]
+             DeepSeek          908   78.8 [74.4,82.7]     99.3 [98.1,99.7]
+             Qwen              910   77.6 [73.2,81.5]     98.6 [97.2,99.3]
+             GPT-6-Luna        903   72.7 [68.1,76.9]     98.4 [96.9,99.2]
+             discordance vs generator-self on T=0: E rejects & G accepts = 46, E accepts & G rejects = 338, exact p = 4.86975e-56
+
+Qwen         (own)             943   94.9 [92.4,96.7]     99.2 [98.1,99.7]
+             GPT-5.4           946   84.8 [81.1,87.8]     97.1 [95.2,98.2]
+             DeepSeek          935   94.2 [91.4,96.1]     98.9 [97.6,99.5]
+             GLM               941   83.4 [78.9,87.2]     91.8 [89.4,93.7]
+             GPT-6-Luna        944   85.6 [82.0,88.6]     97.9 [96.2,98.8]
+             discordance vs generator-self on T=0: E rejects & G accepts = 60, E accepts & G rejects = 146, exact p = 1.86252e-09
+
+GPT-6-Luna   (own)             943   93.5 [90.8,95.5]     96.5 [94.5,97.8]
+             GPT-5.4           943   82.1 [78.2,85.4]     93.2 [90.7,95.1]
+             DeepSeek          938   89.1 [85.7,91.8]     95.8 [93.7,97.2]
+             GLM               938   72.9 [67.6,77.6]     87.2 [84.4,89.6]
+             Qwen              944   87.3 [83.7,90.1]     94.9 [92.7,96.5]
+             discordance vs generator-self on T=0: E rejects & G accepts = 53, E accepts & G rejects = 200, exact p = 2.87116e-21
+
+--- arm: steelman ---
+evaluator    cand family    n_pair          FAR% [95% CI]          TAR% [95% CI]
+GPT-5.4      (own)             938   88.5 [85.2,91.2]     95.1 [92.9,96.7]
+             DeepSeek          932   85.5 [81.7,88.7]     95.2 [93.0,96.7]
+             GLM               940   76.5 [71.5,80.9]     87.2 [84.4,89.6]
+             Qwen              941   85.0 [81.3,88.1]     93.7 [91.3,95.5]
+             GPT-6-Luna        945   89.8 [86.6,92.3]     94.9 [92.7,96.5]
+             discordance vs generator-self on T=0: E rejects & G accepts = 89, E accepts & G rejects = 159, exact p = 1.03812e-05
+
+DeepSeek     (own)             926   94.4 [91.6,96.3]     98.9 [97.6,99.5]
+             GPT-5.4           931   79.4 [75.3,83.0]     95.7 [93.5,97.1]
+             GLM               930   76.8 [71.7,81.2]     90.3 [87.7,92.4]
+             Qwen              924   88.9 [85.5,91.6]     97.3 [95.5,98.4]
+             GPT-6-Luna        935   87.4 [83.9,90.2]     97.4 [95.7,98.5]
+             discordance vs generator-self on T=0: E rejects & G accepts = 82, E accepts & G rejects = 156, exact p = 1.85516e-06
+
+GLM          (own)             932   85.5 [81.1,89.0]     97.5 [95.9,98.4]
+             GPT-5.4           919   73.3 [68.8,77.3]     99.0 [97.7,99.6]
+             DeepSeek          906   77.4 [72.8,81.3]     98.5 [97.1,99.2]
+             Qwen              910   74.2 [69.6,78.3]     98.1 [96.5,99.0]
+             GPT-6-Luna        914   73.1 [68.6,77.2]     98.0 [96.4,98.9]
+             discordance vs generator-self on T=0: E rejects & G accepts = 79, E accepts & G rejects = 328, exact p = 3.84282e-37
+
+Qwen         (own)             940   90.6 [87.4,93.0]     97.3 [95.6,98.4]
+             GPT-5.4           946   84.1 [80.3,87.2]     93.4 [90.9,95.2]
+             DeepSeek          936   92.4 [89.4,94.6]     97.8 [96.2,98.7]
+             GLM               941   81.5 [76.8,85.4]     88.5 [85.7,90.7]
+             GPT-6-Luna        945   88.0 [84.6,90.7]     95.5 [93.3,97.0]
+             discordance vs generator-self on T=0: E rejects & G accepts = 91, E accepts & G rejects = 124, exact p = 0.0288458
+
+GPT-6-Luna   (own)             947   86.9 [83.4,89.7]     93.4 [90.9,95.2]
+             GPT-5.4           947   75.8 [71.5,79.5]     88.9 [85.9,91.3]
+             DeepSeek          937   84.6 [80.7,87.8]     91.7 [89.1,93.7]
+             GLM               942   68.5 [63.1,73.4]     82.6 [79.5,85.4]
+             Qwen              944   81.5 [77.5,84.9]     90.9 [88.2,93.1]
+             discordance vs generator-self on T=0: E rejects & G accepts = 45, E accepts & G rejects = 223, exact p = 1.61672e-29
+
+malformed cross records (reported, never imputed):
+  DeepSeek selfcheck: 55
+  DeepSeek steelman: 60
+  GLM selfcheck: 131
+  GLM steelman: 127
+  GPT-5.4 selfcheck: 1
+  GPT-5.4 steelman: 13
+  GPT-6-Luna selfcheck: 8
+  GPT-6-Luna steelman: 1
+  Qwen selfcheck: 8
+  Qwen steelman: 6

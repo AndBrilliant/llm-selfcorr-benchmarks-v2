@@ -24,6 +24,8 @@ all artifacts.
 | MBPP moderator analysis | Pre-registered stratification (spec: `scripts/mbpp_v2_moderator_spec.md`) | `data/mbpp_v2/moderator_analysis/` |
 | MBPP repeated evaluation | k=3 rounds per arm, 4,718 pairs, 18,884 events | `data/mbpp_v2/repeated_eval/` |
 | MBPP candidate replication | Second independent greedy candidate per (task, model), 4,735 pairs | `data/mbpp_v2/replication/` |
+| MBPP neutral-verification control | Non-adversarial step-by-step re-examination of the same frozen candidates (matched-computation control), 4,718 records | `data/mbpp_v2/control/` (`scripts/mbpp_v2_control_analysis.py`) |
+| MBPP cross-evaluation matrix | Every frozen candidate judged by the four other families in both arms (5 x 4 x 947 pairs), 18,872 records | `data/mbpp_v2/cross_eval/` (`scripts/mbpp_v2_cross_analysis.py`) |
 | Tier 1 analyses | Verdict stability, repeated-acceptance error rates, cross-candidate association, always-accept baseline | `data/mbpp_v2/tier1_analysis/` (`scripts/mbpp_v2_tier1_analysis.py`) |
 | Ledger validator | Duplicates, hashes, verdict reproduction from raw text, manifest verification | `scripts/validate_mbpp_v2_pilot.py` |
 
@@ -57,5 +59,7 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/mbpp_v2_analysis.py --ledger data/mbpp_v2/production --out data/mbpp_v2/analysis
 python3 scripts/mbpp_v2_moderator_analysis.py
 python3 scripts/mbpp_v2_tier1_analysis.py
+python3 scripts/mbpp_v2_control_analysis.py
+python3 scripts/mbpp_v2_cross_analysis.py
 python3 scripts/humaneval/paired_contrasts.py
 ```
