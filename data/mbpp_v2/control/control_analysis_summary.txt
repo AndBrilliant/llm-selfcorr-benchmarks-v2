@@ -2,18 +2,20 @@ Neutral-verification control-arm analysis
 =========================================
 Triple-paired stratum: ground truth assigned, parsed terminal verdict from
 all three arms (selfcheck, steelman, control). Malformed control records are
-reported as counts, never imputed. GPT-5.4's OpenAI key was invalidated
-mid-run; its 747 auth-failed tasks stay visible as malformed records
-(repair_log.jsonl), leaving n=200 triple-paired for that family.
+reported as counts, never imputed. Run history: GPT-5.4's OpenAI key was
+invalidated mid-run; its 747 auth-failed tasks were re-run after key
+replacement, so all five families are complete; the auth failures remain
+visible in auth_failed_records.jsonl and the event-id repair in
+repair_log.jsonl.
 
 family         arm        n_pair          FAR% [95% CI]          TAR% [95% CI]
-gpt-5.4        selfcheck     196   95.5 [88.9,98.2]     98.1 [93.5,99.5]
-gpt-5.4        steelman      196   92.0 [84.5,96.1]     96.3 [90.9,98.6]
-gpt-5.4        control       196   93.2 [85.9,96.8]     96.3 [90.9,98.6]
-               control-vs-steelman T=0: b/c = 2/1  exact p = 1
-               control-vs-steelman T=1: b/c = 3/3  exact p = 1
-               realized completion tokens: steelman med 342/mean 360; control med 482/mean 511 (control/steelman mean ratio 1.42x, n=196)
-               malformed control records: 747 (reported, never imputed)
+gpt-5.4        selfcheck     938   90.2 [87.0,92.6]     97.1 [95.2,98.2]
+gpt-5.4        steelman      938   88.5 [85.2,91.2]     95.1 [92.9,96.7]
+gpt-5.4        control       938   90.6 [87.5,93.0]     95.5 [93.3,97.0]
+               control-vs-steelman T=0: b/c = 19/10  exact p = 0.136046
+               control-vs-steelman T=1: b/c = 19/17  exact p = 0.867939
+               realized completion tokens: steelman med 334/mean 360; control med 486/mean 516 (control/steelman mean ratio 1.44x, n=938)
+               malformed control records: 0 (reported, never imputed)
 
 ds-v4-flash    selfcheck     914   96.9 [94.6,98.2]     98.9 [97.5,99.5]
 ds-v4-flash    steelman      914   94.3 [91.5,96.2]     98.9 [97.5,99.5]
