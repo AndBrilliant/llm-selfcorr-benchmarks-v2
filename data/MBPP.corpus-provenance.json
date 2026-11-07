@@ -1,0 +1,203 @@
+{
+ "corpus": "MBPP (Austin et al. 2021), canonical release, 974 tasks",
+ "kept": 947,
+ "excluded": 27,
+ "excluded_task_ids": [
+  32,
+  100,
+  134,
+  160,
+  173,
+  181,
+  208,
+  210,
+  264,
+  303,
+  318,
+  392,
+  403,
+  531,
+  575,
+  596,
+  663,
+  676,
+  717,
+  759,
+  769,
+  836,
+  900,
+  912,
+  913,
+  927,
+  938
+ ],
+ "excluded_details": [
+  {
+   "task_id": 32,
+   "text": "Write a python function to find the largest prime factor of a given number.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 100,
+   "text": "Write a function to find the next smallest palindrome of a specified number.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 134,
+   "text": "Write a python function to check whether the last element of given array is even or odd after performing an operation p times.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 160,
+   "text": "Write a function to find x and y that satisfies ax + by = n.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 173,
+   "text": "Write a function to remove everything except alphanumeric characters from a string.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 181,
+   "text": "Write a function to find the longest common prefix in the given set of strings.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 208,
+   "text": "Write a function to check the given decimal with a precision of 2 by using regex.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 210,
+   "text": "Write a function to check that the given string contains only a certain set of characters(in this case a-z, a-z and 0-9) by using regex.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 264,
+   "text": "Write a function to calculate a dog's age in dog's years.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 303,
+   "text": "Write a python function to check whether the count of inversion of two types are same or not.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 318,
+   "text": "Write a python function to find the maximum volume of a cuboid with given sum of sides.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 392,
+   "text": "Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n).",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 403,
+   "text": "Write a function to check if a url is valid or not using regex.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 531,
+   "text": "Write a function to find minimum number of coins that make a given value.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 575,
+   "text": "Write a python function to find nth number in a sequence which is not a multiple of a given number.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 596,
+   "text": "Write a function to find the size of the given tuple.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 663,
+   "text": "Write a function to find the largest possible value of k such that k modulo x is y.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 676,
+   "text": "Write a function to remove everything except alphanumeric characters from the given string by using regex.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 717,
+   "text": "Write a function to calculate the standard deviation.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 759,
+   "text": "Write a function to check a decimal with a precision of 2.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 769,
+   "text": "Write a python function to get the difference between two lists.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 836,
+   "text": "Write a function to find length of the subarray having maximum sum.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 900,
+   "text": "Write a function where a string will start with a specific number.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 912,
+   "text": "Write a function to find ln, m lobb number.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 913,
+   "text": "Write a function to check for a number at the end of a string.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 927,
+   "text": "Write a function to calculate the height of the given binary tree.",
+   "had_test_setup_code": true,
+   "had_challenge_tests": false
+  },
+  {
+   "task_id": 938,
+   "text": "Write a function to find three closest elements from three sorted arrays.",
+   "had_test_setup_code": false,
+   "had_challenge_tests": false
+  }
+ ],
+ "provenance_note": "The 947-task corpus is inherited frozen from the v1 benchmark build (llm-selfcorr-benchmarks) and was retained unchanged so that v1 and v2 ledgers remain comparable. Every kept task carries its canonical three reference asserts verbatim. The 27 exclusions predate this repository; the excluded ids are archived here for completeness. No inclusion criterion was re-derived or adjusted after seeing results.",
+ "verification": {
+  "kept_tasks_with_exactly_3_asserts": 947,
+  "generator_and_evaluator_prompts_show_only": "NL description + entry-point name; the three reference asserts are never shown to the generator or to either evaluator arm"
+ }
+}
