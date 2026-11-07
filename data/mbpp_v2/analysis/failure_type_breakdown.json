@@ -1,0 +1,33 @@
+{
+ "total_incorrect": 1988,
+ "breakdown": {
+  "runs, wrong values (assertion failure)": 1249,
+  "crash/exception at runtime": 736,
+  "missing/renamed entry point": 3
+ },
+ "per_model": {
+  "gpt-5.4": {
+   "runs, wrong values (assertion failure)": 253,
+   "crash/exception at runtime": 179,
+   "missing/renamed entry point": 1
+  },
+  "ds-v4-flash": {
+   "runs, wrong values (assertion failure)": 250,
+   "crash/exception at runtime": 147
+  },
+  "gpt-6-luna": {
+   "runs, wrong values (assertion failure)": 264,
+   "crash/exception at runtime": 170
+  },
+  "glm-5.3-flash": {
+   "runs, wrong values (assertion failure)": 211,
+   "crash/exception at runtime": 95,
+   "missing/renamed entry point": 2
+  },
+  "qwen38-flash": {
+   "runs, wrong values (assertion failure)": 271,
+   "crash/exception at runtime": 145
+  }
+ },
+ "method": "AST check for required entry-point definition + test_reason classification (crash vs assertion)"
+}
