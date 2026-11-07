@@ -1,0 +1,48 @@
+Neutral-verification control-arm analysis
+=========================================
+Triple-paired stratum: ground truth assigned, parsed terminal verdict from
+all three arms (selfcheck, steelman, control). Malformed control records are
+reported as counts, never imputed. GPT-5.4's OpenAI key was invalidated
+mid-run; its 747 auth-failed tasks stay visible as malformed records
+(repair_log.jsonl), leaving n=200 triple-paired for that family.
+
+family         arm        n_pair          FAR% [95% CI]          TAR% [95% CI]
+gpt-5.4        selfcheck     196   95.5 [88.9,98.2]     98.1 [93.5,99.5]
+gpt-5.4        steelman      196   92.0 [84.5,96.1]     96.3 [90.9,98.6]
+gpt-5.4        control       196   93.2 [85.9,96.8]     96.3 [90.9,98.6]
+               control-vs-steelman T=0: b/c = 2/1  exact p = 1
+               control-vs-steelman T=1: b/c = 3/3  exact p = 1
+               realized completion tokens: steelman med 342/mean 360; control med 482/mean 511 (control/steelman mean ratio 1.42x, n=196)
+               malformed control records: 747 (reported, never imputed)
+
+ds-v4-flash    selfcheck     914   96.9 [94.6,98.2]     98.9 [97.5,99.5]
+ds-v4-flash    steelman      914   94.3 [91.5,96.2]     98.9 [97.5,99.5]
+ds-v4-flash    control       914   95.1 [92.4,96.8]     98.9 [97.5,99.5]
+               control-vs-steelman T=0: b/c = 16/13  exact p = 0.711071
+               control-vs-steelman T=1: b/c = 5/5  exact p = 1
+               realized completion tokens: steelman med 2550/mean 3081; control med 1083/mean 2004 (control/steelman mean ratio 0.65x, n=914)
+               malformed control records: 6 (reported, never imputed)
+
+glm-5.3-flash  selfcheck     902   89.6 [85.5,92.6]     97.6 [96.0,98.5]
+glm-5.3-flash  steelman      902   86.8 [82.4,90.2]     97.7 [96.2,98.6]
+glm-5.3-flash  control       902   88.5 [84.3,91.7]     98.2 [96.8,99.0]
+               control-vs-steelman T=0: b/c = 21/16  exact p = 0.511376
+               control-vs-steelman T=1: b/c = 9/6  exact p = 0.607239
+               realized completion tokens: steelman med 1910/mean 4279; control med 1370/mean 3761 (control/steelman mean ratio 0.88x, n=902)
+               malformed control records: 15 (reported, never imputed)
+
+qwen38-flash   selfcheck     935   94.9 [92.3,96.6]     99.2 [98.1,99.7]
+qwen38-flash   steelman      935   90.7 [87.5,93.2]     97.3 [95.6,98.4]
+qwen38-flash   control       935   94.6 [92.0,96.4]     99.0 [97.8,99.6]
+               control-vs-steelman T=0: b/c = 23/7  exact p = 0.00522288
+               control-vs-steelman T=1: b/c = 10/1  exact p = 0.0117188
+               realized completion tokens: steelman med 1922/mean 3402; control med 1614/mean 3361 (control/steelman mean ratio 0.99x, n=935)
+               malformed control records: 6 (reported, never imputed)
+
+gpt-6-luna     selfcheck     941   93.5 [90.7,95.5]     96.5 [94.5,97.8]
+gpt-6-luna     steelman      941   86.7 [83.2,89.6]     93.3 [90.8,95.2]
+gpt-6-luna     control       941   85.8 [82.2,88.8]     93.0 [90.4,94.9]
+               control-vs-steelman T=0: b/c = 12/16  exact p = 0.571588
+               control-vs-steelman T=1: b/c = 7/9  exact p = 0.803619
+               realized completion tokens: steelman med 384/mean 475; control med 276/mean 382 (control/steelman mean ratio 0.80x, n=941)
+               malformed control records: 2 (reported, never imputed)
