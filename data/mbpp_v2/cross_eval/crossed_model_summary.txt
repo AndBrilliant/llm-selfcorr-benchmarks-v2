@@ -1,0 +1,26 @@
+Crossed evaluator x generator analysis
+=====================================
+Incorrect candidates only. Logistic acceptance model: evaluator and generator
+categorical effects + same-family indicator; task-clustered sandwich SEs.
+
+--- selfcheck ---
+n=9773, tasks=512
+same-family beta=1.0709, OR=2.918, clustered SE=0.0853, z=12.55, p=4.096e-36, 95% CI [0.9037,1.2382]
+FAR % matrix (rows evaluator, columns generator):
+evaluator        GPT-5.4    DeepSeek         GLM        Qwen  GPT-6-Luna
+GPT-5.4             90.1        88.6        74.4        82.7        88.5
+DeepSeek            79.0        96.9        80.9        87.6        86.7
+GLM                 72.8        78.8        88.8        77.6        72.7
+Qwen                84.8        94.2        83.4        94.9        85.6
+GPT-6-Luna          82.1        89.1        72.9        87.3        93.5
+
+--- steelman ---
+n=9780, tasks=512
+same-family beta=0.6562, OR=1.927, clustered SE=0.0668, z=9.82, p=9.251e-23, 95% CI [0.5252,0.7872]
+FAR % matrix (rows evaluator, columns generator):
+evaluator        GPT-5.4    DeepSeek         GLM        Qwen  GPT-6-Luna
+GPT-5.4             88.5        85.5        76.5        85.0        89.8
+DeepSeek            79.4        94.4        76.8        88.9        87.4
+GLM                 73.3        77.4        85.5        74.2        73.1
+Qwen                84.1        92.4        81.5        90.6        88.0
+GPT-6-Luna          75.8        84.6        68.5        81.5        86.9
