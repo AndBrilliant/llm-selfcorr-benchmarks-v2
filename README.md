@@ -26,6 +26,7 @@ all artifacts.
 | MBPP candidate replication | Second independent greedy candidate per (task, model), 4,735 pairs | `data/mbpp_v2/replication/` |
 | MBPP neutral-verification control | Non-adversarial step-by-step re-examination of the same frozen candidates (matched-computation control), 4,718 records | `data/mbpp_v2/control/` (`scripts/mbpp_v2_control_analysis.py`) |
 | MBPP cross-evaluation matrix | Every frozen candidate judged by the four other families in both arms (5 x 4 x 947 pairs), 18,872 records | `data/mbpp_v2/cross_eval/` (`scripts/mbpp_v2_cross_analysis.py`) |
+| MBPP one-assert-visible control | Qwen only: one example assert shown to generator and both evaluator arms, 947 pairs | `data/mbpp_v2/assert_visible_qwen/` (`scripts/mbpp_v2_assert_visible_analysis.py`) |
 | Tier 1 analyses | Verdict stability, repeated-acceptance error rates, cross-candidate association, always-accept baseline | `data/mbpp_v2/tier1_analysis/` (`scripts/mbpp_v2_tier1_analysis.py`) |
 | Ledger validator | Duplicates, hashes, verdict reproduction from raw text, manifest verification | `scripts/validate_mbpp_v2_pilot.py` |
 
@@ -61,5 +62,6 @@ python3 scripts/mbpp_v2_moderator_analysis.py
 python3 scripts/mbpp_v2_tier1_analysis.py
 python3 scripts/mbpp_v2_control_analysis.py
 python3 scripts/mbpp_v2_cross_analysis.py
+python3 scripts/mbpp_v2_assert_visible_analysis.py
 python3 scripts/humaneval/paired_contrasts.py
 ```
